@@ -1,0 +1,5212 @@
+*SPEF "IEEE 1481-1999"
+*DESIGN "msrv_soc_system_controllerwrapper"
+*DATE "Wed Apr 15 10:43:12 2026"
+*VENDOR "SYNOPSYS INC"
+*PROGRAM "Synopsys Design Compiler (R) NXT cmos"
+*VERSION "T-2022.03-SP4"
+*DESIGN_FLOW "SYNTHESIS"
+*DIVIDER /
+*DELIMITER :
+*BUS_DELIMITER []
+*T_UNIT 1.0 NS
+*C_UNIT 1.0 PF
+*R_UNIT 1.0 KOHM
+*L_UNIT 1.0 HENRY
+
+*PORTS
+
+HADDR\[55\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HADDR\[54\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HADDR\[53\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HADDR\[52\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HADDR\[51\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HADDR\[50\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HADDR\[49\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HADDR\[48\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HADDR\[47\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HADDR\[46\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HADDR\[45\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HADDR\[44\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HADDR\[43\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HADDR\[42\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HADDR\[41\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HADDR\[40\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HADDR\[39\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HADDR\[38\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HADDR\[37\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HADDR\[36\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HADDR\[35\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HADDR\[34\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HADDR\[33\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HADDR\[32\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HADDR\[31\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HADDR\[30\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HADDR\[29\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HADDR\[28\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HADDR\[27\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HADDR\[26\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HADDR\[25\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HADDR\[24\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HADDR\[23\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HADDR\[22\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HADDR\[21\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HADDR\[20\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HADDR\[19\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HADDR\[18\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HADDR\[17\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HADDR\[16\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HADDR\[15\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HADDR\[14\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HADDR\[13\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HADDR\[12\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HADDR\[11\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HADDR\[10\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HADDR\[9\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HADDR\[8\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HADDR\[7\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HADDR\[6\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HADDR\[5\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HADDR\[4\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HADDR\[3\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HADDR\[2\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HADDR\[1\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HADDR\[0\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HWRITE I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HWDATA\[31\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HWDATA\[30\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HWDATA\[29\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HWDATA\[28\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HWDATA\[27\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HWDATA\[26\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HWDATA\[25\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HWDATA\[24\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HWDATA\[23\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HWDATA\[22\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HWDATA\[21\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HWDATA\[20\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HWDATA\[19\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HWDATA\[18\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HWDATA\[17\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HWDATA\[16\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HWDATA\[15\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HWDATA\[14\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HWDATA\[13\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HWDATA\[12\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HWDATA\[11\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HWDATA\[10\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HWDATA\[9\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HWDATA\[8\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HWDATA\[7\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HWDATA\[6\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HWDATA\[5\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HWDATA\[4\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HWDATA\[3\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HWDATA\[2\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HWDATA\[1\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HWDATA\[0\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HREADY I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HTRANS\[1\] I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+HRESPSYS_CTRL O *L 4.000e-03 *S 0.000e+00 0.000e+00 
+HREADYSYS_CTRL O *L 4.000e-03 *S 8.075e-02 7.628e-02 
+HSELSYS_CTRL O *L 4.000e-03 *S 1.207e-01 1.208e-01 
+clk I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reset_ext I *L 0.000e+00 *S 0.000e+00 0.000e+00 
+reset O *L 4.000e-03 *S 6.788e-02 6.249e-02 
+clk_out O *L 4.000e-03 *S 7.159e-02 6.022e-02 
+
+*R_NET HADDR\[55\] 1.719e-02
+*DRIVER HADDR\[55\]
+*CELL NULL
+*C2_R1_C1 8.593e-03 8.117e-02 8.593e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U23:D0 1.527e-04
+*RC dut/reg_bank/haddrreg/U34:A2 1.550e-04
+*RC dut/adrdecs/systemcontrollerdec/U15:A1 1.573e-04
+*END
+
+*R_NET HADDR\[54\] 1.719e-02
+*DRIVER HADDR\[54\]
+*CELL NULL
+*C2_R1_C1 8.593e-03 8.117e-02 8.593e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U17:D0 1.527e-04
+*RC dut/reg_bank/haddrreg/U36:A2 1.550e-04
+*RC dut/adrdecs/systemcontrollerdec/U16:A1 1.573e-04
+*END
+
+*R_NET HADDR\[53\] 1.712e-02
+*DRIVER HADDR\[53\]
+*CELL NULL
+*C2_R1_C1 8.562e-03 8.117e-02 8.562e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U54:D0 1.527e-04
+*RC dut/reg_bank/haddrreg/U17:A2 1.550e-04
+*RC dut/adrdecs/systemcontrollerdec/U16:A2 1.556e-04
+*END
+
+*R_NET HADDR\[52\] 1.708e-02
+*DRIVER HADDR\[52\]
+*CELL NULL
+*C2_R1_C1 8.538e-03 8.117e-02 8.538e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U18:D0 1.527e-04
+*RC dut/reg_bank/haddrreg/U19:A2 1.550e-04
+*RC dut/adrdecs/systemcontrollerdec/U15:A4 1.544e-04
+*END
+
+*R_NET HADDR\[51\] 1.712e-02
+*DRIVER HADDR\[51\]
+*CELL NULL
+*C2_R1_C1 8.562e-03 8.117e-02 8.562e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U20:D0 1.527e-04
+*RC dut/reg_bank/haddrreg/U11:A2 1.550e-04
+*RC dut/adrdecs/systemcontrollerdec/U15:A2 1.556e-04
+*END
+
+*R_NET HADDR\[50\] 1.710e-02
+*DRIVER HADDR\[50\]
+*CELL NULL
+*C2_R1_C1 8.548e-03 8.117e-02 8.548e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U34:D0 1.527e-04
+*RC dut/reg_bank/haddrreg/U24:A2 1.550e-04
+*RC dut/adrdecs/systemcontrollerdec/U15:A3 1.549e-04
+*END
+
+*R_NET HADDR\[49\] 1.710e-02
+*DRIVER HADDR\[49\]
+*CELL NULL
+*C2_R1_C1 8.548e-03 8.117e-02 8.548e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U21:D0 1.527e-04
+*RC dut/reg_bank/haddrreg/U53:A2 1.550e-04
+*RC dut/adrdecs/systemcontrollerdec/U7:A3 1.549e-04
+*END
+
+*R_NET HADDR\[48\] 1.712e-02
+*DRIVER HADDR\[48\]
+*CELL NULL
+*C2_R1_C1 8.562e-03 8.117e-02 8.562e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U22:D0 1.527e-04
+*RC dut/reg_bank/haddrreg/U58:A2 1.550e-04
+*RC dut/adrdecs/systemcontrollerdec/U6:A2 1.556e-04
+*END
+
+*R_NET HADDR\[47\] 1.712e-02
+*DRIVER HADDR\[47\]
+*CELL NULL
+*C2_R1_C1 8.562e-03 8.117e-02 8.562e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U28:D0 1.527e-04
+*RC dut/reg_bank/haddrreg/U52:A2 1.550e-04
+*RC dut/adrdecs/systemcontrollerdec/U14:A2 1.556e-04
+*END
+
+*R_NET HADDR\[46\] 1.712e-02
+*DRIVER HADDR\[46\]
+*CELL NULL
+*C2_R1_C1 8.562e-03 8.117e-02 8.562e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U31:D0 1.527e-04
+*RC dut/reg_bank/haddrreg/U59:A2 1.550e-04
+*RC dut/adrdecs/systemcontrollerdec/U19:A2 1.556e-04
+*END
+
+*R_NET HADDR\[45\] 1.708e-02
+*DRIVER HADDR\[45\]
+*CELL NULL
+*C2_R1_C1 8.538e-03 8.117e-02 8.538e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U29:D0 1.527e-04
+*RC dut/reg_bank/haddrreg/U61:A2 1.550e-04
+*RC dut/adrdecs/systemcontrollerdec/U14:A4 1.544e-04
+*END
+
+*R_NET HADDR\[44\] 1.712e-02
+*DRIVER HADDR\[44\]
+*CELL NULL
+*C2_R1_C1 8.558e-03 8.117e-02 8.558e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U32:D0 1.527e-04
+*RC dut/reg_bank/haddrreg/U63:A2 1.550e-04
+*RC dut/adrdecs/systemcontrollerdec/U1:A1 1.555e-04
+*END
+
+*R_NET HADDR\[43\] 1.714e-02
+*DRIVER HADDR\[43\]
+*CELL NULL
+*C2_R1_C1 8.568e-03 8.117e-02 8.568e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U33:D0 1.527e-04
+*RC dut/reg_bank/haddrreg/U65:A2 1.550e-04
+*RC dut/adrdecs/systemcontrollerdec/U1:A2 1.560e-04
+*END
+
+*R_NET HADDR\[42\] 1.708e-02
+*DRIVER HADDR\[42\]
+*CELL NULL
+*C2_R1_C1 8.538e-03 8.117e-02 8.538e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U24:D0 1.527e-04
+*RC dut/reg_bank/haddrreg/U30:A2 1.550e-04
+*RC dut/adrdecs/systemcontrollerdec/U4:A4 1.544e-04
+*END
+
+*R_NET HADDR\[41\] 1.708e-02
+*DRIVER HADDR\[41\]
+*CELL NULL
+*C2_R1_C1 8.540e-03 8.117e-02 8.540e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U25:D0 1.527e-04
+*RC dut/reg_bank/haddrreg/U16:A2 1.550e-04
+*RC dut/adrdecs/systemcontrollerdec/U11:A2 1.545e-04
+*END
+
+*R_NET HADDR\[40\] 1.706e-02
+*DRIVER HADDR\[40\]
+*CELL NULL
+*C2_R1_C1 8.528e-03 8.117e-02 8.528e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U36:D0 1.527e-04
+*RC dut/reg_bank/haddrreg/U15:A2 1.550e-04
+*RC dut/adrdecs/systemcontrollerdec/U11:A4 1.538e-04
+*END
+
+*R_NET HADDR\[39\] 1.715e-02
+*DRIVER HADDR\[39\]
+*CELL NULL
+*C2_R1_C1 8.573e-03 8.117e-02 8.573e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U26:D0 1.527e-04
+*RC dut/reg_bank/haddrreg/U44:A2 1.550e-04
+*RC dut/adrdecs/systemcontrollerdec/U11:A1 1.563e-04
+*END
+
+*R_NET HADDR\[38\] 1.709e-02
+*DRIVER HADDR\[38\]
+*CELL NULL
+*C2_R1_C1 8.544e-03 8.117e-02 8.544e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U27:D0 1.527e-04
+*RC dut/reg_bank/haddrreg/U46:A2 1.550e-04
+*RC dut/adrdecs/systemcontrollerdec/U11:A3 1.547e-04
+*END
+
+*R_NET HADDR\[37\] 1.719e-02
+*DRIVER HADDR\[37\]
+*CELL NULL
+*C2_R1_C1 8.593e-03 8.117e-02 8.593e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U40:D0 1.527e-04
+*RC dut/reg_bank/haddrreg/U18:A2 1.550e-04
+*RC dut/adrdecs/systemcontrollerdec/U6:A1 1.573e-04
+*END
+
+*R_NET HADDR\[36\] 1.710e-02
+*DRIVER HADDR\[36\]
+*CELL NULL
+*C2_R1_C1 8.548e-03 8.117e-02 8.548e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U37:D0 1.527e-04
+*RC dut/reg_bank/haddrreg/U21:A2 1.550e-04
+*RC dut/adrdecs/systemcontrollerdec/U4:A3 1.549e-04
+*END
+
+*R_NET HADDR\[35\] 1.710e-02
+*DRIVER HADDR\[35\]
+*CELL NULL
+*C2_R1_C1 8.548e-03 8.117e-02 8.548e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U10:D0 1.527e-04
+*RC dut/reg_bank/haddrreg/U49:A2 1.550e-04
+*RC dut/adrdecs/systemcontrollerdec/U6:A3 1.549e-04
+*END
+
+*R_NET HADDR\[34\] 1.712e-02
+*DRIVER HADDR\[34\]
+*CELL NULL
+*C2_R1_C1 8.562e-03 8.117e-02 8.562e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U12:D0 1.527e-04
+*RC dut/reg_bank/haddrreg/U57:A2 1.550e-04
+*RC dut/adrdecs/systemcontrollerdec/U4:A2 1.556e-04
+*END
+
+*R_NET HADDR\[33\] 1.719e-02
+*DRIVER HADDR\[33\]
+*CELL NULL
+*C2_R1_C1 8.593e-03 8.117e-02 8.593e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U35:D0 1.527e-04
+*RC dut/reg_bank/haddrreg/U60:A2 1.550e-04
+*RC dut/adrdecs/systemcontrollerdec/U19:A1 1.573e-04
+*END
+
+*R_NET HADDR\[32\] 1.710e-02
+*DRIVER HADDR\[32\]
+*CELL NULL
+*C2_R1_C1 8.548e-03 8.117e-02 8.548e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U46:D0 1.527e-04
+*RC dut/reg_bank/haddrreg/U27:A2 1.550e-04
+*RC dut/adrdecs/systemcontrollerdec/U17:A3 1.549e-04
+*END
+
+*R_NET HADDR\[31\] 1.719e-02
+*DRIVER HADDR\[31\]
+*CELL NULL
+*C2_R1_C1 8.593e-03 8.117e-02 8.593e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U13:D0 1.527e-04
+*RC dut/reg_bank/haddrreg/U54:A2 1.550e-04
+*RC dut/adrdecs/systemcontrollerdec/U4:A1 1.573e-04
+*END
+
+*R_NET HADDR\[30\] 1.719e-02
+*DRIVER HADDR\[30\]
+*CELL NULL
+*C2_R1_C1 8.593e-03 8.117e-02 8.593e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U14:D0 1.527e-04
+*RC dut/reg_bank/haddrreg/U48:A2 1.550e-04
+*RC dut/adrdecs/systemcontrollerdec/U14:A1 1.573e-04
+*END
+
+*R_NET HADDR\[29\] 1.712e-02
+*DRIVER HADDR\[29\]
+*CELL NULL
+*C2_R1_C1 8.562e-03 8.117e-02 8.562e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U15:D0 1.527e-04
+*RC dut/reg_bank/haddrreg/U62:A2 1.550e-04
+*RC dut/adrdecs/systemcontrollerdec/U5:A2 1.556e-04
+*END
+
+*R_NET HADDR\[28\] 1.713e-02
+*DRIVER HADDR\[28\]
+*CELL NULL
+*C2_R1_C1 8.565e-03 8.117e-02 8.565e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U47:D0 1.527e-04
+*RC dut/reg_bank/haddrreg/U64:A2 1.550e-04
+*RC dut/adrdecs/systemcontrollerdec/U12:A1 1.558e-04
+*END
+
+*R_NET HADDR\[27\] 1.710e-02
+*DRIVER HADDR\[27\]
+*CELL NULL
+*C2_R1_C1 8.548e-03 8.117e-02 8.548e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U39:D0 1.527e-04
+*RC dut/reg_bank/haddrreg/U45:A2 1.550e-04
+*RC dut/adrdecs/systemcontrollerdec/U16:A3 1.549e-04
+*END
+
+*R_NET HADDR\[26\] 1.710e-02
+*DRIVER HADDR\[26\]
+*CELL NULL
+*C2_R1_C1 8.548e-03 8.117e-02 8.548e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U38:D0 1.527e-04
+*RC dut/reg_bank/haddrreg/U43:A2 1.550e-04
+*RC dut/adrdecs/systemcontrollerdec/U8:A3 1.549e-04
+*END
+
+*R_NET HADDR\[25\] 1.719e-02
+*DRIVER HADDR\[25\]
+*CELL NULL
+*C2_R1_C1 8.593e-03 8.117e-02 8.593e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U45:D0 1.527e-04
+*RC dut/reg_bank/haddrreg/U31:A2 1.550e-04
+*RC dut/adrdecs/systemcontrollerdec/U17:A1 1.573e-04
+*END
+
+*R_NET HADDR\[24\] 1.708e-02
+*DRIVER HADDR\[24\]
+*CELL NULL
+*C2_R1_C1 8.538e-03 8.117e-02 8.538e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U44:D0 1.527e-04
+*RC dut/reg_bank/haddrreg/U42:A2 1.550e-04
+*RC dut/adrdecs/systemcontrollerdec/U9:A4 1.544e-04
+*END
+
+*R_NET HADDR\[23\] 1.710e-02
+*DRIVER HADDR\[23\]
+*CELL NULL
+*C2_R1_C1 8.548e-03 8.117e-02 8.548e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U64:D0 1.527e-04
+*RC dut/reg_bank/haddrreg/U35:A2 1.550e-04
+*RC dut/adrdecs/systemcontrollerdec/U9:A3 1.549e-04
+*END
+
+*R_NET HADDR\[22\] 1.710e-02
+*DRIVER HADDR\[22\]
+*CELL NULL
+*C2_R1_C1 8.548e-03 8.117e-02 8.548e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U41:D0 1.527e-04
+*RC dut/reg_bank/haddrreg/U41:A2 1.550e-04
+*RC dut/adrdecs/systemcontrollerdec/U14:A3 1.549e-04
+*END
+
+*R_NET HADDR\[21\] 1.719e-02
+*DRIVER HADDR\[21\]
+*CELL NULL
+*C2_R1_C1 8.593e-03 8.117e-02 8.593e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U58:D0 1.527e-04
+*RC dut/reg_bank/haddrreg/U47:A2 1.550e-04
+*RC dut/adrdecs/systemcontrollerdec/U9:A1 1.573e-04
+*END
+
+*R_NET HADDR\[20\] 1.712e-02
+*DRIVER HADDR\[20\]
+*CELL NULL
+*C2_R1_C1 8.562e-03 8.117e-02 8.562e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U42:D0 1.527e-04
+*RC dut/reg_bank/haddrreg/U50:A2 1.550e-04
+*RC dut/adrdecs/systemcontrollerdec/U9:A2 1.556e-04
+*END
+
+*R_NET HADDR\[19\] 1.712e-02
+*DRIVER HADDR\[19\]
+*CELL NULL
+*C2_R1_C1 8.562e-03 8.117e-02 8.562e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U43:D0 1.527e-04
+*RC dut/reg_bank/haddrreg/U13:A2 1.550e-04
+*RC dut/adrdecs/systemcontrollerdec/U8:A2 1.556e-04
+*END
+
+*R_NET HADDR\[18\] 1.708e-02
+*DRIVER HADDR\[18\]
+*CELL NULL
+*C2_R1_C1 8.538e-03 8.117e-02 8.538e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U60:D0 1.527e-04
+*RC dut/reg_bank/haddrreg/U10:A2 1.550e-04
+*RC dut/adrdecs/systemcontrollerdec/U8:A4 1.544e-04
+*END
+
+*R_NET HADDR\[17\] 1.709e-02
+*DRIVER HADDR\[17\]
+*CELL NULL
+*C2_R1_C1 8.547e-03 8.117e-02 8.547e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U61:D0 1.527e-04
+*RC dut/reg_bank/haddrreg/U12:A2 1.550e-04
+*RC dut/adrdecs/systemcontrollerdec/U12:A3 1.548e-04
+*END
+
+*R_NET HADDR\[16\] 1.708e-02
+*DRIVER HADDR\[16\]
+*CELL NULL
+*C2_R1_C1 8.539e-03 8.117e-02 8.539e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U62:D0 1.527e-04
+*RC dut/reg_bank/haddrreg/U14:A2 1.550e-04
+*RC dut/adrdecs/systemcontrollerdec/U12:A2 1.544e-04
+*END
+
+*R_NET HADDR\[15\] 1.719e-02
+*DRIVER HADDR\[15\]
+*CELL NULL
+*C2_R1_C1 8.593e-03 8.117e-02 8.593e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U63:D0 1.527e-04
+*RC dut/reg_bank/haddrreg/U37:A2 1.550e-04
+*RC dut/adrdecs/systemcontrollerdec/U7:A1 1.573e-04
+*END
+
+*R_NET HADDR\[14\] 1.712e-02
+*DRIVER HADDR\[14\]
+*CELL NULL
+*C2_R1_C1 8.562e-03 8.117e-02 8.562e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U59:D0 1.527e-04
+*RC dut/reg_bank/haddrreg/U39:A2 1.550e-04
+*RC dut/adrdecs/systemcontrollerdec/U7:A2 1.556e-04
+*END
+
+*R_NET HADDR\[13\] 1.708e-02
+*DRIVER HADDR\[13\]
+*CELL NULL
+*C2_R1_C1 8.538e-03 8.117e-02 8.538e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U50:D0 1.527e-04
+*RC dut/reg_bank/haddrreg/U56:A2 1.550e-04
+*RC dut/adrdecs/systemcontrollerdec/U7:A4 1.544e-04
+*END
+
+*R_NET HADDR\[12\] 1.719e-02
+*DRIVER HADDR\[12\]
+*CELL NULL
+*C2_R1_C1 8.593e-03 8.117e-02 8.593e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U49:D0 1.527e-04
+*RC dut/reg_bank/haddrreg/U55:A2 1.550e-04
+*RC dut/adrdecs/systemcontrollerdec/U8:A1 1.573e-04
+*END
+
+*R_NET HADDR\[11\] 1.708e-02
+*DRIVER HADDR\[11\]
+*CELL NULL
+*C2_R1_C1 8.538e-03 8.117e-02 8.538e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U56:D0 1.527e-04
+*RC dut/reg_bank/haddrreg/U40:A2 1.550e-04
+*RC dut/adrdecs/systemcontrollerdec/U5:A4 1.544e-04
+*END
+
+*R_NET HADDR\[10\] 1.708e-02
+*DRIVER HADDR\[10\]
+*CELL NULL
+*C2_R1_C1 8.538e-03 8.117e-02 8.538e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U51:D0 1.527e-04
+*RC dut/reg_bank/haddrreg/U33:A2 1.550e-04
+*RC dut/adrdecs/systemcontrollerdec/U6:A4 1.544e-04
+*END
+
+*R_NET HADDR\[9\] 1.710e-02
+*DRIVER HADDR\[9\]
+*CELL NULL
+*C2_R1_C1 8.548e-03 8.117e-02 8.548e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U16:D0 1.527e-04
+*RC dut/reg_bank/haddrreg/U38:A2 1.550e-04
+*RC dut/adrdecs/systemcontrollerdec/U5:A3 1.549e-04
+*END
+
+*R_NET HADDR\[8\] 1.712e-02
+*DRIVER HADDR\[8\]
+*CELL NULL
+*C2_R1_C1 8.562e-03 8.117e-02 8.562e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U48:D0 1.527e-04
+*RC dut/reg_bank/haddrreg/U32:A2 1.550e-04
+*RC dut/adrdecs/systemcontrollerdec/U17:A2 1.556e-04
+*END
+
+*R_NET HADDR\[7\] 1.708e-02
+*DRIVER HADDR\[7\]
+*CELL NULL
+*C2_R1_C1 8.538e-03 8.117e-02 8.538e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U30:D0 1.527e-04
+*RC dut/reg_bank/haddrreg/U51:A2 1.550e-04
+*RC dut/adrdecs/systemcontrollerdec/U16:A4 1.544e-04
+*END
+
+*R_NET HADDR\[6\] 1.708e-02
+*DRIVER HADDR\[6\]
+*CELL NULL
+*C2_R1_C1 8.538e-03 8.117e-02 8.538e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U57:D0 1.527e-04
+*RC dut/reg_bank/haddrreg/U28:A2 1.550e-04
+*RC dut/adrdecs/systemcontrollerdec/U17:A4 1.544e-04
+*END
+
+*R_NET HADDR\[5\] 1.719e-02
+*DRIVER HADDR\[5\]
+*CELL NULL
+*C2_R1_C1 8.593e-03 8.117e-02 8.593e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U55:D0 1.527e-04
+*RC dut/reg_bank/haddrreg/U22:A2 1.550e-04
+*RC dut/adrdecs/systemcontrollerdec/U5:A1 1.573e-04
+*END
+
+*R_NET HADDR\[4\] 1.056e-02
+*DRIVER HADDR\[4\]
+*CELL NULL
+*C2_R1_C1 5.279e-03 5.002e-02 5.279e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U19:D0 1.310e-04
+*RC dut/reg_bank/haddrreg/U23:A2 1.331e-04
+*END
+
+*R_NET HADDR\[3\] 1.057e-02
+*DRIVER HADDR\[3\]
+*CELL NULL
+*C2_R1_C1 5.285e-03 5.002e-02 5.285e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U7:D0 1.313e-04
+*RC dut/reg_bank/haddrreg/U20:A2 1.331e-04
+*END
+
+*R_NET HADDR\[2\] 1.057e-02
+*DRIVER HADDR\[2\]
+*CELL NULL
+*C2_R1_C1 5.285e-03 5.002e-02 5.285e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U65:D0 1.313e-04
+*RC dut/reg_bank/haddrreg/U66:A2 1.331e-04
+*END
+
+*R_NET HADDR\[1\] 1.056e-02
+*DRIVER HADDR\[1\]
+*CELL NULL
+*C2_R1_C1 5.279e-03 5.002e-02 5.279e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U52:D0 1.310e-04
+*RC dut/reg_bank/haddrreg/U25:A2 1.331e-04
+*END
+
+*R_NET HADDR\[0\] 1.056e-02
+*DRIVER HADDR\[0\]
+*CELL NULL
+*C2_R1_C1 5.279e-03 5.002e-02 5.279e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U53:D0 1.310e-04
+*RC dut/reg_bank/haddrreg/U67:A2 1.331e-04
+*END
+
+*R_NET HWRITE 4.705e-03
+*DRIVER HWRITE
+*CELL NULL
+*C2_R1_C1 2.352e-03 2.192e-02 2.352e-03 
+*LOADS
+*RC dut/reg_bank/U42:A3 1.031e-04
+*END
+
+*R_NET HWDATA\[31\] 4.699e-03
+*DRIVER HWDATA\[31\]
+*CELL NULL
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/pmu_state_config_register_reg_31_:D 1.030e-04
+*END
+
+*R_NET HWDATA\[30\] 4.699e-03
+*DRIVER HWDATA\[30\]
+*CELL NULL
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/pmu_state_config_register_reg_30_:D 1.030e-04
+*END
+
+*R_NET HWDATA\[29\] 4.699e-03
+*DRIVER HWDATA\[29\]
+*CELL NULL
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/pmu_state_config_register_reg_29_:D 1.030e-04
+*END
+
+*R_NET HWDATA\[28\] 4.699e-03
+*DRIVER HWDATA\[28\]
+*CELL NULL
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/pmu_state_config_register_reg_28_:D 1.030e-04
+*END
+
+*R_NET HWDATA\[27\] 4.699e-03
+*DRIVER HWDATA\[27\]
+*CELL NULL
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/pmu_state_config_register_reg_27_:D 1.030e-04
+*END
+
+*R_NET HWDATA\[26\] 4.699e-03
+*DRIVER HWDATA\[26\]
+*CELL NULL
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/pmu_state_config_register_reg_26_:D 1.030e-04
+*END
+
+*R_NET HWDATA\[25\] 4.699e-03
+*DRIVER HWDATA\[25\]
+*CELL NULL
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/pmu_state_config_register_reg_25_:D 1.030e-04
+*END
+
+*R_NET HWDATA\[24\] 4.699e-03
+*DRIVER HWDATA\[24\]
+*CELL NULL
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/pmu_state_config_register_reg_24_:D 1.030e-04
+*END
+
+*R_NET HWDATA\[23\] 4.699e-03
+*DRIVER HWDATA\[23\]
+*CELL NULL
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/pmu_state_config_register_reg_23_:D 1.030e-04
+*END
+
+*R_NET HWDATA\[22\] 4.699e-03
+*DRIVER HWDATA\[22\]
+*CELL NULL
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/pmu_state_config_register_reg_22_:D 1.030e-04
+*END
+
+*R_NET HWDATA\[21\] 4.699e-03
+*DRIVER HWDATA\[21\]
+*CELL NULL
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/pmu_state_config_register_reg_21_:D 1.030e-04
+*END
+
+*R_NET HWDATA\[20\] 4.699e-03
+*DRIVER HWDATA\[20\]
+*CELL NULL
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/pmu_state_config_register_reg_20_:D 1.030e-04
+*END
+
+*R_NET HWDATA\[19\] 4.699e-03
+*DRIVER HWDATA\[19\]
+*CELL NULL
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/pmu_state_config_register_reg_19_:D 1.030e-04
+*END
+
+*R_NET HWDATA\[18\] 4.699e-03
+*DRIVER HWDATA\[18\]
+*CELL NULL
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/pmu_state_config_register_reg_18_:D 1.030e-04
+*END
+
+*R_NET HWDATA\[17\] 4.699e-03
+*DRIVER HWDATA\[17\]
+*CELL NULL
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/pmu_state_config_register_reg_17_:D 1.030e-04
+*END
+
+*R_NET HWDATA\[16\] 4.699e-03
+*DRIVER HWDATA\[16\]
+*CELL NULL
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/pmu_state_config_register_reg_16_:D 1.030e-04
+*END
+
+*R_NET HWDATA\[15\] 4.699e-03
+*DRIVER HWDATA\[15\]
+*CELL NULL
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/pmu_state_config_register_reg_15_:D 1.030e-04
+*END
+
+*R_NET HWDATA\[14\] 4.699e-03
+*DRIVER HWDATA\[14\]
+*CELL NULL
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/pmu_state_config_register_reg_14_:D 1.030e-04
+*END
+
+*R_NET HWDATA\[13\] 4.699e-03
+*DRIVER HWDATA\[13\]
+*CELL NULL
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/pmu_state_config_register_reg_13_:D 1.030e-04
+*END
+
+*R_NET HWDATA\[12\] 4.699e-03
+*DRIVER HWDATA\[12\]
+*CELL NULL
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/pmu_state_config_register_reg_12_:D 1.030e-04
+*END
+
+*R_NET HWDATA\[11\] 4.699e-03
+*DRIVER HWDATA\[11\]
+*CELL NULL
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/pmu_state_config_register_reg_11_:D 1.030e-04
+*END
+
+*R_NET HWDATA\[10\] 4.699e-03
+*DRIVER HWDATA\[10\]
+*CELL NULL
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/pmu_state_config_register_reg_10_:D 1.030e-04
+*END
+
+*R_NET HWDATA\[9\] 4.699e-03
+*DRIVER HWDATA\[9\]
+*CELL NULL
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/pmu_state_config_register_reg_9_:D 1.030e-04
+*END
+
+*R_NET HWDATA\[8\] 4.699e-03
+*DRIVER HWDATA\[8\]
+*CELL NULL
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/pmu_state_config_register_reg_8_:D 1.030e-04
+*END
+
+*R_NET HWDATA\[7\] 4.699e-03
+*DRIVER HWDATA\[7\]
+*CELL NULL
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/pmu_state_config_register_reg_7_:D 1.030e-04
+*END
+
+*R_NET HWDATA\[6\] 4.712e-03
+*DRIVER HWDATA\[6\]
+*CELL NULL
+*C2_R1_C1 2.356e-03 2.192e-02 2.356e-03 
+*LOADS
+*RC dut/reg_bank/pmu_state_config_register_reg_6_:D 1.033e-04
+*END
+
+*R_NET HWDATA\[5\] 4.761e-03
+*DRIVER HWDATA\[5\]
+*CELL NULL
+*C2_R1_C1 2.381e-03 2.192e-02 2.381e-03 
+*LOADS
+*RC dut/reg_bank/pmu_state_config_register_reg_5_:D 1.044e-04
+*END
+
+*R_NET HWDATA\[4\] 4.783e-03
+*DRIVER HWDATA\[4\]
+*CELL NULL
+*C2_R1_C1 2.392e-03 2.192e-02 2.392e-03 
+*LOADS
+*RC dut/reg_bank/pmu_state_config_register_reg_4_:D 1.049e-04
+*END
+
+*R_NET HWDATA\[3\] 4.783e-03
+*DRIVER HWDATA\[3\]
+*CELL NULL
+*C2_R1_C1 2.392e-03 2.192e-02 2.392e-03 
+*LOADS
+*RC dut/reg_bank/pmu_state_config_register_reg_3_:D 1.049e-04
+*END
+
+*R_NET HWDATA\[2\] 4.699e-03
+*DRIVER HWDATA\[2\]
+*CELL NULL
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/pmu_state_config_register_reg_2_:D 1.030e-04
+*END
+
+*R_NET HWDATA\[1\] 1.062e-02
+*DRIVER HWDATA\[1\]
+*CELL NULL
+*C2_R1_C1 5.310e-03 5.002e-02 5.310e-03 
+*LOADS
+*RC dut/reg_bank/U20:D1 1.328e-04
+*RC dut/reg_bank/pmu_state_config_register_reg_1_:D 1.328e-04
+*END
+
+*R_NET HWDATA\[0\] 1.708e-02
+*DRIVER HWDATA\[0\]
+*CELL NULL
+*C2_R1_C1 8.539e-03 8.117e-02 8.539e-03 
+*LOADS
+*RC dut/reg_bank/U18:D0 1.527e-04
+*RC dut/reg_bank/U19:D1 1.547e-04
+*RC dut/reg_bank/pmu_state_config_register_reg_0_:D 1.547e-04
+*END
+
+*R_NET HREADY 2.528e-02
+*DRIVER HREADY
+*CELL NULL
+*C2_R1_C1 1.264e-02 1.158e-01 1.264e-02 
+*LOADS
+*RC dut/reg_bank/haddrreg/U4:A 1.881e-04
+*RC dut/reg_bank/writereg/U3:S 1.870e-04
+*RC dut/reg_bank/U41:A1 1.791e-04
+*RC dut/reg_bank/U42:A1 1.775e-04
+*END
+
+*R_NET HTRANS\[1\] 4.718e-03
+*DRIVER HTRANS\[1\]
+*CELL NULL
+*C2_R1_C1 2.359e-03 2.192e-02 2.359e-03 
+*LOADS
+*RC dut/reg_bank/U42:A4 1.034e-04
+*END
+
+*R_NET HREADYSYS_CTRL 8.349e-03
+*DRIVER dut/reg_bank/readyreg/q_reg_0_:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 4.175e-03 2.192e-02 4.175e-03 
+*LOADS
+*RC HREADYSYS_CTRL 1.831e-04
+*END
+
+*R_NET HSELSYS_CTRL 1.426e-02
+*DRIVER dut/adrdecs/systemcontrollerdec/U2:X
+*CELL SAEDHVT14_INV_S_2
+*C2_R1_C1 7.131e-03 5.002e-02 7.131e-03 
+*LOADS
+*RC HSELSYS_CTRL 2.241e-04
+*RC dut/reg_bank/U42:A2 1.326e-04
+*END
+
+*R_NET clk 7.608e-01
+*DRIVER clk
+*CELL NULL
+*C2_R1_C1 3.804e-01 3.736e+00 3.804e-01 
+*LOADS
+*RC dut/reg_bank/haddrreg/clk_gate_q_reg/latch:CK 2.225e-03
+*RC dut/reg_bank/clk_gate_pmu_state_config_register_reg/latch:CK 2.225e-03
+*RC dut/reg_bank/readyreg/q_reg_0_:CK 2.177e-03
+*RC dut/reg_bank/writereg/q_reg_0_:CK 2.179e-03
+*RC dut/clk_gen/GLITCH_FREE_CKT1/C60:A1 2.189e-03
+*RC dut/clk_gen/GLITCH_FREE_CKT1/q1_reg:CK 2.221e-03
+*RC dut/clk_gen/GLITCH_FREE_CKT1/q0_reg:CK 2.177e-03
+*RC dut/clk_gen/GLITCH_FREE_CKT0/C60:A1 2.189e-03
+*RC dut/clk_gen/GLITCH_FREE_CKT0/q0_reg:CK 2.177e-03
+*RC dut/clk_gen/GLITCH_FREE_CKT0/q1_reg:CK 2.221e-03
+*RC dut/PMU/eeprom_isolation_enb_reg:CK 2.203e-03
+*RC dut/PMU/eeprom_isolation_enb_delay2_reg:CK 2.177e-03
+*RC dut/PMU/eeprom_powergate_enb_delay2_reg:CK 2.177e-03
+*RC dut/PMU/eeprom_powergate_enb_reg:CK 2.203e-03
+*RC dut/PMU/spi_powergate_enb_reg:CK 2.203e-03
+*RC dut/PMU/uart_powergate_enb_delay2_reg:CK 2.179e-03
+*RC dut/PMU/uart_powergate_enb_reg:CK 2.203e-03
+*RC dut/PMU/uart_isolation_enb_reg:CK 2.177e-03
+*RC dut/PMU/spi_isolation_enb_reg:CK 2.177e-03
+*RC dut/PMU/uart_isolation_enb_delay2_reg:CK 2.179e-03
+*RC dut/PMU/spi_isolation_enb_delay2_reg:CK 2.179e-03
+*RC dut/PMU/spi_powergate_enb_delay2_reg:CK 2.179e-03
+*RC dut/PMU/uart_isolation_enb_delay4_reg:CK 2.204e-03
+*RC dut/PMU/uart_isolation_enb_delay3_reg:CK 2.204e-03
+*RC dut/PMU/spi_isolation_enb_delay4_reg:CK 2.204e-03
+*RC dut/PMU/spi_isolation_enb_delay3_reg:CK 2.204e-03
+*RC dut/reg_bank/clk_shift_enb_register_reg_0_:CK 2.179e-03
+*RC dut/reg_bank/clk_div_register_reg_0_:CK 2.186e-03
+*RC dut/reg_bank/clk_div_register_reg_1_:CK 2.186e-03
+*RC dut/clk_gen/U10:A2 2.189e-03
+*RC dut/clk_gen/U12:B2 2.217e-03
+*RC dut/clk_gen/counter_reg_1_:CK 2.179e-03
+*RC dut/clk_gen/counter_reg_0_:CK 2.189e-03
+*RC dut/clk_gen/apb_clk_shift_reg:CK 2.221e-03
+*RC dut/resetsync/q_reg:CK 2.203e-03
+*RC dut/resetsync/mid_reg:CK 2.177e-03
+*END
+
+*R_NET reset_ext 4.732e-03
+*DRIVER reset_ext
+*CELL NULL
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/resetsync/mid_reg:D 1.037e-04
+*END
+
+*R_NET clk_out 8.349e-03
+*DRIVER dut/clk_gen/U4:X
+*CELL SAEDHVT14_MUX2_MM_1
+*C2_R1_C1 4.175e-03 2.192e-02 4.175e-03 
+*LOADS
+*RC clk_out 1.831e-04
+*END
+
+*R_NET HRESPSYS_CTRL 8.349e-03
+*DRIVER U2:X
+*CELL SAEDHVT14_TIE0_V1_2
+*C2_R1_C1 4.175e-03 2.192e-02 4.175e-03 
+*LOADS
+*RC HRESPSYS_CTRL 1.831e-04
+*END
+
+*R_NET reset 1.247e-01
+*DRIVER dut/resetsync/U3:X
+*CELL SAEDRVT14_BUF_12
+*C2_R1_C1 6.235e-02 5.632e-01 6.235e-02 
+*LOADS
+*RC reset 6.248e-04
+*RC dut/clk_gen/GLITCH_FREE_CKT0/U4:A 4.628e-04
+*RC dut/clk_gen/GLITCH_FREE_CKT0/U12:A2 4.592e-04
+*RC dut/clk_gen/GLITCH_FREE_CKT0/U6:A1 4.594e-04
+*RC dut/clk_gen/GLITCH_FREE_CKT1/U4:A 4.628e-04
+*RC dut/clk_gen/GLITCH_FREE_CKT1/U13:A2 4.592e-04
+*RC dut/clk_gen/GLITCH_FREE_CKT1/U6:A1 4.594e-04
+*RC dut/reg_bank/writereg/U4:A1 4.594e-04
+*RC dut/reg_bank/haddrreg/U3:A1 4.670e-04
+*RC dut/reg_bank/haddrreg/U70:A 4.712e-04
+*RC dut/reg_bank/readyreg/U4:A 4.576e-04
+*RC dut/reg_bank/U8:A 6.096e-04
+*END
+
+*R_NET dut/clk_divider_reg\[1\] 4.198e-02
+*DRIVER dut/reg_bank/clk_div_register_reg_1_:Q
+*CELL SAEDRVT14_FSDPRBQ_V2_4
+*C2_R1_C1 2.099e-02 1.969e-01 2.099e-02 
+*LOADS
+*RC dut/clk_gen/GLITCH_FREE_CKT1/U13:A3 2.283e-04
+*RC dut/clk_gen/GLITCH_FREE_CKT1/U14:A1 2.266e-04
+*RC dut/clk_gen/U10:A1 2.308e-04
+*RC dut/clk_gen/U12:A1 2.374e-04
+*RC dut/clk_gen/U5:A 2.316e-04
+*RC dut/reg_bank/U20:D0 2.226e-04
+*END
+
+*R_NET dut/clk_divider_reg\[0\] 3.335e-02
+*DRIVER dut/reg_bank/clk_div_register_reg_0_:Q
+*CELL SAEDRVT14_FSDPRBQ_V2_4
+*C2_R1_C1 1.667e-02 1.542e-01 1.667e-02 
+*LOADS
+*RC dut/clk_gen/GLITCH_FREE_CKT0/U12:A3 2.025e-04
+*RC dut/clk_gen/GLITCH_FREE_CKT0/U13:A1 2.010e-04
+*RC dut/reg_bank/U19:D0 1.972e-04
+*RC dut/clk_gen/U3:A1 2.253e-04
+*RC dut/clk_gen/U6:A 2.025e-04
+*END
+
+*R_NET dut/clk_shift_enb_reg_0_ 1.099e-02
+*DRIVER dut/reg_bank/clk_shift_enb_register_reg_0_:Q
+*CELL SAEDHVT14_FSDPRBQ_V2LP_2
+*C2_R1_C1 5.494e-03 5.002e-02 5.494e-03 
+*LOADS
+*RC dut/clk_gen/U4:S 1.420e-04
+*RC dut/reg_bank/U18:D1 1.328e-04
+*END
+
+*R_NET dut/pmu_state_config\[31\] 4.713e-03
+*DRIVER dut/reg_bank/pmu_state_config_register_reg_31_:Q
+*CELL SAEDHVT14_FSDPRBQ_V2LP_2
+*C2_R1_C1 2.356e-03 2.192e-02 2.356e-03 
+*LOADS
+*RC dut/PMU/C257:A2 1.033e-04
+*END
+
+*R_NET dut/pmu_state_config\[30\] 4.763e-03
+*DRIVER dut/reg_bank/pmu_state_config_register_reg_30_:Q
+*CELL SAEDHVT14_FSDPRBQ_V2LP_2
+*C2_R1_C1 2.382e-03 2.192e-02 2.382e-03 
+*LOADS
+*RC dut/PMU/C257:A1 1.044e-04
+*END
+
+*R_NET dut/pmu_state_config\[29\] 4.763e-03
+*DRIVER dut/reg_bank/pmu_state_config_register_reg_29_:Q
+*CELL SAEDHVT14_FSDPRBQ_V2LP_2
+*C2_R1_C1 2.381e-03 2.192e-02 2.381e-03 
+*LOADS
+*RC dut/PMU/C258:A1 1.044e-04
+*END
+
+*R_NET dut/pmu_state_config\[28\] 4.763e-03
+*DRIVER dut/reg_bank/pmu_state_config_register_reg_28_:Q
+*CELL SAEDHVT14_FSDPRBQ_V2LP_2
+*C2_R1_C1 2.381e-03 2.192e-02 2.381e-03 
+*LOADS
+*RC dut/PMU/C259:A1 1.044e-04
+*END
+
+*R_NET dut/pmu_state_config\[27\] 4.763e-03
+*DRIVER dut/reg_bank/pmu_state_config_register_reg_27_:Q
+*CELL SAEDHVT14_FSDPRBQ_V2LP_2
+*C2_R1_C1 2.381e-03 2.192e-02 2.381e-03 
+*LOADS
+*RC dut/PMU/C161:A1 1.044e-04
+*END
+
+*R_NET dut/pmu_state_config\[26\] 4.763e-03
+*DRIVER dut/reg_bank/pmu_state_config_register_reg_26_:Q
+*CELL SAEDHVT14_FSDPRBQ_V2LP_2
+*C2_R1_C1 2.381e-03 2.192e-02 2.381e-03 
+*LOADS
+*RC dut/PMU/C162:A1 1.044e-04
+*END
+
+*R_NET dut/pmu_state_config\[25\] 4.763e-03
+*DRIVER dut/reg_bank/pmu_state_config_register_reg_25_:Q
+*CELL SAEDHVT14_FSDPRBQ_V2LP_2
+*C2_R1_C1 2.381e-03 2.192e-02 2.381e-03 
+*LOADS
+*RC dut/PMU/C163:A1 1.044e-04
+*END
+
+*R_NET dut/pmu_state_config\[24\] 4.763e-03
+*DRIVER dut/reg_bank/pmu_state_config_register_reg_24_:Q
+*CELL SAEDHVT14_FSDPRBQ_V2LP_2
+*C2_R1_C1 2.381e-03 2.192e-02 2.381e-03 
+*LOADS
+*RC dut/PMU/C164:A1 1.044e-04
+*END
+
+*R_NET dut/pmu_state_config\[23\] 4.763e-03
+*DRIVER dut/reg_bank/pmu_state_config_register_reg_23_:Q
+*CELL SAEDHVT14_FSDPRBQ_V2LP_2
+*C2_R1_C1 2.381e-03 2.192e-02 2.381e-03 
+*LOADS
+*RC dut/PMU/C165:A1 1.044e-04
+*END
+
+*R_NET dut/pmu_state_config\[22\] 4.763e-03
+*DRIVER dut/reg_bank/pmu_state_config_register_reg_22_:Q
+*CELL SAEDHVT14_FSDPRBQ_V2LP_2
+*C2_R1_C1 2.381e-03 2.192e-02 2.381e-03 
+*LOADS
+*RC dut/PMU/C166:A1 1.044e-04
+*END
+
+*R_NET dut/pmu_state_config\[21\] 4.763e-03
+*DRIVER dut/reg_bank/pmu_state_config_register_reg_21_:Q
+*CELL SAEDHVT14_FSDPRBQ_V2LP_2
+*C2_R1_C1 2.381e-03 2.192e-02 2.381e-03 
+*LOADS
+*RC dut/PMU/C167:A1 1.044e-04
+*END
+
+*R_NET dut/pmu_state_config\[20\] 4.763e-03
+*DRIVER dut/reg_bank/pmu_state_config_register_reg_20_:Q
+*CELL SAEDHVT14_FSDPRBQ_V2LP_2
+*C2_R1_C1 2.381e-03 2.192e-02 2.381e-03 
+*LOADS
+*RC dut/PMU/C168:A1 1.044e-04
+*END
+
+*R_NET dut/pmu_state_config\[19\] 4.763e-03
+*DRIVER dut/reg_bank/pmu_state_config_register_reg_19_:Q
+*CELL SAEDHVT14_FSDPRBQ_V2LP_2
+*C2_R1_C1 2.381e-03 2.192e-02 2.381e-03 
+*LOADS
+*RC dut/PMU/C169:A1 1.044e-04
+*END
+
+*R_NET dut/pmu_state_config\[18\] 4.763e-03
+*DRIVER dut/reg_bank/pmu_state_config_register_reg_18_:Q
+*CELL SAEDHVT14_FSDPRBQ_V2LP_2
+*C2_R1_C1 2.381e-03 2.192e-02 2.381e-03 
+*LOADS
+*RC dut/PMU/C170:A1 1.044e-04
+*END
+
+*R_NET dut/pmu_state_config\[17\] 4.763e-03
+*DRIVER dut/reg_bank/pmu_state_config_register_reg_17_:Q
+*CELL SAEDHVT14_FSDPRBQ_V2LP_2
+*C2_R1_C1 2.381e-03 2.192e-02 2.381e-03 
+*LOADS
+*RC dut/PMU/C171:A1 1.044e-04
+*END
+
+*R_NET dut/pmu_state_config\[16\] 4.763e-03
+*DRIVER dut/reg_bank/pmu_state_config_register_reg_16_:Q
+*CELL SAEDHVT14_FSDPRBQ_V2LP_2
+*C2_R1_C1 2.381e-03 2.192e-02 2.381e-03 
+*LOADS
+*RC dut/PMU/C172:A1 1.044e-04
+*END
+
+*R_NET dut/pmu_state_config\[15\] 4.763e-03
+*DRIVER dut/reg_bank/pmu_state_config_register_reg_15_:Q
+*CELL SAEDHVT14_FSDPRBQ_V2LP_2
+*C2_R1_C1 2.381e-03 2.192e-02 2.381e-03 
+*LOADS
+*RC dut/PMU/C173:A1 1.044e-04
+*END
+
+*R_NET dut/pmu_state_config\[14\] 4.763e-03
+*DRIVER dut/reg_bank/pmu_state_config_register_reg_14_:Q
+*CELL SAEDHVT14_FSDPRBQ_V2LP_2
+*C2_R1_C1 2.381e-03 2.192e-02 2.381e-03 
+*LOADS
+*RC dut/PMU/C174:A1 1.044e-04
+*END
+
+*R_NET dut/pmu_state_config\[13\] 4.763e-03
+*DRIVER dut/reg_bank/pmu_state_config_register_reg_13_:Q
+*CELL SAEDHVT14_FSDPRBQ_V2LP_2
+*C2_R1_C1 2.381e-03 2.192e-02 2.381e-03 
+*LOADS
+*RC dut/PMU/C175:A1 1.044e-04
+*END
+
+*R_NET dut/pmu_state_config\[12\] 4.763e-03
+*DRIVER dut/reg_bank/pmu_state_config_register_reg_12_:Q
+*CELL SAEDHVT14_FSDPRBQ_V2LP_2
+*C2_R1_C1 2.381e-03 2.192e-02 2.381e-03 
+*LOADS
+*RC dut/PMU/C176:A1 1.044e-04
+*END
+
+*R_NET dut/pmu_state_config\[11\] 4.763e-03
+*DRIVER dut/reg_bank/pmu_state_config_register_reg_11_:Q
+*CELL SAEDHVT14_FSDPRBQ_V2LP_2
+*C2_R1_C1 2.381e-03 2.192e-02 2.381e-03 
+*LOADS
+*RC dut/PMU/C177:A1 1.044e-04
+*END
+
+*R_NET dut/pmu_state_config\[10\] 4.763e-03
+*DRIVER dut/reg_bank/pmu_state_config_register_reg_10_:Q
+*CELL SAEDHVT14_FSDPRBQ_V2LP_2
+*C2_R1_C1 2.382e-03 2.192e-02 2.382e-03 
+*LOADS
+*RC dut/PMU/C178:A1 1.044e-04
+*END
+
+*R_NET dut/pmu_state_config\[9\] 4.763e-03
+*DRIVER dut/reg_bank/pmu_state_config_register_reg_9_:Q
+*CELL SAEDHVT14_FSDPRBQ_V2LP_2
+*C2_R1_C1 2.382e-03 2.192e-02 2.382e-03 
+*LOADS
+*RC dut/PMU/C179:A1 1.044e-04
+*END
+
+*R_NET dut/pmu_state_config\[8\] 4.842e-03
+*DRIVER dut/reg_bank/pmu_state_config_register_reg_8_:Q
+*CELL SAEDHVT14_FSDPRBQ_V2LP_2
+*C2_R1_C1 2.421e-03 2.192e-02 2.421e-03 
+*LOADS
+*RC dut/PMU/C180:A1 1.062e-04
+*END
+
+*R_NET dut/pmu_state_config\[7\] 1.086e-02
+*DRIVER dut/reg_bank/pmu_state_config_register_reg_7_:Q
+*CELL SAEDHVT14_FSDPRBQ_V2LP_2
+*C2_R1_C1 5.431e-03 5.002e-02 5.431e-03 
+*LOADS
+*RC dut/PMU/C181:A1 1.364e-04
+*RC dut/PMU/U21:A 1.353e-04
+*END
+
+*R_NET dut/pmu_state_config\[6\] 1.746e-02
+*DRIVER dut/reg_bank/pmu_state_config_register_reg_6_:Q
+*CELL SAEDRVT14_FSDPRBQ_V2LP_2
+*C2_R1_C1 8.728e-03 8.117e-02 8.728e-03 
+*LOADS
+*RC dut/PMU/C116:A1 1.564e-04
+*RC dut/PMU/C182:A1 1.586e-04
+*RC dut/PMU/U22:A 1.573e-04
+*END
+
+*R_NET dut/pmu_state_config\[5\] 2.473e-02
+*DRIVER dut/reg_bank/pmu_state_config_register_reg_5_:Q
+*CELL SAEDHVT14_FSDPRBQ_V2_4
+*C2_R1_C1 1.237e-02 1.158e-01 1.237e-02 
+*LOADS
+*RC dut/PMU/C117:A1 1.781e-04
+*RC dut/PMU/C150:A1 1.781e-04
+*RC dut/PMU/C216:A1 1.804e-04
+*RC dut/PMU/U23:A 1.791e-04
+*END
+
+*R_NET dut/pmu_state_config\[4\] 3.277e-02
+*DRIVER dut/reg_bank/pmu_state_config_register_reg_4_:Q
+*CELL SAEDRVT14_FSDPRBQ_V2_4
+*C2_R1_C1 1.639e-02 1.542e-01 1.639e-02 
+*LOADS
+*RC dut/PMU/C118:A1 2.014e-04
+*RC dut/PMU/C184:A1 2.014e-04
+*RC dut/PMU/C250:A1 2.039e-04
+*RC dut/PMU/C151:A1 2.014e-04
+*RC dut/PMU/U24:A 2.025e-04
+*END
+
+*R_NET dut/pmu_state_config\[3\] 4.165e-02
+*DRIVER dut/reg_bank/pmu_state_config_register_reg_3_:Q
+*CELL SAEDRVT14_FSDPRBQ_V2_4
+*C2_R1_C1 2.082e-02 1.969e-01 2.082e-02 
+*LOADS
+*RC dut/PMU/C152:A1 2.271e-04
+*RC dut/PMU/C119:A1 2.271e-04
+*RC dut/PMU/C185:A1 2.271e-04
+*RC dut/PMU/C218:A1 2.271e-04
+*RC dut/PMU/C284:A1 2.297e-04
+*RC dut/PMU/U25:A 2.282e-04
+*END
+
+*R_NET dut/pmu_state_config\[1\] 6.214e-02
+*DRIVER dut/reg_bank/U14:X
+*CELL SAEDRVT14_BUF_S_6
+*C2_R1_C1 3.107e-02 2.964e-01 3.107e-02 
+*LOADS
+*RC dut/PMU/C352:A1 2.876e-04
+*RC dut/PMU/C253:A1 2.876e-04
+*RC dut/PMU/C286:A1 2.876e-04
+*RC dut/PMU/C154:A1 2.876e-04
+*RC dut/PMU/C187:A1 2.876e-04
+*RC dut/PMU/C121:A1 2.876e-04
+*RC dut/PMU/C220:A1 2.876e-04
+*RC dut/PMU/U27:A 2.889e-04
+*END
+
+*R_NET dut/pmu_state_config\[0\] 6.218e-02
+*DRIVER dut/reg_bank/U13:X
+*CELL SAEDRVT14_BUF_S_6
+*C2_R1_C1 3.109e-02 2.964e-01 3.109e-02 
+*LOADS
+*RC dut/PMU/C155:A1 2.906e-04
+*RC dut/PMU/C221:A1 2.867e-04
+*RC dut/PMU/C254:A1 2.867e-04
+*RC dut/PMU/C122:A1 2.906e-04
+*RC dut/PMU/C188:A1 2.867e-04
+*RC dut/PMU/C287:A1 2.867e-04
+*RC dut/PMU/C320:A1 2.867e-04
+*RC dut/PMU/U28:A 2.889e-04
+*END
+
+*R_NET dut/n96 5.134e-02
+*DRIVER dut/reg_bank/U15:X
+*CELL SAEDHVT14_BUF_S_6
+*C2_R1_C1 2.567e-02 2.441e-01 2.567e-02 
+*LOADS
+*RC dut/PMU/C120:A1 2.557e-04
+*RC dut/PMU/C153:A1 2.557e-04
+*RC dut/PMU/C186:A1 2.557e-04
+*RC dut/PMU/C219:A1 2.557e-04
+*RC dut/PMU/C252:A1 2.557e-04
+*RC dut/PMU/C351:A1 2.549e-04
+*RC dut/PMU/U26:A 2.569e-04
+*END
+
+*R_NET dut/adrdecs/systemcontrollerdec/N209 5.266e-03
+*DRIVER dut/adrdecs/systemcontrollerdec/U3:X
+*CELL SAEDHVT14_OR4_1
+*C2_R1_C1 2.633e-03 2.192e-02 2.633e-03 
+*LOADS
+*RC dut/adrdecs/systemcontrollerdec/U2:A 1.154e-04
+*END
+
+*R_NET dut/adrdecs/systemcontrollerdec/n106 4.687e-03
+*DRIVER dut/adrdecs/systemcontrollerdec/U9:X
+*CELL SAEDHVT14_OR4_1
+*C2_R1_C1 2.343e-03 2.192e-02 2.343e-03 
+*LOADS
+*RC dut/adrdecs/systemcontrollerdec/U10:A4 1.028e-04
+*END
+
+*R_NET dut/adrdecs/systemcontrollerdec/n107 4.707e-03
+*DRIVER dut/adrdecs/systemcontrollerdec/U8:X
+*CELL SAEDHVT14_OR4_1
+*C2_R1_C1 2.353e-03 2.192e-02 2.353e-03 
+*LOADS
+*RC dut/adrdecs/systemcontrollerdec/U10:A3 1.032e-04
+*END
+
+*R_NET dut/adrdecs/systemcontrollerdec/n108 4.734e-03
+*DRIVER dut/adrdecs/systemcontrollerdec/U7:X
+*CELL SAEDHVT14_OR4_1
+*C2_R1_C1 2.367e-03 2.192e-02 2.367e-03 
+*LOADS
+*RC dut/adrdecs/systemcontrollerdec/U10:A2 1.038e-04
+*END
+
+*R_NET dut/adrdecs/systemcontrollerdec/n109 4.795e-03
+*DRIVER dut/adrdecs/systemcontrollerdec/U6:X
+*CELL SAEDHVT14_OR4_1
+*C2_R1_C1 2.398e-03 2.192e-02 2.398e-03 
+*LOADS
+*RC dut/adrdecs/systemcontrollerdec/U10:A1 1.051e-04
+*END
+
+*R_NET dut/adrdecs/systemcontrollerdec/n110 4.718e-03
+*DRIVER dut/adrdecs/systemcontrollerdec/U1:X
+*CELL SAEDRVT14_NR2_1
+*C2_R1_C1 2.359e-03 2.192e-02 2.359e-03 
+*LOADS
+*RC dut/adrdecs/systemcontrollerdec/U12:A4 1.034e-04
+*END
+
+*R_NET dut/adrdecs/systemcontrollerdec/n111 4.790e-03
+*DRIVER dut/adrdecs/systemcontrollerdec/U12:X
+*CELL SAEDHVT14_AN4_1
+*C2_R1_C1 2.395e-03 2.192e-02 2.395e-03 
+*LOADS
+*RC dut/adrdecs/systemcontrollerdec/U13:A2 1.050e-04
+*END
+
+*R_NET dut/adrdecs/systemcontrollerdec/n112 4.796e-03
+*DRIVER dut/adrdecs/systemcontrollerdec/U11:X
+*CELL SAEDHVT14_NR4_0P75
+*C2_R1_C1 2.398e-03 2.192e-02 2.398e-03 
+*LOADS
+*RC dut/adrdecs/systemcontrollerdec/U13:A1 1.052e-04
+*END
+
+*R_NET dut/adrdecs/systemcontrollerdec/n113 4.687e-03
+*DRIVER dut/adrdecs/systemcontrollerdec/U17:X
+*CELL SAEDHVT14_OR4_1
+*C2_R1_C1 2.343e-03 2.192e-02 2.343e-03 
+*LOADS
+*RC dut/adrdecs/systemcontrollerdec/U18:A4 1.028e-04
+*END
+
+*R_NET dut/adrdecs/systemcontrollerdec/n114 4.707e-03
+*DRIVER dut/adrdecs/systemcontrollerdec/U16:X
+*CELL SAEDHVT14_OR4_1
+*C2_R1_C1 2.353e-03 2.192e-02 2.353e-03 
+*LOADS
+*RC dut/adrdecs/systemcontrollerdec/U18:A3 1.032e-04
+*END
+
+*R_NET dut/adrdecs/systemcontrollerdec/n115 4.734e-03
+*DRIVER dut/adrdecs/systemcontrollerdec/U15:X
+*CELL SAEDHVT14_OR4_1
+*C2_R1_C1 2.367e-03 2.192e-02 2.367e-03 
+*LOADS
+*RC dut/adrdecs/systemcontrollerdec/U18:A2 1.038e-04
+*END
+
+*R_NET dut/adrdecs/systemcontrollerdec/n116 4.795e-03
+*DRIVER dut/adrdecs/systemcontrollerdec/U14:X
+*CELL SAEDHVT14_OR4_1
+*C2_R1_C1 2.398e-03 2.192e-02 2.398e-03 
+*LOADS
+*RC dut/adrdecs/systemcontrollerdec/U18:A1 1.051e-04
+*END
+
+*R_NET dut/adrdecs/systemcontrollerdec/n117 4.687e-03
+*DRIVER dut/adrdecs/systemcontrollerdec/U18:X
+*CELL SAEDHVT14_OR4_1
+*C2_R1_C1 2.343e-03 2.192e-02 2.343e-03 
+*LOADS
+*RC dut/adrdecs/systemcontrollerdec/U19:A4 1.028e-04
+*END
+
+*R_NET dut/adrdecs/systemcontrollerdec/n118 4.707e-03
+*DRIVER dut/adrdecs/systemcontrollerdec/U13:X
+*CELL SAEDHVT14_ND2_CDC_1
+*C2_R1_C1 2.353e-03 2.192e-02 2.353e-03 
+*LOADS
+*RC dut/adrdecs/systemcontrollerdec/U19:A3 1.032e-04
+*END
+
+*R_NET dut/adrdecs/systemcontrollerdec/n119 4.687e-03
+*DRIVER dut/adrdecs/systemcontrollerdec/U19:X
+*CELL SAEDHVT14_OR4_1
+*C2_R1_C1 2.343e-03 2.192e-02 2.343e-03 
+*LOADS
+*RC dut/adrdecs/systemcontrollerdec/U3:A4 1.028e-04
+*END
+
+*R_NET dut/adrdecs/systemcontrollerdec/n120 4.707e-03
+*DRIVER dut/adrdecs/systemcontrollerdec/U10:X
+*CELL SAEDHVT14_OR4_1
+*C2_R1_C1 2.353e-03 2.192e-02 2.353e-03 
+*LOADS
+*RC dut/adrdecs/systemcontrollerdec/U3:A3 1.032e-04
+*END
+
+*R_NET dut/adrdecs/systemcontrollerdec/n121 4.734e-03
+*DRIVER dut/adrdecs/systemcontrollerdec/U5:X
+*CELL SAEDHVT14_OR4_1
+*C2_R1_C1 2.367e-03 2.192e-02 2.367e-03 
+*LOADS
+*RC dut/adrdecs/systemcontrollerdec/U3:A2 1.038e-04
+*END
+
+*R_NET dut/adrdecs/systemcontrollerdec/n122 4.795e-03
+*DRIVER dut/adrdecs/systemcontrollerdec/U4:X
+*CELL SAEDHVT14_OR4_1
+*C2_R1_C1 2.398e-03 2.192e-02 2.398e-03 
+*LOADS
+*RC dut/adrdecs/systemcontrollerdec/U3:A1 1.051e-04
+*END
+
+*R_NET dut/resetsync/n3 6.287e-03
+*DRIVER dut/resetsync/q_reg:Q
+*CELL SAEDHVT14_FDPQ_V3_1
+*C2_R1_C1 3.144e-03 2.192e-02 3.144e-03 
+*LOADS
+*RC dut/resetsync/U3:A 1.378e-04
+*END
+
+*R_NET dut/resetsync/mid 4.721e-03
+*DRIVER dut/resetsync/mid_reg:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.361e-03 2.192e-02 2.361e-03 
+*LOADS
+*RC dut/resetsync/q_reg:D 1.035e-04
+*END
+
+*R_NET dut/resetsync/n2 1.091e-02
+*DRIVER dut/resetsync/U4:X
+*CELL SAEDHVT14_TIE0_V1_2
+*C2_R1_C1 5.456e-03 5.002e-02 5.456e-03 
+*LOADS
+*RC dut/resetsync/mid_reg:SE 1.419e-04
+*RC dut/resetsync/mid_reg:SI 1.310e-04
+*END
+
+*R_NET dut/clk_gen/counter\[1\] 1.100e-02
+*DRIVER dut/clk_gen/counter_reg_1_:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_2
+*C2_R1_C1 5.499e-03 5.002e-02 5.499e-03 
+*LOADS
+*RC dut/clk_gen/U8:A 1.378e-04
+*RC dut/clk_gen/U11:A1 1.372e-04
+*END
+
+*R_NET dut/clk_gen/counter\[0\] 2.510e-02
+*DRIVER dut/clk_gen/counter_reg_0_:Q
+*CELL SAEDHVT14_FSDPQ_V2_4
+*C2_R1_C1 1.255e-02 1.158e-01 1.255e-02 
+*LOADS
+*RC dut/clk_gen/U7:A 1.821e-04
+*RC dut/clk_gen/U11:B2 1.796e-04
+*RC dut/clk_gen/GLITCH_FREE_CKT0/q2_reg:CK 1.775e-04
+*RC dut/clk_gen/GLITCH_FREE_CKT0/q3_reg:CK 1.873e-04
+*END
+
+*R_NET dut/clk_gen/N8 4.732e-03
+*DRIVER dut/clk_gen/U11:X
+*CELL SAEDRVT14_OAI22_1
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/clk_gen/counter_reg_1_:D 1.037e-04
+*END
+
+*R_NET dut/clk_gen/apb_clk_divide_by_2 5.015e-03
+*DRIVER dut/clk_gen/GLITCH_FREE_CKT0/U11:X
+*CELL SAEDRVT14_OAI21_1
+*C2_R1_C1 2.507e-03 2.192e-02 2.507e-03 
+*LOADS
+*RC dut/clk_gen/U12:A2 1.099e-04
+*END
+
+*R_NET dut/clk_gen/apb_clk_divide_by_4 4.813e-03
+*DRIVER dut/clk_gen/GLITCH_FREE_CKT1/U12:X
+*CELL SAEDRVT14_OAI21_1
+*C2_R1_C1 2.406e-03 2.192e-02 2.406e-03 
+*LOADS
+*RC dut/clk_gen/U10:B2 1.055e-04
+*END
+
+*R_NET dut/clk_gen/apb_clk_shift 4.698e-03
+*DRIVER dut/clk_gen/apb_clk_shift_reg:Q
+*CELL SAEDHVT14_FSDNQ_V3_1
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/clk_gen/U4:D1 1.030e-04
+*END
+
+*R_NET dut/clk_gen/n3 4.249e-02
+*DRIVER dut/clk_gen/U9:X
+*CELL SAEDHVT14_TIE0_V1_2
+*C2_R1_C1 2.124e-02 1.969e-01 2.124e-02 
+*LOADS
+*RC dut/clk_gen/counter_reg_1_:SE 2.369e-04
+*RC dut/clk_gen/counter_reg_1_:SI 2.226e-04
+*RC dut/clk_gen/counter_reg_0_:SE 2.382e-04
+*RC dut/clk_gen/counter_reg_0_:SI 2.227e-04
+*RC dut/clk_gen/apb_clk_shift_reg:SI 2.257e-04
+*RC dut/clk_gen/apb_clk_shift_reg:SE 2.479e-04
+*END
+
+*R_NET dut/clk_gen/n4 1.098e-02
+*DRIVER dut/clk_gen/U8:X
+*CELL SAEDRVT14_INV_S_1
+*C2_R1_C1 5.488e-03 5.002e-02 5.488e-03 
+*LOADS
+*RC dut/clk_gen/U11:B1 1.367e-04
+*RC dut/clk_gen/GLITCH_FREE_CKT1/U10:A 1.378e-04
+*END
+
+*R_NET dut/clk_gen/n5 1.117e-02
+*DRIVER dut/clk_gen/U5:X
+*CELL SAEDRVT14_INV_S_1
+*C2_R1_C1 5.587e-03 5.002e-02 5.587e-03 
+*LOADS
+*RC dut/clk_gen/U10:B1 1.367e-04
+*RC dut/clk_gen/U12:B1 1.427e-04
+*END
+
+*R_NET dut/clk_gen/n6 5.544e-03
+*DRIVER dut/clk_gen/U12:X
+*CELL SAEDHVT14_OAI22_1P5
+*C2_R1_C1 2.772e-03 2.192e-02 2.772e-03 
+*LOADS
+*RC dut/clk_gen/U3:B2 1.216e-04
+*END
+
+*R_NET dut/clk_gen/n8 5.478e-03
+*DRIVER dut/clk_gen/U10:X
+*CELL SAEDRVT14_OAI22_1
+*C2_R1_C1 2.739e-03 2.192e-02 2.739e-03 
+*LOADS
+*RC dut/clk_gen/U3:A2 1.201e-04
+*END
+
+*R_NET dut/clk_gen/n2 5.555e-03
+*DRIVER dut/clk_gen/U6:X
+*CELL SAEDHVT14_INV_0P75
+*C2_R1_C1 2.778e-03 2.192e-02 2.778e-03 
+*LOADS
+*RC dut/clk_gen/U3:B1 1.218e-04
+*END
+
+*R_NET dut/clk_gen/n7 1.072e-02
+*DRIVER dut/clk_gen/U3:X
+*CELL SAEDHVT14_OAI22_3
+*C2_R1_C1 5.361e-03 5.002e-02 5.361e-03 
+*LOADS
+*RC dut/clk_gen/U4:D0 1.310e-04
+*RC dut/clk_gen/apb_clk_shift_reg:D 1.372e-04
+*END
+
+*R_NET dut/clk_gen/n9 1.085e-02
+*DRIVER dut/clk_gen/U7:X
+*CELL SAEDRVT14_INV_S_1
+*C2_R1_C1 5.426e-03 5.002e-02 5.426e-03 
+*LOADS
+*RC dut/clk_gen/counter_reg_0_:D 1.347e-04
+*RC dut/clk_gen/U11:A2 1.367e-04
+*END
+
+*R_NET dut/reg_bank/net1984 1.769e+00
+*DRIVER dut/reg_bank/U17:X
+*CELL SAEDHVT14_TIE0_V1_2
+*C2_R1_C1 8.846e-01 8.725e+00 8.846e-01 
+*LOADS
+*RC dut/reg_bank/pmu_state_config_register_reg_5_:SE 3.097e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_5_:SI 3.046e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_6_:SE 3.087e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_6_:SI 3.038e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_4_:SE 3.102e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_4_:SI 3.048e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_9_:SE 3.084e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_9_:SI 3.037e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_31_:SE 3.084e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_31_:SI 3.037e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_30_:SE 3.084e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_30_:SI 3.037e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_29_:SE 3.084e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_29_:SI 3.037e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_0_:SE 3.084e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_0_:SI 3.037e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_8_:SE 3.084e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_8_:SI 3.037e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_16_:SE 3.084e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_16_:SI 3.037e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_17_:SE 3.084e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_17_:SI 3.037e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_19_:SE 3.084e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_19_:SI 3.037e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_20_:SE 3.084e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_20_:SI 3.037e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_2_:SE 3.084e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_2_:SI 3.037e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_12_:SE 3.084e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_12_:SI 3.037e-03
+*RC dut/reg_bank/clk_shift_enb_register_reg_0_:SE 3.084e-03
+*RC dut/reg_bank/clk_shift_enb_register_reg_0_:SI 3.037e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_22_:SE 3.084e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_22_:SI 3.037e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_21_:SE 3.084e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_21_:SI 3.037e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_28_:SE 3.084e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_28_:SI 3.037e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_14_:SE 3.084e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_14_:SI 3.037e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_13_:SE 3.084e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_13_:SI 3.037e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_11_:SE 3.084e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_11_:SI 3.037e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_23_:SE 3.084e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_23_:SI 3.037e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_15_:SE 3.084e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_15_:SI 3.037e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_10_:SE 3.084e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_10_:SI 3.037e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_27_:SE 3.084e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_27_:SI 3.037e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_26_:SE 3.084e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_26_:SI 3.037e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_25_:SE 3.084e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_25_:SI 3.037e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_24_:SE 3.084e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_24_:SI 3.037e-03
+*RC dut/reg_bank/clk_div_register_reg_0_:SE 3.102e-03
+*RC dut/reg_bank/clk_div_register_reg_0_:SI 3.048e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_7_:SE 3.084e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_7_:SI 3.037e-03
+*RC dut/reg_bank/clk_div_register_reg_1_:SE 3.102e-03
+*RC dut/reg_bank/clk_div_register_reg_1_:SI 3.048e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_3_:SE 3.102e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_3_:SI 3.048e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_1_:SE 3.084e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_1_:SI 3.037e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_18_:SE 3.084e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_18_:SI 3.037e-03
+*RC dut/reg_bank/clk_gate_pmu_state_config_register_reg/latch:SE 3.031e-03
+*END
+
+*R_NET dut/reg_bank/n37 5.318e-03
+*DRIVER dut/reg_bank/pmu_state_config_register_reg_2_:Q
+*CELL SAEDHVT14_FSDPRBQ_V2LP_2
+*C2_R1_C1 2.659e-03 2.192e-02 2.659e-03 
+*LOADS
+*RC dut/reg_bank/U15:A 1.166e-04
+*END
+
+*R_NET dut/reg_bank/n39 5.345e-03
+*DRIVER dut/reg_bank/pmu_state_config_register_reg_1_:Q
+*CELL SAEDHVT14_FSDPRBQ_V2LP_2
+*C2_R1_C1 2.673e-03 2.192e-02 2.673e-03 
+*LOADS
+*RC dut/reg_bank/U14:A 1.172e-04
+*END
+
+*R_NET dut/reg_bank/n40 5.345e-03
+*DRIVER dut/reg_bank/pmu_state_config_register_reg_0_:Q
+*CELL SAEDHVT14_FSDPRBQ_V2LP_2
+*C2_R1_C1 2.673e-03 2.192e-02 2.673e-03 
+*LOADS
+*RC dut/reg_bank/U13:A 1.172e-04
+*END
+
+*R_NET dut/reg_bank/write 4.741e-03
+*DRIVER dut/reg_bank/U42:X
+*CELL SAEDHVT14_AN4_1
+*C2_R1_C1 2.371e-03 2.192e-02 2.371e-03 
+*LOADS
+*RC dut/reg_bank/writereg/U3:D1 1.040e-04
+*END
+
+*R_NET dut/reg_bank/writeD 1.111e-02
+*DRIVER dut/reg_bank/writereg/q_reg_0_:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_2
+*C2_R1_C1 5.557e-03 5.002e-02 5.557e-03 
+*LOADS
+*RC dut/reg_bank/writereg/U3:D0 1.310e-04
+*RC dut/reg_bank/U16:A 1.470e-04
+*END
+
+*R_NET dut/reg_bank/addr_D\[55\] 4.698e-03
+*DRIVER dut/reg_bank/haddrreg/q_reg_55_:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U23:D1 1.030e-04
+*END
+
+*R_NET dut/reg_bank/addr_D\[54\] 4.698e-03
+*DRIVER dut/reg_bank/haddrreg/q_reg_54_:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U17:D1 1.030e-04
+*END
+
+*R_NET dut/reg_bank/addr_D\[53\] 4.698e-03
+*DRIVER dut/reg_bank/haddrreg/q_reg_53_:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U54:D1 1.030e-04
+*END
+
+*R_NET dut/reg_bank/addr_D\[52\] 4.698e-03
+*DRIVER dut/reg_bank/haddrreg/q_reg_52_:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U18:D1 1.030e-04
+*END
+
+*R_NET dut/reg_bank/addr_D\[51\] 4.698e-03
+*DRIVER dut/reg_bank/haddrreg/q_reg_51_:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U20:D1 1.030e-04
+*END
+
+*R_NET dut/reg_bank/addr_D\[50\] 4.698e-03
+*DRIVER dut/reg_bank/haddrreg/q_reg_50_:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U34:D1 1.030e-04
+*END
+
+*R_NET dut/reg_bank/addr_D\[49\] 4.698e-03
+*DRIVER dut/reg_bank/haddrreg/q_reg_49_:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U21:D1 1.030e-04
+*END
+
+*R_NET dut/reg_bank/addr_D\[48\] 4.698e-03
+*DRIVER dut/reg_bank/haddrreg/q_reg_48_:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U22:D1 1.030e-04
+*END
+
+*R_NET dut/reg_bank/addr_D\[47\] 4.698e-03
+*DRIVER dut/reg_bank/haddrreg/q_reg_47_:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U28:D1 1.030e-04
+*END
+
+*R_NET dut/reg_bank/addr_D\[46\] 4.698e-03
+*DRIVER dut/reg_bank/haddrreg/q_reg_46_:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U31:D1 1.030e-04
+*END
+
+*R_NET dut/reg_bank/addr_D\[45\] 4.698e-03
+*DRIVER dut/reg_bank/haddrreg/q_reg_45_:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U29:D1 1.030e-04
+*END
+
+*R_NET dut/reg_bank/addr_D\[44\] 4.698e-03
+*DRIVER dut/reg_bank/haddrreg/q_reg_44_:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U32:D1 1.030e-04
+*END
+
+*R_NET dut/reg_bank/addr_D\[43\] 4.698e-03
+*DRIVER dut/reg_bank/haddrreg/q_reg_43_:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U33:D1 1.030e-04
+*END
+
+*R_NET dut/reg_bank/addr_D\[42\] 4.698e-03
+*DRIVER dut/reg_bank/haddrreg/q_reg_42_:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U24:D1 1.030e-04
+*END
+
+*R_NET dut/reg_bank/addr_D\[41\] 4.698e-03
+*DRIVER dut/reg_bank/haddrreg/q_reg_41_:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U25:D1 1.030e-04
+*END
+
+*R_NET dut/reg_bank/addr_D\[40\] 4.698e-03
+*DRIVER dut/reg_bank/haddrreg/q_reg_40_:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U36:D1 1.030e-04
+*END
+
+*R_NET dut/reg_bank/addr_D\[39\] 4.698e-03
+*DRIVER dut/reg_bank/haddrreg/q_reg_39_:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U26:D1 1.030e-04
+*END
+
+*R_NET dut/reg_bank/addr_D\[38\] 4.698e-03
+*DRIVER dut/reg_bank/haddrreg/q_reg_38_:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U27:D1 1.030e-04
+*END
+
+*R_NET dut/reg_bank/addr_D\[37\] 4.698e-03
+*DRIVER dut/reg_bank/haddrreg/q_reg_37_:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U40:D1 1.030e-04
+*END
+
+*R_NET dut/reg_bank/addr_D\[36\] 4.698e-03
+*DRIVER dut/reg_bank/haddrreg/q_reg_36_:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U37:D1 1.030e-04
+*END
+
+*R_NET dut/reg_bank/addr_D\[35\] 4.698e-03
+*DRIVER dut/reg_bank/haddrreg/q_reg_35_:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U10:D1 1.030e-04
+*END
+
+*R_NET dut/reg_bank/addr_D\[34\] 4.698e-03
+*DRIVER dut/reg_bank/haddrreg/q_reg_34_:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U12:D1 1.030e-04
+*END
+
+*R_NET dut/reg_bank/addr_D\[33\] 4.698e-03
+*DRIVER dut/reg_bank/haddrreg/q_reg_33_:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U35:D1 1.030e-04
+*END
+
+*R_NET dut/reg_bank/addr_D\[32\] 4.698e-03
+*DRIVER dut/reg_bank/haddrreg/q_reg_32_:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U46:D1 1.030e-04
+*END
+
+*R_NET dut/reg_bank/addr_D\[31\] 4.698e-03
+*DRIVER dut/reg_bank/haddrreg/q_reg_31_:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U13:D1 1.030e-04
+*END
+
+*R_NET dut/reg_bank/addr_D\[30\] 4.698e-03
+*DRIVER dut/reg_bank/haddrreg/q_reg_30_:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U14:D1 1.030e-04
+*END
+
+*R_NET dut/reg_bank/addr_D\[29\] 4.698e-03
+*DRIVER dut/reg_bank/haddrreg/q_reg_29_:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U15:D1 1.030e-04
+*END
+
+*R_NET dut/reg_bank/addr_D\[28\] 4.698e-03
+*DRIVER dut/reg_bank/haddrreg/q_reg_28_:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U47:D1 1.030e-04
+*END
+
+*R_NET dut/reg_bank/addr_D\[27\] 4.698e-03
+*DRIVER dut/reg_bank/haddrreg/q_reg_27_:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U39:D1 1.030e-04
+*END
+
+*R_NET dut/reg_bank/addr_D\[26\] 4.698e-03
+*DRIVER dut/reg_bank/haddrreg/q_reg_26_:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U38:D1 1.030e-04
+*END
+
+*R_NET dut/reg_bank/addr_D\[25\] 4.698e-03
+*DRIVER dut/reg_bank/haddrreg/q_reg_25_:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U45:D1 1.030e-04
+*END
+
+*R_NET dut/reg_bank/addr_D\[24\] 4.698e-03
+*DRIVER dut/reg_bank/haddrreg/q_reg_24_:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U44:D1 1.030e-04
+*END
+
+*R_NET dut/reg_bank/addr_D\[23\] 4.698e-03
+*DRIVER dut/reg_bank/haddrreg/q_reg_23_:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U64:D1 1.030e-04
+*END
+
+*R_NET dut/reg_bank/addr_D\[22\] 4.698e-03
+*DRIVER dut/reg_bank/haddrreg/q_reg_22_:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U41:D1 1.030e-04
+*END
+
+*R_NET dut/reg_bank/addr_D\[21\] 4.698e-03
+*DRIVER dut/reg_bank/haddrreg/q_reg_21_:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U58:D1 1.030e-04
+*END
+
+*R_NET dut/reg_bank/addr_D\[20\] 4.698e-03
+*DRIVER dut/reg_bank/haddrreg/q_reg_20_:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U42:D1 1.030e-04
+*END
+
+*R_NET dut/reg_bank/addr_D\[19\] 4.698e-03
+*DRIVER dut/reg_bank/haddrreg/q_reg_19_:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U43:D1 1.030e-04
+*END
+
+*R_NET dut/reg_bank/addr_D\[18\] 4.698e-03
+*DRIVER dut/reg_bank/haddrreg/q_reg_18_:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U60:D1 1.030e-04
+*END
+
+*R_NET dut/reg_bank/addr_D\[17\] 4.698e-03
+*DRIVER dut/reg_bank/haddrreg/q_reg_17_:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U61:D1 1.030e-04
+*END
+
+*R_NET dut/reg_bank/addr_D\[16\] 4.698e-03
+*DRIVER dut/reg_bank/haddrreg/q_reg_16_:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U62:D1 1.030e-04
+*END
+
+*R_NET dut/reg_bank/addr_D\[15\] 4.698e-03
+*DRIVER dut/reg_bank/haddrreg/q_reg_15_:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U63:D1 1.030e-04
+*END
+
+*R_NET dut/reg_bank/addr_D\[14\] 4.698e-03
+*DRIVER dut/reg_bank/haddrreg/q_reg_14_:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U59:D1 1.030e-04
+*END
+
+*R_NET dut/reg_bank/addr_D\[13\] 4.698e-03
+*DRIVER dut/reg_bank/haddrreg/q_reg_13_:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U50:D1 1.030e-04
+*END
+
+*R_NET dut/reg_bank/addr_D\[12\] 4.698e-03
+*DRIVER dut/reg_bank/haddrreg/q_reg_12_:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U49:D1 1.030e-04
+*END
+
+*R_NET dut/reg_bank/addr_D\[11\] 4.698e-03
+*DRIVER dut/reg_bank/haddrreg/q_reg_11_:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U56:D1 1.030e-04
+*END
+
+*R_NET dut/reg_bank/addr_D\[10\] 4.698e-03
+*DRIVER dut/reg_bank/haddrreg/q_reg_10_:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U51:D1 1.030e-04
+*END
+
+*R_NET dut/reg_bank/addr_D\[9\] 4.698e-03
+*DRIVER dut/reg_bank/haddrreg/q_reg_9_:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U16:D1 1.030e-04
+*END
+
+*R_NET dut/reg_bank/addr_D\[8\] 4.698e-03
+*DRIVER dut/reg_bank/haddrreg/q_reg_8_:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U48:D1 1.030e-04
+*END
+
+*R_NET dut/reg_bank/addr_D\[7\] 4.698e-03
+*DRIVER dut/reg_bank/haddrreg/q_reg_7_:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U30:D1 1.030e-04
+*END
+
+*R_NET dut/reg_bank/addr_D\[6\] 4.698e-03
+*DRIVER dut/reg_bank/haddrreg/q_reg_6_:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U57:D1 1.030e-04
+*END
+
+*R_NET dut/reg_bank/addr_D\[5\] 4.698e-03
+*DRIVER dut/reg_bank/haddrreg/q_reg_5_:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U55:D1 1.030e-04
+*END
+
+*R_NET dut/reg_bank/addr_D\[4\] 4.698e-03
+*DRIVER dut/reg_bank/haddrreg/q_reg_4_:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U19:D1 1.030e-04
+*END
+
+*R_NET dut/reg_bank/addr_D\[3\] 4.711e-03
+*DRIVER dut/reg_bank/haddrreg/q_reg_3_:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.356e-03 2.192e-02 2.356e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U7:D1 1.033e-04
+*END
+
+*R_NET dut/reg_bank/addr_D\[2\] 4.711e-03
+*DRIVER dut/reg_bank/haddrreg/q_reg_2_:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.356e-03 2.192e-02 2.356e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U65:D1 1.033e-04
+*END
+
+*R_NET dut/reg_bank/addr_D\[1\] 4.698e-03
+*DRIVER dut/reg_bank/haddrreg/q_reg_1_:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U52:D1 1.030e-04
+*END
+
+*R_NET dut/reg_bank/addr_D\[0\] 4.698e-03
+*DRIVER dut/reg_bank/haddrreg/q_reg_0_:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U53:D1 1.030e-04
+*END
+
+*R_NET dut/reg_bank/Reg_Addr\[55\] 4.707e-03
+*DRIVER dut/reg_bank/adrmux/U23:X
+*CELL SAEDHVT14_MUX2_MM_1
+*C2_R1_C1 2.353e-03 2.192e-02 2.353e-03 
+*LOADS
+*RC dut/reg_bank/U30:A3 1.032e-04
+*END
+
+*R_NET dut/reg_bank/Reg_Addr\[54\] 4.707e-03
+*DRIVER dut/reg_bank/adrmux/U17:X
+*CELL SAEDHVT14_MUX2_MM_1
+*C2_R1_C1 2.353e-03 2.192e-02 2.353e-03 
+*LOADS
+*RC dut/reg_bank/U26:A3 1.032e-04
+*END
+
+*R_NET dut/reg_bank/Reg_Addr\[53\] 4.707e-03
+*DRIVER dut/reg_bank/adrmux/U54:X
+*CELL SAEDHVT14_MUX2_MM_1
+*C2_R1_C1 2.353e-03 2.192e-02 2.353e-03 
+*LOADS
+*RC dut/reg_bank/U28:A3 1.032e-04
+*END
+
+*R_NET dut/reg_bank/Reg_Addr\[52\] 4.795e-03
+*DRIVER dut/reg_bank/adrmux/U18:X
+*CELL SAEDHVT14_MUX2_MM_1
+*C2_R1_C1 2.398e-03 2.192e-02 2.398e-03 
+*LOADS
+*RC dut/reg_bank/U28:A1 1.051e-04
+*END
+
+*R_NET dut/reg_bank/Reg_Addr\[51\] 4.795e-03
+*DRIVER dut/reg_bank/adrmux/U20:X
+*CELL SAEDHVT14_MUX2_MM_1
+*C2_R1_C1 2.398e-03 2.192e-02 2.398e-03 
+*LOADS
+*RC dut/reg_bank/U30:A1 1.051e-04
+*END
+
+*R_NET dut/reg_bank/Reg_Addr\[50\] 4.795e-03
+*DRIVER dut/reg_bank/adrmux/U34:X
+*CELL SAEDHVT14_MUX2_MM_1
+*C2_R1_C1 2.398e-03 2.192e-02 2.398e-03 
+*LOADS
+*RC dut/reg_bank/U32:A1 1.051e-04
+*END
+
+*R_NET dut/reg_bank/Reg_Addr\[49\] 4.687e-03
+*DRIVER dut/reg_bank/adrmux/U21:X
+*CELL SAEDHVT14_MUX2_MM_1
+*C2_R1_C1 2.343e-03 2.192e-02 2.343e-03 
+*LOADS
+*RC dut/reg_bank/U30:A4 1.028e-04
+*END
+
+*R_NET dut/reg_bank/Reg_Addr\[48\] 4.734e-03
+*DRIVER dut/reg_bank/adrmux/U22:X
+*CELL SAEDHVT14_MUX2_MM_1
+*C2_R1_C1 2.367e-03 2.192e-02 2.367e-03 
+*LOADS
+*RC dut/reg_bank/U30:A2 1.038e-04
+*END
+
+*R_NET dut/reg_bank/Reg_Addr\[47\] 4.687e-03
+*DRIVER dut/reg_bank/adrmux/U28:X
+*CELL SAEDHVT14_MUX2_MM_1
+*C2_R1_C1 2.343e-03 2.192e-02 2.343e-03 
+*LOADS
+*RC dut/reg_bank/U31:A4 1.028e-04
+*END
+
+*R_NET dut/reg_bank/Reg_Addr\[46\] 4.795e-03
+*DRIVER dut/reg_bank/adrmux/U31:X
+*CELL SAEDHVT14_MUX2_MM_1
+*C2_R1_C1 2.398e-03 2.192e-02 2.398e-03 
+*LOADS
+*RC dut/reg_bank/U31:A1 1.051e-04
+*END
+
+*R_NET dut/reg_bank/Reg_Addr\[45\] 4.707e-03
+*DRIVER dut/reg_bank/adrmux/U29:X
+*CELL SAEDHVT14_MUX2_MM_1
+*C2_R1_C1 2.353e-03 2.192e-02 2.353e-03 
+*LOADS
+*RC dut/reg_bank/U31:A3 1.032e-04
+*END
+
+*R_NET dut/reg_bank/Reg_Addr\[44\] 4.707e-03
+*DRIVER dut/reg_bank/adrmux/U32:X
+*CELL SAEDHVT14_MUX2_MM_1
+*C2_R1_C1 2.353e-03 2.192e-02 2.353e-03 
+*LOADS
+*RC dut/reg_bank/U32:A3 1.032e-04
+*END
+
+*R_NET dut/reg_bank/Reg_Addr\[43\] 4.734e-03
+*DRIVER dut/reg_bank/adrmux/U33:X
+*CELL SAEDHVT14_MUX2_MM_1
+*C2_R1_C1 2.367e-03 2.192e-02 2.367e-03 
+*LOADS
+*RC dut/reg_bank/U32:A2 1.038e-04
+*END
+
+*R_NET dut/reg_bank/Reg_Addr\[42\] 4.734e-03
+*DRIVER dut/reg_bank/adrmux/U24:X
+*CELL SAEDHVT14_MUX2_MM_1
+*C2_R1_C1 2.367e-03 2.192e-02 2.367e-03 
+*LOADS
+*RC dut/reg_bank/U33:A2 1.038e-04
+*END
+
+*R_NET dut/reg_bank/Reg_Addr\[41\] 4.795e-03
+*DRIVER dut/reg_bank/adrmux/U25:X
+*CELL SAEDHVT14_MUX2_MM_1
+*C2_R1_C1 2.398e-03 2.192e-02 2.398e-03 
+*LOADS
+*RC dut/reg_bank/U33:A1 1.051e-04
+*END
+
+*R_NET dut/reg_bank/Reg_Addr\[40\] 4.795e-03
+*DRIVER dut/reg_bank/adrmux/U36:X
+*CELL SAEDHVT14_MUX2_MM_1
+*C2_R1_C1 2.398e-03 2.192e-02 2.398e-03 
+*LOADS
+*RC dut/reg_bank/U35:A1 1.051e-04
+*END
+
+*R_NET dut/reg_bank/Reg_Addr\[39\] 4.687e-03
+*DRIVER dut/reg_bank/adrmux/U26:X
+*CELL SAEDHVT14_MUX2_MM_1
+*C2_R1_C1 2.343e-03 2.192e-02 2.343e-03 
+*LOADS
+*RC dut/reg_bank/U33:A4 1.028e-04
+*END
+
+*R_NET dut/reg_bank/Reg_Addr\[38\] 4.707e-03
+*DRIVER dut/reg_bank/adrmux/U27:X
+*CELL SAEDHVT14_MUX2_MM_1
+*C2_R1_C1 2.353e-03 2.192e-02 2.353e-03 
+*LOADS
+*RC dut/reg_bank/U33:A3 1.032e-04
+*END
+
+*R_NET dut/reg_bank/Reg_Addr\[37\] 4.795e-03
+*DRIVER dut/reg_bank/adrmux/U40:X
+*CELL SAEDHVT14_MUX2_MM_1
+*C2_R1_C1 2.398e-03 2.192e-02 2.398e-03 
+*LOADS
+*RC dut/reg_bank/U36:A1 1.051e-04
+*END
+
+*R_NET dut/reg_bank/Reg_Addr\[36\] 4.687e-03
+*DRIVER dut/reg_bank/adrmux/U37:X
+*CELL SAEDHVT14_MUX2_MM_1
+*C2_R1_C1 2.343e-03 2.192e-02 2.343e-03 
+*LOADS
+*RC dut/reg_bank/U35:A4 1.028e-04
+*END
+
+*R_NET dut/reg_bank/Reg_Addr\[35\] 4.687e-03
+*DRIVER dut/reg_bank/adrmux/U10:X
+*CELL SAEDHVT14_MUX2_MM_1
+*C2_R1_C1 2.343e-03 2.192e-02 2.343e-03 
+*LOADS
+*RC dut/reg_bank/U32:A4 1.028e-04
+*END
+
+*R_NET dut/reg_bank/Reg_Addr\[34\] 4.707e-03
+*DRIVER dut/reg_bank/adrmux/U12:X
+*CELL SAEDHVT14_MUX2_MM_1
+*C2_R1_C1 2.353e-03 2.192e-02 2.353e-03 
+*LOADS
+*RC dut/reg_bank/U35:A3 1.032e-04
+*END
+
+*R_NET dut/reg_bank/Reg_Addr\[33\] 4.734e-03
+*DRIVER dut/reg_bank/adrmux/U35:X
+*CELL SAEDHVT14_MUX2_MM_1
+*C2_R1_C1 2.367e-03 2.192e-02 2.367e-03 
+*LOADS
+*RC dut/reg_bank/U35:A2 1.038e-04
+*END
+
+*R_NET dut/reg_bank/Reg_Addr\[32\] 4.795e-03
+*DRIVER dut/reg_bank/adrmux/U46:X
+*CELL SAEDHVT14_MUX2_MM_1
+*C2_R1_C1 2.398e-03 2.192e-02 2.398e-03 
+*LOADS
+*RC dut/reg_bank/U37:A1 1.051e-04
+*END
+
+*R_NET dut/reg_bank/Reg_Addr\[31\] 4.687e-03
+*DRIVER dut/reg_bank/adrmux/U13:X
+*CELL SAEDHVT14_MUX2_MM_1
+*C2_R1_C1 2.343e-03 2.192e-02 2.343e-03 
+*LOADS
+*RC dut/reg_bank/U36:A4 1.028e-04
+*END
+
+*R_NET dut/reg_bank/Reg_Addr\[30\] 4.795e-03
+*DRIVER dut/reg_bank/adrmux/U14:X
+*CELL SAEDHVT14_MUX2_MM_1
+*C2_R1_C1 2.398e-03 2.192e-02 2.398e-03 
+*LOADS
+*RC dut/reg_bank/U38:A1 1.051e-04
+*END
+
+*R_NET dut/reg_bank/Reg_Addr\[29\] 4.734e-03
+*DRIVER dut/reg_bank/adrmux/U15:X
+*CELL SAEDHVT14_MUX2_MM_1
+*C2_R1_C1 2.367e-03 2.192e-02 2.367e-03 
+*LOADS
+*RC dut/reg_bank/U37:A2 1.038e-04
+*END
+
+*R_NET dut/reg_bank/Reg_Addr\[28\] 4.796e-03
+*DRIVER dut/reg_bank/adrmux/U47:X
+*CELL SAEDHVT14_MUX2_MM_1
+*C2_R1_C1 2.398e-03 2.192e-02 2.398e-03 
+*LOADS
+*RC dut/reg_bank/U25:A1 1.052e-04
+*END
+
+*R_NET dut/reg_bank/Reg_Addr\[27\] 4.707e-03
+*DRIVER dut/reg_bank/adrmux/U39:X
+*CELL SAEDHVT14_MUX2_MM_1
+*C2_R1_C1 2.353e-03 2.192e-02 2.353e-03 
+*LOADS
+*RC dut/reg_bank/U36:A3 1.032e-04
+*END
+
+*R_NET dut/reg_bank/Reg_Addr\[26\] 4.734e-03
+*DRIVER dut/reg_bank/adrmux/U38:X
+*CELL SAEDHVT14_MUX2_MM_1
+*C2_R1_C1 2.367e-03 2.192e-02 2.367e-03 
+*LOADS
+*RC dut/reg_bank/U36:A2 1.038e-04
+*END
+
+*R_NET dut/reg_bank/Reg_Addr\[25\] 4.687e-03
+*DRIVER dut/reg_bank/adrmux/U45:X
+*CELL SAEDHVT14_MUX2_MM_1
+*C2_R1_C1 2.343e-03 2.192e-02 2.343e-03 
+*LOADS
+*RC dut/reg_bank/U37:A4 1.028e-04
+*END
+
+*R_NET dut/reg_bank/Reg_Addr\[24\] 4.707e-03
+*DRIVER dut/reg_bank/adrmux/U44:X
+*CELL SAEDHVT14_MUX2_MM_1
+*C2_R1_C1 2.353e-03 2.192e-02 2.353e-03 
+*LOADS
+*RC dut/reg_bank/U37:A3 1.032e-04
+*END
+
+*R_NET dut/reg_bank/Reg_Addr\[23\] 4.734e-03
+*DRIVER dut/reg_bank/adrmux/U64:X
+*CELL SAEDHVT14_MUX2_MM_1
+*C2_R1_C1 2.367e-03 2.192e-02 2.367e-03 
+*LOADS
+*RC dut/reg_bank/U24:A2 1.038e-04
+*END
+
+*R_NET dut/reg_bank/Reg_Addr\[22\] 4.734e-03
+*DRIVER dut/reg_bank/adrmux/U41:X
+*CELL SAEDHVT14_MUX2_MM_1
+*C2_R1_C1 2.367e-03 2.192e-02 2.367e-03 
+*LOADS
+*RC dut/reg_bank/U38:A2 1.038e-04
+*END
+
+*R_NET dut/reg_bank/Reg_Addr\[21\] 4.707e-03
+*DRIVER dut/reg_bank/adrmux/U58:X
+*CELL SAEDHVT14_MUX2_MM_1
+*C2_R1_C1 2.353e-03 2.192e-02 2.353e-03 
+*LOADS
+*RC dut/reg_bank/U23:A3 1.032e-04
+*END
+
+*R_NET dut/reg_bank/Reg_Addr\[20\] 4.687e-03
+*DRIVER dut/reg_bank/adrmux/U42:X
+*CELL SAEDHVT14_MUX2_MM_1
+*C2_R1_C1 2.343e-03 2.192e-02 2.343e-03 
+*LOADS
+*RC dut/reg_bank/U38:A4 1.028e-04
+*END
+
+*R_NET dut/reg_bank/Reg_Addr\[19\] 4.707e-03
+*DRIVER dut/reg_bank/adrmux/U43:X
+*CELL SAEDHVT14_MUX2_MM_1
+*C2_R1_C1 2.353e-03 2.192e-02 2.353e-03 
+*LOADS
+*RC dut/reg_bank/U38:A3 1.032e-04
+*END
+
+*R_NET dut/reg_bank/Reg_Addr\[18\] 4.734e-03
+*DRIVER dut/reg_bank/adrmux/U60:X
+*CELL SAEDHVT14_MUX2_MM_1
+*C2_R1_C1 2.367e-03 2.192e-02 2.367e-03 
+*LOADS
+*RC dut/reg_bank/U23:A2 1.038e-04
+*END
+
+*R_NET dut/reg_bank/Reg_Addr\[17\] 4.790e-03
+*DRIVER dut/reg_bank/adrmux/U61:X
+*CELL SAEDHVT14_MUX2_MM_1
+*C2_R1_C1 2.395e-03 2.192e-02 2.395e-03 
+*LOADS
+*RC dut/reg_bank/U22:A2 1.050e-04
+*END
+
+*R_NET dut/reg_bank/Reg_Addr\[16\] 4.796e-03
+*DRIVER dut/reg_bank/adrmux/U62:X
+*CELL SAEDHVT14_MUX2_MM_1
+*C2_R1_C1 2.398e-03 2.192e-02 2.398e-03 
+*LOADS
+*RC dut/reg_bank/U22:A1 1.052e-04
+*END
+
+*R_NET dut/reg_bank/Reg_Addr\[15\] 4.795e-03
+*DRIVER dut/reg_bank/adrmux/U63:X
+*CELL SAEDHVT14_MUX2_MM_1
+*C2_R1_C1 2.398e-03 2.192e-02 2.398e-03 
+*LOADS
+*RC dut/reg_bank/U24:A1 1.051e-04
+*END
+
+*R_NET dut/reg_bank/Reg_Addr\[14\] 4.795e-03
+*DRIVER dut/reg_bank/adrmux/U59:X
+*CELL SAEDHVT14_MUX2_MM_1
+*C2_R1_C1 2.398e-03 2.192e-02 2.398e-03 
+*LOADS
+*RC dut/reg_bank/U23:A1 1.051e-04
+*END
+
+*R_NET dut/reg_bank/Reg_Addr\[13\] 4.734e-03
+*DRIVER dut/reg_bank/adrmux/U50:X
+*CELL SAEDHVT14_MUX2_MM_1
+*C2_R1_C1 2.367e-03 2.192e-02 2.367e-03 
+*LOADS
+*RC dut/reg_bank/U26:A2 1.038e-04
+*END
+
+*R_NET dut/reg_bank/Reg_Addr\[12\] 4.795e-03
+*DRIVER dut/reg_bank/adrmux/U49:X
+*CELL SAEDHVT14_MUX2_MM_1
+*C2_R1_C1 2.398e-03 2.192e-02 2.398e-03 
+*LOADS
+*RC dut/reg_bank/U26:A1 1.051e-04
+*END
+
+*R_NET dut/reg_bank/Reg_Addr\[11\] 4.795e-03
+*DRIVER dut/reg_bank/adrmux/U56:X
+*CELL SAEDHVT14_MUX2_MM_1
+*C2_R1_C1 2.398e-03 2.192e-02 2.398e-03 
+*LOADS
+*RC dut/reg_bank/U27:A1 1.051e-04
+*END
+
+*R_NET dut/reg_bank/Reg_Addr\[10\] 4.687e-03
+*DRIVER dut/reg_bank/adrmux/U51:X
+*CELL SAEDHVT14_MUX2_MM_1
+*C2_R1_C1 2.343e-03 2.192e-02 2.343e-03 
+*LOADS
+*RC dut/reg_bank/U26:A4 1.028e-04
+*END
+
+*R_NET dut/reg_bank/Reg_Addr\[9\] 4.747e-03
+*DRIVER dut/reg_bank/adrmux/U16:X
+*CELL SAEDHVT14_MUX2_MM_1
+*C2_R1_C1 2.374e-03 2.192e-02 2.374e-03 
+*LOADS
+*RC dut/reg_bank/U6:A2 1.041e-04
+*END
+
+*R_NET dut/reg_bank/Reg_Addr\[8\] 4.727e-03
+*DRIVER dut/reg_bank/adrmux/U48:X
+*CELL SAEDHVT14_MUX2_MM_1
+*C2_R1_C1 2.364e-03 2.192e-02 2.364e-03 
+*LOADS
+*RC dut/reg_bank/U6:A1 1.036e-04
+*END
+
+*R_NET dut/reg_bank/Reg_Addr\[7\] 4.734e-03
+*DRIVER dut/reg_bank/adrmux/U30:X
+*CELL SAEDHVT14_MUX2_MM_1
+*C2_R1_C1 2.367e-03 2.192e-02 2.367e-03 
+*LOADS
+*RC dut/reg_bank/U31:A2 1.038e-04
+*END
+
+*R_NET dut/reg_bank/Reg_Addr\[6\] 4.707e-03
+*DRIVER dut/reg_bank/adrmux/U57:X
+*CELL SAEDHVT14_MUX2_MM_1
+*C2_R1_C1 2.353e-03 2.192e-02 2.353e-03 
+*LOADS
+*RC dut/reg_bank/U27:A3 1.032e-04
+*END
+
+*R_NET dut/reg_bank/Reg_Addr\[5\] 4.734e-03
+*DRIVER dut/reg_bank/adrmux/U55:X
+*CELL SAEDHVT14_MUX2_MM_1
+*C2_R1_C1 2.367e-03 2.192e-02 2.367e-03 
+*LOADS
+*RC dut/reg_bank/U27:A2 1.038e-04
+*END
+
+*R_NET dut/reg_bank/Reg_Addr\[4\] 4.687e-03
+*DRIVER dut/reg_bank/adrmux/U19:X
+*CELL SAEDHVT14_MUX2_MM_1
+*C2_R1_C1 2.343e-03 2.192e-02 2.343e-03 
+*LOADS
+*RC dut/reg_bank/U27:A4 1.028e-04
+*END
+
+*R_NET dut/reg_bank/Reg_Addr\[3\] 1.154e-02
+*DRIVER dut/reg_bank/adrmux/U7:X
+*CELL SAEDRVT14_MUX2_MM_1
+*C2_R1_C1 5.770e-03 5.002e-02 5.770e-03 
+*LOADS
+*RC dut/reg_bank/U7:A 1.378e-04
+*RC dut/reg_bank/U9:A1 1.508e-04
+*END
+
+*R_NET dut/reg_bank/Reg_Addr\[2\] 1.060e-02
+*DRIVER dut/reg_bank/adrmux/U65:X
+*CELL SAEDRVT14_MUX2_MM_1
+*C2_R1_C1 5.301e-03 5.002e-02 5.301e-03 
+*LOADS
+*RC dut/reg_bank/U5:A2 1.316e-04
+*RC dut/reg_bank/U40:B2 1.335e-04
+*END
+
+*R_NET dut/reg_bank/Reg_Addr\[1\] 4.734e-03
+*DRIVER dut/reg_bank/adrmux/U52:X
+*CELL SAEDHVT14_MUX2_MM_1
+*C2_R1_C1 2.367e-03 2.192e-02 2.367e-03 
+*LOADS
+*RC dut/reg_bank/U28:A2 1.038e-04
+*END
+
+*R_NET dut/reg_bank/Reg_Addr\[0\] 4.687e-03
+*DRIVER dut/reg_bank/adrmux/U53:X
+*CELL SAEDHVT14_MUX2_MM_1
+*C2_R1_C1 2.343e-03 2.192e-02 2.343e-03 
+*LOADS
+*RC dut/reg_bank/U28:A4 1.028e-04
+*END
+
+*R_NET dut/reg_bank/N104 4.646e-03
+*DRIVER dut/reg_bank/U4:X
+*CELL SAEDRVT14_NR2_1
+*C2_R1_C1 2.323e-03 2.192e-02 2.323e-03 
+*LOADS
+*RC dut/reg_bank/clk_gate_pmu_state_config_register_reg/latch:EN 1.019e-04
+*END
+
+*R_NET dut/reg_bank/net1839 6.413e-01
+*DRIVER dut/reg_bank/clk_gate_pmu_state_config_register_reg/latch:Q
+*CELL SAEDHVT14_CKGTPLT_V5_1
+*C2_R1_C1 3.206e-01 3.166e+00 3.206e-01 
+*LOADS
+*RC dut/reg_bank/pmu_state_config_register_reg_5_:CK 1.987e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_6_:CK 1.982e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_4_:CK 1.988e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_9_:CK 1.982e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_31_:CK 1.982e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_30_:CK 1.982e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_29_:CK 1.982e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_0_:CK 1.982e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_8_:CK 1.982e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_16_:CK 1.982e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_17_:CK 1.982e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_19_:CK 1.982e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_20_:CK 1.982e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_2_:CK 1.982e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_12_:CK 1.982e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_22_:CK 1.982e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_21_:CK 1.982e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_28_:CK 1.982e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_14_:CK 1.982e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_13_:CK 1.982e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_11_:CK 1.982e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_23_:CK 1.982e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_15_:CK 1.982e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_10_:CK 1.982e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_27_:CK 1.982e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_26_:CK 1.982e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_25_:CK 1.982e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_24_:CK 1.982e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_7_:CK 1.982e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_3_:CK 1.988e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_1_:CK 1.982e-03
+*RC dut/reg_bank/pmu_state_config_register_reg_18_:CK 1.982e-03
+*END
+
+*R_NET dut/reg_bank/n2 4.699e-03
+*DRIVER dut/reg_bank/U18:X
+*CELL SAEDHVT14_MUX2_MM_1
+*C2_R1_C1 2.349e-03 2.192e-02 2.349e-03 
+*LOADS
+*RC dut/reg_bank/clk_shift_enb_register_reg_0_:D 1.030e-04
+*END
+
+*R_NET dut/reg_bank/n4 4.783e-03
+*DRIVER dut/reg_bank/U19:X
+*CELL SAEDHVT14_MUX2_MM_1
+*C2_R1_C1 2.392e-03 2.192e-02 2.392e-03 
+*LOADS
+*RC dut/reg_bank/clk_div_register_reg_0_:D 1.049e-04
+*END
+
+*R_NET dut/reg_bank/n6 4.783e-03
+*DRIVER dut/reg_bank/U20:X
+*CELL SAEDHVT14_MUX2_MM_1
+*C2_R1_C1 2.392e-03 2.192e-02 2.392e-03 
+*LOADS
+*RC dut/reg_bank/clk_div_register_reg_1_:D 1.049e-04
+*END
+
+*R_NET dut/reg_bank/n38 9.163e-02
+*DRIVER dut/reg_bank/U8:X
+*CELL SAEDRVT14_INV_S_8
+*C2_R1_C1 4.581e-02 4.175e-01 4.581e-02 
+*LOADS
+*RC dut/reg_bank/pmu_state_config_register_reg_15_:RD 3.778e-04
+*RC dut/reg_bank/pmu_state_config_register_reg_17_:RD 3.778e-04
+*RC dut/reg_bank/pmu_state_config_register_reg_16_:RD 3.778e-04
+*RC dut/reg_bank/pmu_state_config_register_reg_9_:RD 3.778e-04
+*RC dut/reg_bank/pmu_state_config_register_reg_4_:RD 3.784e-04
+*RC dut/reg_bank/U11:A 4.243e-04
+*RC dut/reg_bank/pmu_state_config_register_reg_19_:RD 3.778e-04
+*RC dut/reg_bank/pmu_state_config_register_reg_2_:RD 3.778e-04
+*RC dut/reg_bank/pmu_state_config_register_reg_12_:RD 3.778e-04
+*RC dut/reg_bank/pmu_state_config_register_reg_18_:RD 3.778e-04
+*END
+
+*R_NET dut/reg_bank/n62 1.736e-02
+*DRIVER dut/reg_bank/U16:X
+*CELL SAEDHVT14_INV_S_2
+*C2_R1_C1 8.682e-03 8.117e-02 8.682e-03 
+*LOADS
+*RC dut/reg_bank/U23:A4 1.544e-04
+*RC dut/reg_bank/U41:A2 1.571e-04
+*RC dut/reg_bank/readyreg/U4:B 1.583e-04
+*END
+
+*R_NET dut/reg_bank/n8 4.687e-03
+*DRIVER dut/reg_bank/U23:X
+*CELL SAEDHVT14_OR4_1
+*C2_R1_C1 2.343e-03 2.192e-02 2.343e-03 
+*LOADS
+*RC dut/reg_bank/U24:A4 1.028e-04
+*END
+
+*R_NET dut/reg_bank/n9 4.707e-03
+*DRIVER dut/reg_bank/U22:X
+*CELL SAEDHVT14_ND2_CDC_1
+*C2_R1_C1 2.353e-03 2.192e-02 2.353e-03 
+*LOADS
+*RC dut/reg_bank/U24:A3 1.032e-04
+*END
+
+*R_NET dut/reg_bank/n10 4.790e-03
+*DRIVER dut/reg_bank/U6:X
+*CELL SAEDRVT14_NR2_1
+*C2_R1_C1 2.395e-03 2.192e-02 2.395e-03 
+*LOADS
+*RC dut/reg_bank/U25:A2 1.050e-04
+*END
+
+*R_NET dut/reg_bank/n11 4.687e-03
+*DRIVER dut/reg_bank/U28:X
+*CELL SAEDHVT14_OR4_1
+*C2_R1_C1 2.343e-03 2.192e-02 2.343e-03 
+*LOADS
+*RC dut/reg_bank/U29:A4 1.028e-04
+*END
+
+*R_NET dut/reg_bank/n12 4.707e-03
+*DRIVER dut/reg_bank/U27:X
+*CELL SAEDHVT14_OR4_1
+*C2_R1_C1 2.353e-03 2.192e-02 2.353e-03 
+*LOADS
+*RC dut/reg_bank/U29:A3 1.032e-04
+*END
+
+*R_NET dut/reg_bank/n13 4.734e-03
+*DRIVER dut/reg_bank/U26:X
+*CELL SAEDHVT14_OR4_1
+*C2_R1_C1 2.367e-03 2.192e-02 2.367e-03 
+*LOADS
+*RC dut/reg_bank/U29:A2 1.038e-04
+*END
+
+*R_NET dut/reg_bank/n14 4.795e-03
+*DRIVER dut/reg_bank/U25:X
+*CELL SAEDHVT14_ND2_CDC_1
+*C2_R1_C1 2.398e-03 2.192e-02 2.398e-03 
+*LOADS
+*RC dut/reg_bank/U29:A1 1.051e-04
+*END
+
+*R_NET dut/reg_bank/n15 4.687e-03
+*DRIVER dut/reg_bank/U33:X
+*CELL SAEDHVT14_OR4_1
+*C2_R1_C1 2.343e-03 2.192e-02 2.343e-03 
+*LOADS
+*RC dut/reg_bank/U34:A4 1.028e-04
+*END
+
+*R_NET dut/reg_bank/n16 4.707e-03
+*DRIVER dut/reg_bank/U32:X
+*CELL SAEDHVT14_OR4_1
+*C2_R1_C1 2.353e-03 2.192e-02 2.353e-03 
+*LOADS
+*RC dut/reg_bank/U34:A3 1.032e-04
+*END
+
+*R_NET dut/reg_bank/n17 4.734e-03
+*DRIVER dut/reg_bank/U31:X
+*CELL SAEDHVT14_OR4_1
+*C2_R1_C1 2.367e-03 2.192e-02 2.367e-03 
+*LOADS
+*RC dut/reg_bank/U34:A2 1.038e-04
+*END
+
+*R_NET dut/reg_bank/n18 4.795e-03
+*DRIVER dut/reg_bank/U30:X
+*CELL SAEDHVT14_OR4_1
+*C2_R1_C1 2.398e-03 2.192e-02 2.398e-03 
+*LOADS
+*RC dut/reg_bank/U34:A1 1.051e-04
+*END
+
+*R_NET dut/reg_bank/n19 4.687e-03
+*DRIVER dut/reg_bank/U38:X
+*CELL SAEDHVT14_OR4_1
+*C2_R1_C1 2.343e-03 2.192e-02 2.343e-03 
+*LOADS
+*RC dut/reg_bank/U39:A4 1.028e-04
+*END
+
+*R_NET dut/reg_bank/n20 4.707e-03
+*DRIVER dut/reg_bank/U37:X
+*CELL SAEDHVT14_OR4_1
+*C2_R1_C1 2.353e-03 2.192e-02 2.353e-03 
+*LOADS
+*RC dut/reg_bank/U39:A3 1.032e-04
+*END
+
+*R_NET dut/reg_bank/n21 4.734e-03
+*DRIVER dut/reg_bank/U36:X
+*CELL SAEDHVT14_OR4_1
+*C2_R1_C1 2.367e-03 2.192e-02 2.367e-03 
+*LOADS
+*RC dut/reg_bank/U39:A2 1.038e-04
+*END
+
+*R_NET dut/reg_bank/n22 4.795e-03
+*DRIVER dut/reg_bank/U35:X
+*CELL SAEDHVT14_OR4_1
+*C2_R1_C1 2.398e-03 2.192e-02 2.398e-03 
+*LOADS
+*RC dut/reg_bank/U39:A1 1.051e-04
+*END
+
+*R_NET dut/reg_bank/n23 4.706e-03
+*DRIVER dut/reg_bank/U39:X
+*CELL SAEDHVT14_OR4_1
+*C2_R1_C1 2.353e-03 2.192e-02 2.353e-03 
+*LOADS
+*RC dut/reg_bank/U21:A4 1.032e-04
+*END
+
+*R_NET dut/reg_bank/n24 4.725e-03
+*DRIVER dut/reg_bank/U34:X
+*CELL SAEDHVT14_OR4_1
+*C2_R1_C1 2.362e-03 2.192e-02 2.362e-03 
+*LOADS
+*RC dut/reg_bank/U21:A3 1.036e-04
+*END
+
+*R_NET dut/reg_bank/n25 4.757e-03
+*DRIVER dut/reg_bank/U29:X
+*CELL SAEDHVT14_OR4_1
+*C2_R1_C1 2.379e-03 2.192e-02 2.379e-03 
+*LOADS
+*RC dut/reg_bank/U21:A2 1.043e-04
+*END
+
+*R_NET dut/reg_bank/n26 4.816e-03
+*DRIVER dut/reg_bank/U24:X
+*CELL SAEDHVT14_OR4_1
+*C2_R1_C1 2.408e-03 2.192e-02 2.408e-03 
+*LOADS
+*RC dut/reg_bank/U21:A1 1.056e-04
+*END
+
+*R_NET dut/reg_bank/n27 5.067e-03
+*DRIVER dut/reg_bank/U40:X
+*CELL SAEDHVT14_ND3B_0P75
+*C2_R1_C1 2.533e-03 2.192e-02 2.533e-03 
+*LOADS
+*RC dut/reg_bank/U18:S 1.111e-04
+*END
+
+*R_NET dut/reg_bank/n28 1.074e-02
+*DRIVER dut/reg_bank/U21:X
+*CELL SAEDRVT14_OR4_1
+*C2_R1_C1 5.371e-03 5.002e-02 5.371e-03 
+*LOADS
+*RC dut/reg_bank/U5:A1 1.338e-04
+*RC dut/reg_bank/U40:A 1.348e-04
+*END
+
+*R_NET dut/reg_bank/n29 1.063e-02
+*DRIVER dut/reg_bank/U7:X
+*CELL SAEDRVT14_INV_S_1
+*C2_R1_C1 5.313e-03 5.002e-02 5.313e-03 
+*LOADS
+*RC dut/reg_bank/U4:A1 1.335e-04
+*RC dut/reg_bank/U40:B1 1.322e-04
+*END
+
+*R_NET dut/reg_bank/n30 1.133e-02
+*DRIVER dut/reg_bank/U5:X
+*CELL SAEDHVT14_OR2_MM_1P5
+*C2_R1_C1 5.667e-03 5.002e-02 5.667e-03 
+*LOADS
+*RC dut/reg_bank/U4:A2 1.340e-04
+*RC dut/reg_bank/U9:A2 1.494e-04
+*END
+
+*R_NET dut/reg_bank/n31 1.136e-02
+*DRIVER dut/reg_bank/U9:X
+*CELL SAEDHVT14_NR2_MM_3
+*C2_R1_C1 5.679e-03 5.002e-02 5.679e-03 
+*LOADS
+*RC dut/reg_bank/U19:S 1.420e-04
+*RC dut/reg_bank/U20:S 1.420e-04
+*END
+
+*R_NET dut/reg_bank/n32 4.889e-03
+*DRIVER dut/reg_bank/U41:X
+*CELL SAEDHVT14_ND2_CDC_1
+*C2_R1_C1 2.444e-03 2.192e-02 2.444e-03 
+*LOADS
+*RC dut/reg_bank/U12:A 1.072e-04
+*END
+
+*R_NET dut/reg_bank/n33 1.210e-01
+*DRIVER dut/reg_bank/U3:X
+*CELL SAEDHVT14_BUF_16
+*C2_R1_C1 6.051e-02 5.632e-01 6.051e-02 
+*LOADS
+*RC dut/reg_bank/pmu_state_config_register_reg_10_:RD 4.731e-04
+*RC dut/reg_bank/pmu_state_config_register_reg_11_:RD 4.731e-04
+*RC dut/reg_bank/pmu_state_config_register_reg_29_:RD 4.731e-04
+*RC dut/reg_bank/pmu_state_config_register_reg_6_:RD 4.754e-04
+*RC dut/reg_bank/pmu_state_config_register_reg_5_:RD 4.722e-04
+*RC dut/reg_bank/pmu_state_config_register_reg_1_:RD 4.731e-04
+*RC dut/reg_bank/clk_div_register_reg_1_:RD 4.737e-04
+*RC dut/reg_bank/pmu_state_config_register_reg_13_:RD 4.731e-04
+*RC dut/reg_bank/pmu_state_config_register_reg_0_:RD 4.731e-04
+*RC dut/reg_bank/clk_shift_enb_register_reg_0_:RD 4.731e-04
+*RC dut/reg_bank/clk_div_register_reg_0_:RD 4.737e-04
+*RC dut/reg_bank/pmu_state_config_register_reg_3_:RD 4.737e-04
+*END
+
+*R_NET dut/reg_bank/n34 4.366e-02
+*DRIVER dut/reg_bank/U10:X
+*CELL SAEDHVT14_BUF_S_6
+*C2_R1_C1 2.183e-02 1.969e-01 2.183e-02 
+*LOADS
+*RC dut/reg_bank/pmu_state_config_register_reg_31_:RD 2.387e-04
+*RC dut/reg_bank/pmu_state_config_register_reg_30_:RD 2.387e-04
+*RC dut/reg_bank/pmu_state_config_register_reg_7_:RD 2.387e-04
+*RC dut/reg_bank/pmu_state_config_register_reg_23_:RD 2.387e-04
+*RC dut/reg_bank/pmu_state_config_register_reg_27_:RD 2.387e-04
+*RC dut/reg_bank/pmu_state_config_register_reg_24_:RD 2.387e-04
+*END
+
+*R_NET dut/reg_bank/n35 9.199e-02
+*DRIVER dut/reg_bank/U11:X
+*CELL SAEDHVT14_BUF_12
+*C2_R1_C1 4.599e-02 4.175e-01 4.599e-02 
+*LOADS
+*RC dut/reg_bank/U3:A 4.316e-04
+*RC dut/reg_bank/U10:A 3.862e-04
+*RC dut/reg_bank/pmu_state_config_register_reg_28_:RD 3.778e-04
+*RC dut/reg_bank/pmu_state_config_register_reg_21_:RD 3.778e-04
+*RC dut/reg_bank/pmu_state_config_register_reg_22_:RD 3.778e-04
+*RC dut/reg_bank/pmu_state_config_register_reg_8_:RD 3.778e-04
+*RC dut/reg_bank/pmu_state_config_register_reg_14_:RD 3.778e-04
+*RC dut/reg_bank/pmu_state_config_register_reg_20_:RD 3.778e-04
+*RC dut/reg_bank/pmu_state_config_register_reg_26_:RD 3.778e-04
+*RC dut/reg_bank/pmu_state_config_register_reg_25_:RD 3.778e-04
+*END
+
+*R_NET dut/reg_bank/n36 3.507e-02
+*DRIVER dut/reg_bank/U12:X
+*CELL SAEDRVT14_BUF_3
+*C2_R1_C1 1.754e-02 1.542e-01 1.754e-02 
+*LOADS
+*RC dut/reg_bank/adrmux/U3:A 2.312e-04
+*RC dut/reg_bank/adrmux/U4:A 2.186e-04
+*RC dut/reg_bank/adrmux/U5:A 2.194e-04
+*RC dut/reg_bank/adrmux/U9:A 2.016e-04
+*RC dut/reg_bank/adrmux/U64:S 2.108e-04
+*END
+
+*R_NET dut/PMU/uart_powergate_enb 4.898e-03
+*DRIVER dut/PMU/uart_powergate_enb_reg:Q
+*CELL SAEDHVT14_FDPQ_V3_1
+*C2_R1_C1 2.449e-03 2.192e-02 2.449e-03 
+*LOADS
+*RC dut/PMU/U19:A 1.074e-04
+*END
+
+*R_NET dut/PMU/uart_isolation_enb 4.687e-03
+*DRIVER dut/PMU/uart_isolation_enb_reg:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.343e-03 2.192e-02 2.343e-03 
+*LOADS
+*RC dut/PMU/C428:A2 1.027e-04
+*END
+
+*R_NET dut/PMU/spi_powergate_enb 5.108e-03
+*DRIVER dut/PMU/spi_powergate_enb_reg:Q
+*CELL SAEDHVT14_FDPQ_V3_1
+*C2_R1_C1 2.554e-03 2.192e-02 2.554e-03 
+*LOADS
+*RC dut/PMU/U20:A 1.120e-04
+*END
+
+*R_NET dut/PMU/spi_isolation_enb 4.687e-03
+*DRIVER dut/PMU/spi_isolation_enb_reg:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.343e-03 2.192e-02 2.343e-03 
+*LOADS
+*RC dut/PMU/C429:A2 1.027e-04
+*END
+
+*R_NET dut/PMU/spi_powergate_enb_delay1 1.730e-02
+*DRIVER dut/PMU/U38:X
+*CELL SAEDHVT14_OA21B_4
+*C2_R1_C1 8.648e-03 8.117e-02 8.648e-03 
+*LOADS
+*RC dut/PMU/C419:A1 1.568e-04
+*RC dut/PMU/spi_isolation_enb_delay2_reg:D 1.556e-04
+*RC dut/PMU/spi_powergate_enb_delay2_reg:D 1.556e-04
+*END
+
+*R_NET dut/PMU/uart_powergate_enb_delay1 1.730e-02
+*DRIVER dut/PMU/U41:X
+*CELL SAEDHVT14_OA21_MM_2
+*C2_R1_C1 8.648e-03 8.117e-02 8.648e-03 
+*LOADS
+*RC dut/PMU/C424:A1 1.568e-04
+*RC dut/PMU/uart_powergate_enb_delay2_reg:D 1.556e-04
+*RC dut/PMU/uart_isolation_enb_delay2_reg:D 1.556e-04
+*END
+
+*R_NET dut/PMU/eeprom_powergate_enb_delay1 1.069e-02
+*DRIVER dut/PMU/U33:X
+*CELL SAEDHVT14_AO32_2
+*C2_R1_C1 5.344e-03 5.002e-02 5.344e-03 
+*LOADS
+*RC dut/PMU/eeprom_isolation_enb_delay2_reg:D 1.337e-04
+*RC dut/PMU/eeprom_powergate_enb_delay2_reg:D 1.337e-04
+*END
+
+*R_NET dut/PMU/uart_powergate_enb_delay2 1.072e-02
+*DRIVER dut/PMU/uart_powergate_enb_delay2_reg:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_2
+*C2_R1_C1 5.361e-03 5.002e-02 5.361e-03 
+*LOADS
+*RC dut/PMU/uart_powergate_enb_reg:D 1.334e-04
+*RC dut/PMU/C426:A1 1.348e-04
+*END
+
+*R_NET dut/PMU/spi_powergate_enb_delay2 1.072e-02
+*DRIVER dut/PMU/spi_powergate_enb_delay2_reg:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_2
+*C2_R1_C1 5.361e-03 5.002e-02 5.361e-03 
+*LOADS
+*RC dut/PMU/spi_powergate_enb_reg:D 1.334e-04
+*RC dut/PMU/C421:A1 1.348e-04
+*END
+
+*R_NET dut/PMU/eeprom_powergate_enb_delay2 4.721e-03
+*DRIVER dut/PMU/eeprom_powergate_enb_delay2_reg:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.361e-03 2.192e-02 2.361e-03 
+*LOADS
+*RC dut/PMU/eeprom_powergate_enb_reg:D 1.035e-04
+*END
+
+*R_NET dut/PMU/uart_isolation_enb_delay2 1.064e-02
+*DRIVER dut/PMU/uart_isolation_enb_delay2_reg:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_2
+*C2_R1_C1 5.322e-03 5.002e-02 5.322e-03 
+*LOADS
+*RC dut/PMU/uart_isolation_enb_delay3_reg:D 1.318e-04
+*RC dut/PMU/C415:A1 1.344e-04
+*END
+
+*R_NET dut/PMU/spi_isolation_enb_delay2 1.064e-02
+*DRIVER dut/PMU/spi_isolation_enb_delay2_reg:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_2
+*C2_R1_C1 5.322e-03 5.002e-02 5.322e-03 
+*LOADS
+*RC dut/PMU/spi_isolation_enb_delay3_reg:D 1.318e-04
+*RC dut/PMU/C417:A1 1.344e-04
+*END
+
+*R_NET dut/PMU/eeprom_isolation_enb_delay2 4.721e-03
+*DRIVER dut/PMU/eeprom_isolation_enb_delay2_reg:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.361e-03 2.192e-02 2.361e-03 
+*LOADS
+*RC dut/PMU/eeprom_isolation_enb_reg:D 1.035e-04
+*END
+
+*R_NET dut/PMU/uart_isolation_enb_delay3 1.762e-02
+*DRIVER dut/PMU/uart_isolation_enb_delay3_reg:Q
+*CELL SAEDHVT14_FDPQ_V3_2
+*C2_R1_C1 8.808e-03 8.117e-02 8.808e-03 
+*LOADS
+*RC dut/PMU/uart_isolation_enb_delay4_reg:D 1.535e-04
+*RC dut/PMU/C415:A2 1.551e-04
+*RC dut/PMU/C428:A1 1.680e-04
+*END
+
+*R_NET dut/PMU/spi_isolation_enb_delay3 1.762e-02
+*DRIVER dut/PMU/spi_isolation_enb_delay3_reg:Q
+*CELL SAEDHVT14_FDPQ_V3_2
+*C2_R1_C1 8.808e-03 8.117e-02 8.808e-03 
+*LOADS
+*RC dut/PMU/spi_isolation_enb_delay4_reg:D 1.535e-04
+*RC dut/PMU/C417:A2 1.551e-04
+*RC dut/PMU/C429:A1 1.680e-04
+*END
+
+*R_NET dut/PMU/uart_isolation_enb_delay4 4.713e-03
+*DRIVER dut/PMU/uart_isolation_enb_delay4_reg:Q
+*CELL SAEDHVT14_FDPQ_V3_2
+*C2_R1_C1 2.356e-03 2.192e-02 2.356e-03 
+*LOADS
+*RC dut/PMU/C414:A2 1.033e-04
+*END
+
+*R_NET dut/PMU/spi_isolation_enb_delay4 4.713e-03
+*DRIVER dut/PMU/spi_isolation_enb_delay4_reg:Q
+*CELL SAEDHVT14_FDPQ_V3_2
+*C2_R1_C1 2.356e-03 2.192e-02 2.356e-03 
+*LOADS
+*RC dut/PMU/C416:A2 1.033e-04
+*END
+
+*R_NET dut/PMU/N50 4.732e-03
+*DRIVER dut/PMU/C414:X
+*CELL SAEDHVT14_OR2_0P75
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/PMU/uart_isolation_enb_reg:D 1.037e-04
+*END
+
+*R_NET dut/PMU/N51 4.732e-03
+*DRIVER dut/PMU/C416:X
+*CELL SAEDHVT14_OR2_0P75
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/PMU/spi_isolation_enb_reg:D 1.037e-04
+*END
+
+*R_NET dut/PMU/N76 4.712e-03
+*DRIVER dut/PMU/C115:X
+*CELL SAEDHVT14_OR2_1
+*C2_R1_C1 2.356e-03 2.192e-02 2.356e-03 
+*LOADS
+*RC dut/PMU/C116:A2 1.033e-04
+*END
+
+*R_NET dut/PMU/N77 4.712e-03
+*DRIVER dut/PMU/C116:X
+*CELL SAEDHVT14_OR2_1
+*C2_R1_C1 2.356e-03 2.192e-02 2.356e-03 
+*LOADS
+*RC dut/PMU/C117:A2 1.033e-04
+*END
+
+*R_NET dut/PMU/N78 4.712e-03
+*DRIVER dut/PMU/C117:X
+*CELL SAEDHVT14_OR2_1
+*C2_R1_C1 2.356e-03 2.192e-02 2.356e-03 
+*LOADS
+*RC dut/PMU/C118:A2 1.033e-04
+*END
+
+*R_NET dut/PMU/N79 4.712e-03
+*DRIVER dut/PMU/C118:X
+*CELL SAEDHVT14_OR2_1
+*C2_R1_C1 2.356e-03 2.192e-02 2.356e-03 
+*LOADS
+*RC dut/PMU/C119:A2 1.033e-04
+*END
+
+*R_NET dut/PMU/N80 4.712e-03
+*DRIVER dut/PMU/C119:X
+*CELL SAEDHVT14_OR2_1
+*C2_R1_C1 2.356e-03 2.192e-02 2.356e-03 
+*LOADS
+*RC dut/PMU/C120:A2 1.033e-04
+*END
+
+*R_NET dut/PMU/N81 4.712e-03
+*DRIVER dut/PMU/C120:X
+*CELL SAEDHVT14_OR2_1
+*C2_R1_C1 2.356e-03 2.192e-02 2.356e-03 
+*LOADS
+*RC dut/PMU/C121:A2 1.033e-04
+*END
+
+*R_NET dut/PMU/N82 4.778e-03
+*DRIVER dut/PMU/C121:X
+*CELL SAEDHVT14_OR2_1
+*C2_R1_C1 2.389e-03 2.192e-02 2.389e-03 
+*LOADS
+*RC dut/PMU/C122:A2 1.047e-04
+*END
+
+*R_NET dut/PMU/N83 1.782e-02
+*DRIVER dut/PMU/C122:X
+*CELL SAEDHVT14_OR2_2
+*C2_R1_C1 8.911e-03 8.117e-02 8.911e-03 
+*LOADS
+*RC dut/PMU/U37:A1 1.715e-04
+*RC dut/PMU/U33:B1 1.560e-04
+*RC dut/PMU/U33:A1 1.548e-04
+*END
+
+*R_NET dut/PMU/N110 4.712e-03
+*DRIVER dut/PMU/C149:X
+*CELL SAEDHVT14_OR2_1
+*C2_R1_C1 2.356e-03 2.192e-02 2.356e-03 
+*LOADS
+*RC dut/PMU/C150:A2 1.033e-04
+*END
+
+*R_NET dut/PMU/N111 4.712e-03
+*DRIVER dut/PMU/C150:X
+*CELL SAEDHVT14_OR2_1
+*C2_R1_C1 2.356e-03 2.192e-02 2.356e-03 
+*LOADS
+*RC dut/PMU/C151:A2 1.033e-04
+*END
+
+*R_NET dut/PMU/N112 4.712e-03
+*DRIVER dut/PMU/C151:X
+*CELL SAEDHVT14_OR2_1
+*C2_R1_C1 2.356e-03 2.192e-02 2.356e-03 
+*LOADS
+*RC dut/PMU/C152:A2 1.033e-04
+*END
+
+*R_NET dut/PMU/N113 4.712e-03
+*DRIVER dut/PMU/C152:X
+*CELL SAEDHVT14_OR2_1
+*C2_R1_C1 2.356e-03 2.192e-02 2.356e-03 
+*LOADS
+*RC dut/PMU/C153:A2 1.033e-04
+*END
+
+*R_NET dut/PMU/N114 4.712e-03
+*DRIVER dut/PMU/C153:X
+*CELL SAEDHVT14_OR2_1
+*C2_R1_C1 2.356e-03 2.192e-02 2.356e-03 
+*LOADS
+*RC dut/PMU/C154:A2 1.033e-04
+*END
+
+*R_NET dut/PMU/N115 4.778e-03
+*DRIVER dut/PMU/C154:X
+*CELL SAEDHVT14_OR2_1
+*C2_R1_C1 2.389e-03 2.192e-02 2.389e-03 
+*LOADS
+*RC dut/PMU/C155:A2 1.047e-04
+*END
+
+*R_NET dut/PMU/N116 1.125e-02
+*DRIVER dut/PMU/C155:X
+*CELL SAEDHVT14_OR2_2
+*C2_R1_C1 5.627e-03 5.002e-02 5.627e-03 
+*LOADS
+*RC dut/PMU/U32:A 1.370e-04
+*RC dut/PMU/U37:A2 1.444e-04
+*END
+
+*R_NET dut/PMU/N122 4.712e-03
+*DRIVER dut/PMU/C161:X
+*CELL SAEDHVT14_OR2_1
+*C2_R1_C1 2.356e-03 2.192e-02 2.356e-03 
+*LOADS
+*RC dut/PMU/C162:A2 1.033e-04
+*END
+
+*R_NET dut/PMU/N123 4.712e-03
+*DRIVER dut/PMU/C162:X
+*CELL SAEDHVT14_OR2_1
+*C2_R1_C1 2.356e-03 2.192e-02 2.356e-03 
+*LOADS
+*RC dut/PMU/C163:A2 1.033e-04
+*END
+
+*R_NET dut/PMU/N124 4.712e-03
+*DRIVER dut/PMU/C163:X
+*CELL SAEDHVT14_OR2_1
+*C2_R1_C1 2.356e-03 2.192e-02 2.356e-03 
+*LOADS
+*RC dut/PMU/C164:A2 1.033e-04
+*END
+
+*R_NET dut/PMU/N125 4.712e-03
+*DRIVER dut/PMU/C164:X
+*CELL SAEDHVT14_OR2_1
+*C2_R1_C1 2.356e-03 2.192e-02 2.356e-03 
+*LOADS
+*RC dut/PMU/C165:A2 1.033e-04
+*END
+
+*R_NET dut/PMU/N126 4.712e-03
+*DRIVER dut/PMU/C165:X
+*CELL SAEDHVT14_OR2_1
+*C2_R1_C1 2.356e-03 2.192e-02 2.356e-03 
+*LOADS
+*RC dut/PMU/C166:A2 1.033e-04
+*END
+
+*R_NET dut/PMU/N127 4.712e-03
+*DRIVER dut/PMU/C166:X
+*CELL SAEDHVT14_OR2_1
+*C2_R1_C1 2.356e-03 2.192e-02 2.356e-03 
+*LOADS
+*RC dut/PMU/C167:A2 1.033e-04
+*END
+
+*R_NET dut/PMU/N128 4.712e-03
+*DRIVER dut/PMU/C167:X
+*CELL SAEDHVT14_OR2_1
+*C2_R1_C1 2.356e-03 2.192e-02 2.356e-03 
+*LOADS
+*RC dut/PMU/C168:A2 1.033e-04
+*END
+
+*R_NET dut/PMU/N129 4.712e-03
+*DRIVER dut/PMU/C168:X
+*CELL SAEDHVT14_OR2_1
+*C2_R1_C1 2.356e-03 2.192e-02 2.356e-03 
+*LOADS
+*RC dut/PMU/C169:A2 1.033e-04
+*END
+
+*R_NET dut/PMU/N130 4.712e-03
+*DRIVER dut/PMU/C169:X
+*CELL SAEDHVT14_OR2_1
+*C2_R1_C1 2.356e-03 2.192e-02 2.356e-03 
+*LOADS
+*RC dut/PMU/C170:A2 1.033e-04
+*END
+
+*R_NET dut/PMU/N131 4.712e-03
+*DRIVER dut/PMU/C170:X
+*CELL SAEDHVT14_OR2_1
+*C2_R1_C1 2.356e-03 2.192e-02 2.356e-03 
+*LOADS
+*RC dut/PMU/C171:A2 1.033e-04
+*END
+
+*R_NET dut/PMU/N132 4.712e-03
+*DRIVER dut/PMU/C171:X
+*CELL SAEDHVT14_OR2_1
+*C2_R1_C1 2.356e-03 2.192e-02 2.356e-03 
+*LOADS
+*RC dut/PMU/C172:A2 1.033e-04
+*END
+
+*R_NET dut/PMU/N133 4.712e-03
+*DRIVER dut/PMU/C172:X
+*CELL SAEDHVT14_OR2_1
+*C2_R1_C1 2.356e-03 2.192e-02 2.356e-03 
+*LOADS
+*RC dut/PMU/C173:A2 1.033e-04
+*END
+
+*R_NET dut/PMU/N134 4.712e-03
+*DRIVER dut/PMU/C173:X
+*CELL SAEDHVT14_OR2_1
+*C2_R1_C1 2.356e-03 2.192e-02 2.356e-03 
+*LOADS
+*RC dut/PMU/C174:A2 1.033e-04
+*END
+
+*R_NET dut/PMU/N135 4.712e-03
+*DRIVER dut/PMU/C174:X
+*CELL SAEDHVT14_OR2_1
+*C2_R1_C1 2.356e-03 2.192e-02 2.356e-03 
+*LOADS
+*RC dut/PMU/C175:A2 1.033e-04
+*END
+
+*R_NET dut/PMU/N136 4.712e-03
+*DRIVER dut/PMU/C175:X
+*CELL SAEDHVT14_OR2_1
+*C2_R1_C1 2.356e-03 2.192e-02 2.356e-03 
+*LOADS
+*RC dut/PMU/C176:A2 1.033e-04
+*END
+
+*R_NET dut/PMU/N137 4.712e-03
+*DRIVER dut/PMU/C176:X
+*CELL SAEDHVT14_OR2_1
+*C2_R1_C1 2.356e-03 2.192e-02 2.356e-03 
+*LOADS
+*RC dut/PMU/C177:A2 1.033e-04
+*END
+
+*R_NET dut/PMU/N138 4.713e-03
+*DRIVER dut/PMU/C177:X
+*CELL SAEDHVT14_OR2_1
+*C2_R1_C1 2.356e-03 2.192e-02 2.356e-03 
+*LOADS
+*RC dut/PMU/C178:A2 1.033e-04
+*END
+
+*R_NET dut/PMU/N139 4.713e-03
+*DRIVER dut/PMU/C178:X
+*CELL SAEDHVT14_OR2_0P75
+*C2_R1_C1 2.356e-03 2.192e-02 2.356e-03 
+*LOADS
+*RC dut/PMU/C179:A2 1.033e-04
+*END
+
+*R_NET dut/PMU/N140 4.778e-03
+*DRIVER dut/PMU/C179:X
+*CELL SAEDHVT14_OR2_0P75
+*C2_R1_C1 2.389e-03 2.192e-02 2.389e-03 
+*LOADS
+*RC dut/PMU/C180:A2 1.047e-04
+*END
+
+*R_NET dut/PMU/N141 1.071e-02
+*DRIVER dut/PMU/C180:X
+*CELL SAEDHVT14_OR2_2
+*C2_R1_C1 5.357e-03 5.002e-02 5.357e-03 
+*LOADS
+*RC dut/PMU/C115:A2 1.332e-04
+*RC dut/PMU/C181:A2 1.348e-04
+*END
+
+*R_NET dut/PMU/N142 1.071e-02
+*DRIVER dut/PMU/C181:X
+*CELL SAEDHVT14_OR2_2
+*C2_R1_C1 5.357e-03 5.002e-02 5.357e-03 
+*LOADS
+*RC dut/PMU/C149:A2 1.332e-04
+*RC dut/PMU/C182:A2 1.348e-04
+*END
+
+*R_NET dut/PMU/N143 1.071e-02
+*DRIVER dut/PMU/C182:X
+*CELL SAEDHVT14_OR2_2
+*C2_R1_C1 5.357e-03 5.002e-02 5.357e-03 
+*LOADS
+*RC dut/PMU/C183:A2 1.332e-04
+*RC dut/PMU/C216:A2 1.348e-04
+*END
+
+*R_NET dut/PMU/N144 4.712e-03
+*DRIVER dut/PMU/C183:X
+*CELL SAEDHVT14_OR2_1
+*C2_R1_C1 2.356e-03 2.192e-02 2.356e-03 
+*LOADS
+*RC dut/PMU/C184:A2 1.033e-04
+*END
+
+*R_NET dut/PMU/N145 4.712e-03
+*DRIVER dut/PMU/C184:X
+*CELL SAEDHVT14_OR2_1
+*C2_R1_C1 2.356e-03 2.192e-02 2.356e-03 
+*LOADS
+*RC dut/PMU/C185:A2 1.033e-04
+*END
+
+*R_NET dut/PMU/N146 4.712e-03
+*DRIVER dut/PMU/C185:X
+*CELL SAEDHVT14_OR2_1
+*C2_R1_C1 2.356e-03 2.192e-02 2.356e-03 
+*LOADS
+*RC dut/PMU/C186:A2 1.033e-04
+*END
+
+*R_NET dut/PMU/N147 4.712e-03
+*DRIVER dut/PMU/C186:X
+*CELL SAEDHVT14_OR2_1
+*C2_R1_C1 2.356e-03 2.192e-02 2.356e-03 
+*LOADS
+*RC dut/PMU/C187:A2 1.033e-04
+*END
+
+*R_NET dut/PMU/N148 4.650e-03
+*DRIVER dut/PMU/C187:X
+*CELL SAEDHVT14_OR2_1
+*C2_R1_C1 2.325e-03 2.192e-02 2.325e-03 
+*LOADS
+*RC dut/PMU/C188:A2 1.019e-04
+*END
+
+*R_NET dut/PMU/N149 1.108e-02
+*DRIVER dut/PMU/C188:X
+*CELL SAEDHVT14_OR2_MM_1P5
+*C2_R1_C1 5.540e-03 5.002e-02 5.540e-03 
+*LOADS
+*RC dut/PMU/U36:A1 1.433e-04
+*RC dut/PMU/U33:A2 1.338e-04
+*END
+
+*R_NET dut/PMU/N177 1.071e-02
+*DRIVER dut/PMU/C216:X
+*CELL SAEDHVT14_OR2_2
+*C2_R1_C1 5.357e-03 5.002e-02 5.357e-03 
+*LOADS
+*RC dut/PMU/C250:A2 1.348e-04
+*RC dut/PMU/C217:A2 1.332e-04
+*END
+
+*R_NET dut/PMU/N178 4.712e-03
+*DRIVER dut/PMU/C217:X
+*CELL SAEDHVT14_OR2_1
+*C2_R1_C1 2.356e-03 2.192e-02 2.356e-03 
+*LOADS
+*RC dut/PMU/C218:A2 1.033e-04
+*END
+
+*R_NET dut/PMU/N179 4.712e-03
+*DRIVER dut/PMU/C218:X
+*CELL SAEDHVT14_OR2_1
+*C2_R1_C1 2.356e-03 2.192e-02 2.356e-03 
+*LOADS
+*RC dut/PMU/C219:A2 1.033e-04
+*END
+
+*R_NET dut/PMU/N180 4.712e-03
+*DRIVER dut/PMU/C219:X
+*CELL SAEDHVT14_OR2_1
+*C2_R1_C1 2.356e-03 2.192e-02 2.356e-03 
+*LOADS
+*RC dut/PMU/C220:A2 1.033e-04
+*END
+
+*R_NET dut/PMU/N181 4.650e-03
+*DRIVER dut/PMU/C220:X
+*CELL SAEDHVT14_OR2_1
+*C2_R1_C1 2.325e-03 2.192e-02 2.325e-03 
+*LOADS
+*RC dut/PMU/C221:A2 1.019e-04
+*END
+
+*R_NET dut/PMU/N182 1.132e-02
+*DRIVER dut/PMU/C221:X
+*CELL SAEDHVT14_OR2_MM_1P5
+*C2_R1_C1 5.662e-03 5.002e-02 5.662e-03 
+*LOADS
+*RC dut/PMU/U36:A2 1.471e-04
+*RC dut/PMU/U31:B 1.362e-04
+*END
+
+*R_NET dut/PMU/N211 1.071e-02
+*DRIVER dut/PMU/C250:X
+*CELL SAEDHVT14_OR2_2
+*C2_R1_C1 5.357e-03 5.002e-02 5.357e-03 
+*LOADS
+*RC dut/PMU/C284:A2 1.348e-04
+*RC dut/PMU/C251:A2 1.332e-04
+*END
+
+*R_NET dut/PMU/N212 4.713e-03
+*DRIVER dut/PMU/C251:X
+*CELL SAEDHVT14_OR2_0P75
+*C2_R1_C1 2.356e-03 2.192e-02 2.356e-03 
+*LOADS
+*RC dut/PMU/C252:A2 1.033e-04
+*END
+
+*R_NET dut/PMU/N213 4.713e-03
+*DRIVER dut/PMU/C252:X
+*CELL SAEDHVT14_OR2_0P75
+*C2_R1_C1 2.356e-03 2.192e-02 2.356e-03 
+*LOADS
+*RC dut/PMU/C253:A2 1.033e-04
+*END
+
+*R_NET dut/PMU/N214 4.650e-03
+*DRIVER dut/PMU/C253:X
+*CELL SAEDHVT14_OR2_0P75
+*C2_R1_C1 2.325e-03 2.192e-02 2.325e-03 
+*LOADS
+*RC dut/PMU/C254:A2 1.019e-04
+*END
+
+*R_NET dut/PMU/N215 1.077e-02
+*DRIVER dut/PMU/C254:X
+*CELL SAEDHVT14_OR2_MM_1P5
+*C2_R1_C1 5.387e-03 5.002e-02 5.387e-03 
+*LOADS
+*RC dut/PMU/U34:A1 1.353e-04
+*RC dut/PMU/U31:A1 1.342e-04
+*END
+
+*R_NET dut/PMU/N218 4.712e-03
+*DRIVER dut/PMU/C257:X
+*CELL SAEDHVT14_OR2_0P75
+*C2_R1_C1 2.356e-03 2.192e-02 2.356e-03 
+*LOADS
+*RC dut/PMU/C258:A2 1.033e-04
+*END
+
+*R_NET dut/PMU/N219 4.712e-03
+*DRIVER dut/PMU/C258:X
+*CELL SAEDHVT14_OR2_1
+*C2_R1_C1 2.356e-03 2.192e-02 2.356e-03 
+*LOADS
+*RC dut/PMU/C259:A2 1.033e-04
+*END
+
+*R_NET dut/PMU/N220 4.712e-03
+*DRIVER dut/PMU/C259:X
+*CELL SAEDHVT14_OR2_1
+*C2_R1_C1 2.356e-03 2.192e-02 2.356e-03 
+*LOADS
+*RC dut/PMU/C161:A2 1.033e-04
+*END
+
+*R_NET dut/PMU/N245 1.059e-02
+*DRIVER dut/PMU/C284:X
+*CELL SAEDHVT14_OR2_2
+*C2_R1_C1 5.293e-03 5.002e-02 5.293e-03 
+*LOADS
+*RC dut/PMU/C285:A2 1.332e-04
+*RC dut/PMU/C351:A2 1.316e-04
+*END
+
+*R_NET dut/PMU/N246 4.713e-03
+*DRIVER dut/PMU/C285:X
+*CELL SAEDHVT14_OR2_0P75
+*C2_R1_C1 2.356e-03 2.192e-02 2.356e-03 
+*LOADS
+*RC dut/PMU/C286:A2 1.033e-04
+*END
+
+*R_NET dut/PMU/N247 4.650e-03
+*DRIVER dut/PMU/C286:X
+*CELL SAEDHVT14_OR2_0P75
+*C2_R1_C1 2.325e-03 2.192e-02 2.325e-03 
+*LOADS
+*RC dut/PMU/C287:A2 1.019e-04
+*END
+
+*R_NET dut/PMU/N248 1.081e-02
+*DRIVER dut/PMU/C287:X
+*CELL SAEDHVT14_OR2_MM_1P5
+*C2_R1_C1 5.405e-03 5.002e-02 5.405e-03 
+*LOADS
+*RC dut/PMU/U34:A2 1.351e-04
+*RC dut/PMU/U30:B 1.353e-04
+*END
+
+*R_NET dut/PMU/N280 4.650e-03
+*DRIVER dut/PMU/C319:X
+*CELL SAEDHVT14_OR2_0P75
+*C2_R1_C1 2.325e-03 2.192e-02 2.325e-03 
+*LOADS
+*RC dut/PMU/C320:A2 1.019e-04
+*END
+
+*R_NET dut/PMU/N281 1.118e-02
+*DRIVER dut/PMU/C320:X
+*CELL SAEDHVT14_OR2_MM_1P5
+*C2_R1_C1 5.592e-03 5.002e-02 5.592e-03 
+*LOADS
+*RC dut/PMU/U29:A 1.353e-04
+*RC dut/PMU/U39:A2 1.444e-04
+*END
+
+*R_NET dut/PMU/N312 1.065e-02
+*DRIVER dut/PMU/C351:X
+*CELL SAEDHVT14_OR2_MM_1P5
+*C2_R1_C1 5.325e-03 5.002e-02 5.325e-03 
+*LOADS
+*RC dut/PMU/C352:A2 1.332e-04
+*RC dut/PMU/C319:A2 1.332e-04
+*END
+
+*R_NET dut/PMU/N313 4.650e-03
+*DRIVER dut/PMU/C352:X
+*CELL SAEDHVT14_OR2_0P75
+*C2_R1_C1 2.325e-03 2.192e-02 2.325e-03 
+*LOADS
+*RC dut/PMU/C353:A2 1.019e-04
+*END
+
+*R_NET dut/PMU/N314 1.139e-02
+*DRIVER dut/PMU/C353:X
+*CELL SAEDHVT14_OR2_MM_1P5
+*C2_R1_C1 5.694e-03 5.002e-02 5.694e-03 
+*LOADS
+*RC dut/PMU/U30:A1 1.365e-04
+*RC dut/PMU/U39:A1 1.483e-04
+*END
+
+*R_NET dut/PMU/N316 4.763e-03
+*DRIVER dut/PMU/C415:X
+*CELL SAEDHVT14_OR2_0P75
+*C2_R1_C1 2.382e-03 2.192e-02 2.382e-03 
+*LOADS
+*RC dut/PMU/C414:A1 1.044e-04
+*END
+
+*R_NET dut/PMU/N317 4.763e-03
+*DRIVER dut/PMU/C417:X
+*CELL SAEDHVT14_OR2_0P75
+*C2_R1_C1 2.382e-03 2.192e-02 2.382e-03 
+*LOADS
+*RC dut/PMU/C416:A1 1.044e-04
+*END
+
+*R_NET dut/PMU/N319 4.739e-03
+*DRIVER dut/PMU/C419:X
+*CELL SAEDHVT14_AN2_1
+*C2_R1_C1 2.369e-03 2.192e-02 2.369e-03 
+*LOADS
+*RC dut/PMU/C418:A1 1.039e-04
+*END
+
+*R_NET dut/PMU/N320 4.650e-03
+*DRIVER dut/PMU/C421:X
+*CELL SAEDHVT14_AN2_1
+*C2_R1_C1 2.325e-03 2.192e-02 2.325e-03 
+*LOADS
+*RC dut/PMU/C418:A2 1.019e-04
+*END
+
+*R_NET dut/PMU/N322 4.739e-03
+*DRIVER dut/PMU/C424:X
+*CELL SAEDHVT14_AN2_1
+*C2_R1_C1 2.369e-03 2.192e-02 2.369e-03 
+*LOADS
+*RC dut/PMU/C423:A1 1.039e-04
+*END
+
+*R_NET dut/PMU/N323 4.650e-03
+*DRIVER dut/PMU/C426:X
+*CELL SAEDHVT14_AN2_1
+*C2_R1_C1 2.325e-03 2.192e-02 2.325e-03 
+*LOADS
+*RC dut/PMU/C423:A2 1.019e-04
+*END
+
+*R_NET dut/PMU/n16 1.946e-01
+*DRIVER dut/PMU/U50:X
+*CELL SAEDHVT14_TIE0_V1_2
+*C2_R1_C1 9.730e-02 9.411e-01 9.730e-02 
+*LOADS
+*RC dut/PMU/uart_powergate_enb_delay2_reg:SI 7.026e-04
+*RC dut/PMU/uart_powergate_enb_delay2_reg:SE 7.282e-04
+*RC dut/PMU/spi_powergate_enb_delay2_reg:SI 7.026e-04
+*RC dut/PMU/spi_powergate_enb_delay2_reg:SE 7.282e-04
+*RC dut/PMU/eeprom_powergate_enb_delay2_reg:SI 7.026e-04
+*RC dut/PMU/eeprom_powergate_enb_delay2_reg:SE 7.283e-04
+*RC dut/PMU/uart_isolation_enb_delay2_reg:SI 7.026e-04
+*RC dut/PMU/uart_isolation_enb_delay2_reg:SE 7.282e-04
+*RC dut/PMU/spi_isolation_enb_delay2_reg:SI 7.026e-04
+*RC dut/PMU/spi_isolation_enb_delay2_reg:SE 7.282e-04
+*RC dut/PMU/eeprom_isolation_enb_delay2_reg:SI 7.026e-04
+*RC dut/PMU/eeprom_isolation_enb_delay2_reg:SE 7.283e-04
+*RC dut/PMU/uart_isolation_enb_reg:SI 7.026e-04
+*RC dut/PMU/uart_isolation_enb_reg:SE 7.283e-04
+*RC dut/PMU/spi_isolation_enb_reg:SE 7.283e-04
+*RC dut/PMU/spi_isolation_enb_reg:SI 7.026e-04
+*END
+
+*R_NET dut/PMU/n17 5.075e-03
+*DRIVER dut/PMU/U29:X
+*CELL SAEDHVT14_INV_0P75
+*C2_R1_C1 2.537e-03 2.192e-02 2.537e-03 
+*LOADS
+*RC dut/PMU/U30:A2 1.113e-04
+*END
+
+*R_NET dut/PMU/n18 4.689e-03
+*DRIVER dut/PMU/U30:X
+*CELL SAEDRVT14_OAI21_1
+*C2_R1_C1 2.344e-03 2.192e-02 2.344e-03 
+*LOADS
+*RC dut/PMU/U31:A2 1.028e-04
+*END
+
+*R_NET dut/PMU/n19 4.764e-03
+*DRIVER dut/PMU/U32:X
+*CELL SAEDHVT14_INV_S_1
+*C2_R1_C1 2.382e-03 2.192e-02 2.382e-03 
+*LOADS
+*RC dut/PMU/U33:B2 1.045e-04
+*END
+
+*R_NET dut/PMU/n20 4.692e-03
+*DRIVER dut/PMU/U31:X
+*CELL SAEDRVT14_AO21B_1
+*C2_R1_C1 2.346e-03 2.192e-02 2.346e-03 
+*LOADS
+*RC dut/PMU/U33:A3 1.029e-04
+*END
+
+*R_NET dut/PMU/n22 1.089e-02
+*DRIVER dut/PMU/U36:X
+*CELL SAEDRVT14_ND2_1
+*C2_R1_C1 5.446e-03 5.002e-02 5.446e-03 
+*LOADS
+*RC dut/PMU/U40:A2 1.360e-04
+*RC dut/PMU/U38:A2 1.364e-04
+*END
+
+*R_NET dut/PMU/n23 1.214e-02
+*DRIVER dut/PMU/U37:X
+*CELL SAEDRVT14_ND2_CDC_2
+*C2_R1_C1 6.072e-03 5.002e-02 6.072e-03 
+*LOADS
+*RC dut/PMU/U40:A1 1.360e-04
+*RC dut/PMU/U38:B 1.677e-04
+*END
+
+*R_NET dut/PMU/n24 4.783e-03
+*DRIVER dut/PMU/U40:X
+*CELL SAEDRVT14_NR2_MM_1
+*C2_R1_C1 2.391e-03 2.192e-02 2.391e-03 
+*LOADS
+*RC dut/PMU/U41:B 1.049e-04
+*END
+
+*R_NET dut/PMU/n25 4.716e-03
+*DRIVER dut/PMU/U34:X
+*CELL SAEDHVT14_ND2_CDC_1
+*C2_R1_C1 2.358e-03 2.192e-02 2.358e-03 
+*LOADS
+*RC dut/PMU/U41:A2 1.034e-04
+*END
+
+*R_NET dut/PMU/n26 1.088e-02
+*DRIVER dut/PMU/U39:X
+*CELL SAEDRVT14_ND2_CDC_2
+*C2_R1_C1 5.442e-03 5.002e-02 5.442e-03 
+*LOADS
+*RC dut/PMU/U38:A1 1.374e-04
+*RC dut/PMU/U41:A1 1.348e-04
+*END
+
+*R_NET dut/PMU/n27 1.064e-02
+*DRIVER dut/PMU/U19:X
+*CELL SAEDRVT14_INV_S_1
+*C2_R1_C1 5.321e-03 5.002e-02 5.321e-03 
+*LOADS
+*RC dut/PMU/C424:A2 1.331e-04
+*RC dut/PMU/C426:A2 1.331e-04
+*END
+
+*R_NET dut/PMU/n28 1.064e-02
+*DRIVER dut/PMU/U20:X
+*CELL SAEDHVT14_INV_S_1P5
+*C2_R1_C1 5.321e-03 5.002e-02 5.321e-03 
+*LOADS
+*RC dut/PMU/C419:A2 1.331e-04
+*RC dut/PMU/C421:A2 1.331e-04
+*END
+
+*R_NET dut/PMU/n29 4.763e-03
+*DRIVER dut/PMU/U21:X
+*CELL SAEDHVT14_INV_0P75
+*C2_R1_C1 2.381e-03 2.192e-02 2.381e-03 
+*LOADS
+*RC dut/PMU/C115:A1 1.044e-04
+*END
+
+*R_NET dut/PMU/n30 4.763e-03
+*DRIVER dut/PMU/U22:X
+*CELL SAEDHVT14_INV_0P75
+*C2_R1_C1 2.381e-03 2.192e-02 2.381e-03 
+*LOADS
+*RC dut/PMU/C149:A1 1.044e-04
+*END
+
+*R_NET dut/PMU/n31 4.763e-03
+*DRIVER dut/PMU/U23:X
+*CELL SAEDHVT14_INV_0P75
+*C2_R1_C1 2.381e-03 2.192e-02 2.381e-03 
+*LOADS
+*RC dut/PMU/C183:A1 1.044e-04
+*END
+
+*R_NET dut/PMU/n32 4.763e-03
+*DRIVER dut/PMU/U24:X
+*CELL SAEDHVT14_INV_0P75
+*C2_R1_C1 2.381e-03 2.192e-02 2.381e-03 
+*LOADS
+*RC dut/PMU/C217:A1 1.044e-04
+*END
+
+*R_NET dut/PMU/n33 4.763e-03
+*DRIVER dut/PMU/U25:X
+*CELL SAEDHVT14_INV_0P75
+*C2_R1_C1 2.382e-03 2.192e-02 2.382e-03 
+*LOADS
+*RC dut/PMU/C251:A1 1.044e-04
+*END
+
+*R_NET dut/PMU/n34 4.763e-03
+*DRIVER dut/PMU/U26:X
+*CELL SAEDHVT14_INV_0P75
+*C2_R1_C1 2.382e-03 2.192e-02 2.382e-03 
+*LOADS
+*RC dut/PMU/C285:A1 1.044e-04
+*END
+
+*R_NET dut/PMU/n35 4.763e-03
+*DRIVER dut/PMU/U27:X
+*CELL SAEDHVT14_INV_0P75
+*C2_R1_C1 2.382e-03 2.192e-02 2.382e-03 
+*LOADS
+*RC dut/PMU/C319:A1 1.044e-04
+*END
+
+*R_NET dut/PMU/n36 4.739e-03
+*DRIVER dut/PMU/U28:X
+*CELL SAEDHVT14_INV_0P75
+*C2_R1_C1 2.369e-03 2.192e-02 2.369e-03 
+*LOADS
+*RC dut/PMU/C353:A1 1.039e-04
+*END
+
+*R_NET dut/clk_gen/GLITCH_FREE_CKT0/q3 1.757e-02
+*DRIVER dut/clk_gen/GLITCH_FREE_CKT0/q3_reg:Q
+*CELL SAEDHVT14_FSDNQ_V3_4
+*C2_R1_C1 8.783e-03 8.117e-02 8.783e-03 
+*LOADS
+*RC dut/clk_gen/GLITCH_FREE_CKT0/U9:A1 1.581e-04
+*RC dut/clk_gen/GLITCH_FREE_CKT0/U11:A1 1.586e-04
+*RC dut/clk_gen/GLITCH_FREE_CKT0/U12:A1 1.586e-04
+*END
+
+*R_NET dut/clk_gen/GLITCH_FREE_CKT0/q0 4.777e-03
+*DRIVER dut/clk_gen/GLITCH_FREE_CKT0/q0_reg:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.388e-03 2.192e-02 2.388e-03 
+*LOADS
+*RC dut/clk_gen/GLITCH_FREE_CKT0/U5:A1 1.047e-04
+*END
+
+*R_NET dut/clk_gen/GLITCH_FREE_CKT0/N3 4.732e-03
+*DRIVER dut/clk_gen/GLITCH_FREE_CKT0/U12:X
+*CELL SAEDHVT14_NR3_1
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/clk_gen/GLITCH_FREE_CKT0/q0_reg:D 1.037e-04
+*END
+
+*R_NET dut/clk_gen/GLITCH_FREE_CKT0/q1 4.777e-03
+*DRIVER dut/clk_gen/GLITCH_FREE_CKT0/q1_reg:Q
+*CELL SAEDHVT14_FSDNQ_V3_1
+*C2_R1_C1 2.389e-03 2.192e-02 2.389e-03 
+*LOADS
+*RC dut/clk_gen/GLITCH_FREE_CKT0/C60:A2 1.047e-04
+*END
+
+*R_NET dut/clk_gen/GLITCH_FREE_CKT0/N5 4.873e-03
+*DRIVER dut/clk_gen/GLITCH_FREE_CKT0/U5:X
+*CELL SAEDHVT14_AN2_1
+*C2_R1_C1 2.436e-03 2.192e-02 2.436e-03 
+*LOADS
+*RC dut/clk_gen/GLITCH_FREE_CKT0/q1_reg:D 1.068e-04
+*END
+
+*R_NET dut/clk_gen/GLITCH_FREE_CKT0/q2 5.723e-03
+*DRIVER dut/clk_gen/GLITCH_FREE_CKT0/q2_reg:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.862e-03 2.192e-02 2.862e-03 
+*LOADS
+*RC dut/clk_gen/GLITCH_FREE_CKT0/U8:A 1.255e-04
+*END
+
+*R_NET dut/clk_gen/GLITCH_FREE_CKT0/N6 4.732e-03
+*DRIVER dut/clk_gen/GLITCH_FREE_CKT0/U13:X
+*CELL SAEDHVT14_AN3_0P5
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/clk_gen/GLITCH_FREE_CKT0/q2_reg:D 1.037e-04
+*END
+
+*R_NET dut/clk_gen/GLITCH_FREE_CKT0/N8 4.868e-03
+*DRIVER dut/clk_gen/GLITCH_FREE_CKT0/U6:X
+*CELL SAEDRVT14_NR2_MM_1
+*C2_R1_C1 2.434e-03 2.192e-02 2.434e-03 
+*LOADS
+*RC dut/clk_gen/GLITCH_FREE_CKT0/q3_reg:D 1.067e-04
+*END
+
+*R_NET dut/clk_gen/GLITCH_FREE_CKT0/clk_out1 1.088e-02
+*DRIVER dut/clk_gen/GLITCH_FREE_CKT0/C60:X
+*CELL SAEDHVT14_AN2_2
+*C2_R1_C1 5.440e-03 5.002e-02 5.440e-03 
+*LOADS
+*RC dut/clk_gen/GLITCH_FREE_CKT0/U7:A2 1.360e-04
+*RC dut/clk_gen/GLITCH_FREE_CKT0/U9:A2 1.360e-04
+*END
+
+*R_NET dut/clk_gen/GLITCH_FREE_CKT0/n4 6.360e-02
+*DRIVER dut/clk_gen/GLITCH_FREE_CKT0/U10:X
+*CELL SAEDHVT14_TIE0_V1_2
+*C2_R1_C1 3.180e-02 2.964e-01 3.180e-02 
+*LOADS
+*RC dut/clk_gen/GLITCH_FREE_CKT0/q2_reg:SE 2.987e-04
+*RC dut/clk_gen/GLITCH_FREE_CKT0/q2_reg:SI 2.825e-04
+*RC dut/clk_gen/GLITCH_FREE_CKT0/q3_reg:SE 3.111e-04
+*RC dut/clk_gen/GLITCH_FREE_CKT0/q3_reg:SI 2.856e-04
+*RC dut/clk_gen/GLITCH_FREE_CKT0/q0_reg:SE 2.987e-04
+*RC dut/clk_gen/GLITCH_FREE_CKT0/q0_reg:SI 2.825e-04
+*RC dut/clk_gen/GLITCH_FREE_CKT0/q1_reg:SE 3.111e-04
+*RC dut/clk_gen/GLITCH_FREE_CKT0/q1_reg:SI 2.861e-04
+*END
+
+*R_NET dut/clk_gen/GLITCH_FREE_CKT0/n2 4.797e-03
+*DRIVER dut/clk_gen/GLITCH_FREE_CKT0/U3:X
+*CELL SAEDHVT14_OR2_1
+*C2_R1_C1 2.399e-03 2.192e-02 2.399e-03 
+*LOADS
+*RC dut/clk_gen/GLITCH_FREE_CKT0/U11:B 1.052e-04
+*END
+
+*R_NET dut/clk_gen/GLITCH_FREE_CKT0/n3 4.763e-03
+*DRIVER dut/clk_gen/GLITCH_FREE_CKT0/U7:X
+*CELL SAEDRVT14_NR2_MM_1
+*C2_R1_C1 2.381e-03 2.192e-02 2.381e-03 
+*LOADS
+*RC dut/clk_gen/GLITCH_FREE_CKT0/U3:A1 1.044e-04
+*END
+
+*R_NET dut/clk_gen/GLITCH_FREE_CKT0/n5 4.712e-03
+*DRIVER dut/clk_gen/GLITCH_FREE_CKT0/U9:X
+*CELL SAEDRVT14_NR2_MM_1
+*C2_R1_C1 2.356e-03 2.192e-02 2.356e-03 
+*LOADS
+*RC dut/clk_gen/GLITCH_FREE_CKT0/U3:A2 1.033e-04
+*END
+
+*R_NET dut/clk_gen/GLITCH_FREE_CKT0/n6 1.059e-02
+*DRIVER dut/clk_gen/GLITCH_FREE_CKT0/U4:X
+*CELL SAEDRVT14_INV_S_1
+*C2_R1_C1 5.297e-03 5.002e-02 5.297e-03 
+*LOADS
+*RC dut/clk_gen/GLITCH_FREE_CKT0/U5:A2 1.331e-04
+*RC dut/clk_gen/GLITCH_FREE_CKT0/U13:A3 1.319e-04
+*END
+
+*R_NET dut/clk_gen/GLITCH_FREE_CKT0/n7 2.496e-02
+*DRIVER dut/clk_gen/GLITCH_FREE_CKT0/U8:X
+*CELL SAEDHVT14_INV_S_3
+*C2_R1_C1 1.248e-02 1.158e-01 1.248e-02 
+*LOADS
+*RC dut/clk_gen/GLITCH_FREE_CKT0/U6:A2 1.800e-04
+*RC dut/clk_gen/GLITCH_FREE_CKT0/U7:A1 1.800e-04
+*RC dut/clk_gen/GLITCH_FREE_CKT0/U11:A2 1.872e-04
+*RC dut/clk_gen/GLITCH_FREE_CKT0/U13:A2 1.754e-04
+*END
+
+*R_NET dut/clk_gen/GLITCH_FREE_CKT1/q3 1.757e-02
+*DRIVER dut/clk_gen/GLITCH_FREE_CKT1/q3_reg:Q
+*CELL SAEDHVT14_FSDNQ_V3_4
+*C2_R1_C1 8.783e-03 8.117e-02 8.783e-03 
+*LOADS
+*RC dut/clk_gen/GLITCH_FREE_CKT1/U8:A1 1.581e-04
+*RC dut/clk_gen/GLITCH_FREE_CKT1/U12:A1 1.586e-04
+*RC dut/clk_gen/GLITCH_FREE_CKT1/U13:A1 1.586e-04
+*END
+
+*R_NET dut/clk_gen/GLITCH_FREE_CKT1/q0 4.777e-03
+*DRIVER dut/clk_gen/GLITCH_FREE_CKT1/q0_reg:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.388e-03 2.192e-02 2.388e-03 
+*LOADS
+*RC dut/clk_gen/GLITCH_FREE_CKT1/U9:A1 1.047e-04
+*END
+
+*R_NET dut/clk_gen/GLITCH_FREE_CKT1/N3 4.732e-03
+*DRIVER dut/clk_gen/GLITCH_FREE_CKT1/U13:X
+*CELL SAEDHVT14_NR3_1
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/clk_gen/GLITCH_FREE_CKT1/q0_reg:D 1.037e-04
+*END
+
+*R_NET dut/clk_gen/GLITCH_FREE_CKT1/q1 4.777e-03
+*DRIVER dut/clk_gen/GLITCH_FREE_CKT1/q1_reg:Q
+*CELL SAEDHVT14_FSDNQ_V3_1
+*C2_R1_C1 2.389e-03 2.192e-02 2.389e-03 
+*LOADS
+*RC dut/clk_gen/GLITCH_FREE_CKT1/C60:A2 1.047e-04
+*END
+
+*R_NET dut/clk_gen/GLITCH_FREE_CKT1/N5 4.873e-03
+*DRIVER dut/clk_gen/GLITCH_FREE_CKT1/U9:X
+*CELL SAEDHVT14_AN2_1
+*C2_R1_C1 2.436e-03 2.192e-02 2.436e-03 
+*LOADS
+*RC dut/clk_gen/GLITCH_FREE_CKT1/q1_reg:D 1.068e-04
+*END
+
+*R_NET dut/clk_gen/GLITCH_FREE_CKT1/q2 5.723e-03
+*DRIVER dut/clk_gen/GLITCH_FREE_CKT1/q2_reg:Q
+*CELL SAEDHVT14_FSDPQ_V2LP_1
+*C2_R1_C1 2.862e-03 2.192e-02 2.862e-03 
+*LOADS
+*RC dut/clk_gen/GLITCH_FREE_CKT1/U7:A 1.255e-04
+*END
+
+*R_NET dut/clk_gen/GLITCH_FREE_CKT1/N6 4.732e-03
+*DRIVER dut/clk_gen/GLITCH_FREE_CKT1/U14:X
+*CELL SAEDHVT14_AN3_0P5
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/clk_gen/GLITCH_FREE_CKT1/q2_reg:D 1.037e-04
+*END
+
+*R_NET dut/clk_gen/GLITCH_FREE_CKT1/N8 4.868e-03
+*DRIVER dut/clk_gen/GLITCH_FREE_CKT1/U6:X
+*CELL SAEDRVT14_NR2_MM_1
+*C2_R1_C1 2.434e-03 2.192e-02 2.434e-03 
+*LOADS
+*RC dut/clk_gen/GLITCH_FREE_CKT1/q3_reg:D 1.067e-04
+*END
+
+*R_NET dut/clk_gen/GLITCH_FREE_CKT1/clk_out1 1.088e-02
+*DRIVER dut/clk_gen/GLITCH_FREE_CKT1/C60:X
+*CELL SAEDHVT14_AN2_2
+*C2_R1_C1 5.440e-03 5.002e-02 5.440e-03 
+*LOADS
+*RC dut/clk_gen/GLITCH_FREE_CKT1/U5:A2 1.360e-04
+*RC dut/clk_gen/GLITCH_FREE_CKT1/U8:A2 1.360e-04
+*END
+
+*R_NET dut/clk_gen/GLITCH_FREE_CKT1/n2 4.797e-03
+*DRIVER dut/clk_gen/GLITCH_FREE_CKT1/U3:X
+*CELL SAEDHVT14_OR2_1
+*C2_R1_C1 2.399e-03 2.192e-02 2.399e-03 
+*LOADS
+*RC dut/clk_gen/GLITCH_FREE_CKT1/U12:B 1.052e-04
+*END
+
+*R_NET dut/clk_gen/GLITCH_FREE_CKT1/n3 4.763e-03
+*DRIVER dut/clk_gen/GLITCH_FREE_CKT1/U5:X
+*CELL SAEDRVT14_NR2_MM_1
+*C2_R1_C1 2.381e-03 2.192e-02 2.381e-03 
+*LOADS
+*RC dut/clk_gen/GLITCH_FREE_CKT1/U3:A1 1.044e-04
+*END
+
+*R_NET dut/clk_gen/GLITCH_FREE_CKT1/n5 4.712e-03
+*DRIVER dut/clk_gen/GLITCH_FREE_CKT1/U8:X
+*CELL SAEDRVT14_NR2_MM_1
+*C2_R1_C1 2.356e-03 2.192e-02 2.356e-03 
+*LOADS
+*RC dut/clk_gen/GLITCH_FREE_CKT1/U3:A2 1.033e-04
+*END
+
+*R_NET dut/clk_gen/GLITCH_FREE_CKT1/n6 1.059e-02
+*DRIVER dut/clk_gen/GLITCH_FREE_CKT1/U4:X
+*CELL SAEDRVT14_INV_S_1
+*C2_R1_C1 5.297e-03 5.002e-02 5.297e-03 
+*LOADS
+*RC dut/clk_gen/GLITCH_FREE_CKT1/U9:A2 1.331e-04
+*RC dut/clk_gen/GLITCH_FREE_CKT1/U14:A3 1.319e-04
+*END
+
+*R_NET dut/clk_gen/GLITCH_FREE_CKT1/n7 2.496e-02
+*DRIVER dut/clk_gen/GLITCH_FREE_CKT1/U7:X
+*CELL SAEDHVT14_INV_S_3
+*C2_R1_C1 1.248e-02 1.158e-01 1.248e-02 
+*LOADS
+*RC dut/clk_gen/GLITCH_FREE_CKT1/U5:A1 1.800e-04
+*RC dut/clk_gen/GLITCH_FREE_CKT1/U6:A2 1.800e-04
+*RC dut/clk_gen/GLITCH_FREE_CKT1/U12:A2 1.872e-04
+*RC dut/clk_gen/GLITCH_FREE_CKT1/U14:A2 1.754e-04
+*END
+
+*R_NET dut/clk_gen/GLITCH_FREE_CKT1/n8 1.105e-02
+*DRIVER dut/clk_gen/GLITCH_FREE_CKT1/U10:X
+*CELL SAEDRVT14_INV_S_1
+*C2_R1_C1 5.523e-03 5.002e-02 5.523e-03 
+*LOADS
+*RC dut/clk_gen/GLITCH_FREE_CKT1/q3_reg:CK 1.424e-04
+*RC dut/clk_gen/GLITCH_FREE_CKT1/q2_reg:CK 1.339e-04
+*END
+
+*R_NET dut/clk_gen/GLITCH_FREE_CKT1/n9 6.360e-02
+*DRIVER dut/clk_gen/GLITCH_FREE_CKT1/U11:X
+*CELL SAEDHVT14_TIE0_V1_2
+*C2_R1_C1 3.180e-02 2.964e-01 3.180e-02 
+*LOADS
+*RC dut/clk_gen/GLITCH_FREE_CKT1/q1_reg:SE 3.111e-04
+*RC dut/clk_gen/GLITCH_FREE_CKT1/q1_reg:SI 2.861e-04
+*RC dut/clk_gen/GLITCH_FREE_CKT1/q3_reg:SE 3.111e-04
+*RC dut/clk_gen/GLITCH_FREE_CKT1/q3_reg:SI 2.856e-04
+*RC dut/clk_gen/GLITCH_FREE_CKT1/q0_reg:SE 2.987e-04
+*RC dut/clk_gen/GLITCH_FREE_CKT1/q0_reg:SI 2.825e-04
+*RC dut/clk_gen/GLITCH_FREE_CKT1/q2_reg:SE 2.987e-04
+*RC dut/clk_gen/GLITCH_FREE_CKT1/q2_reg:SI 2.825e-04
+*END
+
+*R_NET dut/reg_bank/writereg/n1 1.091e-02
+*DRIVER dut/reg_bank/writereg/U5:X
+*CELL SAEDHVT14_TIE0_V1_2
+*C2_R1_C1 5.455e-03 5.002e-02 5.455e-03 
+*LOADS
+*RC dut/reg_bank/writereg/q_reg_0_:SE 1.419e-04
+*RC dut/reg_bank/writereg/q_reg_0_:SI 1.310e-04
+*END
+
+*R_NET dut/reg_bank/writereg/n2 4.732e-03
+*DRIVER dut/reg_bank/writereg/U4:X
+*CELL SAEDRVT14_NR2_MM_1
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/reg_bank/writereg/q_reg_0_:D 1.037e-04
+*END
+
+*R_NET dut/reg_bank/writereg/n4 4.828e-03
+*DRIVER dut/reg_bank/writereg/U3:X
+*CELL SAEDHVT14_MUXI2_1
+*C2_R1_C1 2.414e-03 2.192e-02 2.414e-03 
+*LOADS
+*RC dut/reg_bank/writereg/U4:A2 1.058e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/net1986 2.974e+00
+*DRIVER dut/reg_bank/haddrreg/U68:X
+*CELL SAEDHVT14_TIE0_V1_2
+*C2_R1_C1 1.487e+00 1.471e+01 1.487e+00 
+*LOADS
+*RC dut/reg_bank/haddrreg/q_reg_3_:SE 3.456e-03
+*RC dut/reg_bank/haddrreg/q_reg_3_:SI 3.399e-03
+*RC dut/reg_bank/haddrreg/q_reg_8_:SE 3.456e-03
+*RC dut/reg_bank/haddrreg/q_reg_8_:SI 3.399e-03
+*RC dut/reg_bank/haddrreg/q_reg_17_:SE 3.456e-03
+*RC dut/reg_bank/haddrreg/q_reg_17_:SI 3.399e-03
+*RC dut/reg_bank/haddrreg/q_reg_55_:SE 3.456e-03
+*RC dut/reg_bank/haddrreg/q_reg_55_:SI 3.399e-03
+*RC dut/reg_bank/haddrreg/q_reg_54_:SE 3.456e-03
+*RC dut/reg_bank/haddrreg/q_reg_54_:SI 3.399e-03
+*RC dut/reg_bank/haddrreg/q_reg_53_:SE 3.456e-03
+*RC dut/reg_bank/haddrreg/q_reg_53_:SI 3.399e-03
+*RC dut/reg_bank/haddrreg/q_reg_52_:SE 3.456e-03
+*RC dut/reg_bank/haddrreg/q_reg_52_:SI 3.399e-03
+*RC dut/reg_bank/haddrreg/q_reg_51_:SE 3.456e-03
+*RC dut/reg_bank/haddrreg/q_reg_51_:SI 3.399e-03
+*RC dut/reg_bank/haddrreg/q_reg_50_:SE 3.456e-03
+*RC dut/reg_bank/haddrreg/q_reg_50_:SI 3.399e-03
+*RC dut/reg_bank/haddrreg/q_reg_49_:SE 3.456e-03
+*RC dut/reg_bank/haddrreg/q_reg_49_:SI 3.399e-03
+*RC dut/reg_bank/haddrreg/q_reg_48_:SE 3.456e-03
+*RC dut/reg_bank/haddrreg/q_reg_48_:SI 3.399e-03
+*RC dut/reg_bank/haddrreg/q_reg_47_:SE 3.456e-03
+*RC dut/reg_bank/haddrreg/q_reg_47_:SI 3.399e-03
+*RC dut/reg_bank/haddrreg/q_reg_45_:SE 3.456e-03
+*RC dut/reg_bank/haddrreg/q_reg_45_:SI 3.399e-03
+*RC dut/reg_bank/haddrreg/q_reg_44_:SE 3.456e-03
+*RC dut/reg_bank/haddrreg/q_reg_44_:SI 3.399e-03
+*RC dut/reg_bank/haddrreg/q_reg_43_:SE 3.456e-03
+*RC dut/reg_bank/haddrreg/q_reg_43_:SI 3.399e-03
+*RC dut/reg_bank/haddrreg/q_reg_42_:SE 3.456e-03
+*RC dut/reg_bank/haddrreg/q_reg_42_:SI 3.399e-03
+*RC dut/reg_bank/haddrreg/q_reg_41_:SE 3.456e-03
+*RC dut/reg_bank/haddrreg/q_reg_41_:SI 3.399e-03
+*RC dut/reg_bank/haddrreg/q_reg_40_:SE 3.456e-03
+*RC dut/reg_bank/haddrreg/q_reg_40_:SI 3.399e-03
+*RC dut/reg_bank/haddrreg/q_reg_39_:SE 3.456e-03
+*RC dut/reg_bank/haddrreg/q_reg_39_:SI 3.399e-03
+*RC dut/reg_bank/haddrreg/q_reg_38_:SE 3.456e-03
+*RC dut/reg_bank/haddrreg/q_reg_38_:SI 3.399e-03
+*RC dut/reg_bank/haddrreg/q_reg_37_:SE 3.456e-03
+*RC dut/reg_bank/haddrreg/q_reg_37_:SI 3.399e-03
+*RC dut/reg_bank/haddrreg/q_reg_36_:SE 3.456e-03
+*RC dut/reg_bank/haddrreg/q_reg_36_:SI 3.399e-03
+*RC dut/reg_bank/haddrreg/q_reg_35_:SE 3.456e-03
+*RC dut/reg_bank/haddrreg/q_reg_35_:SI 3.399e-03
+*RC dut/reg_bank/haddrreg/q_reg_34_:SE 3.456e-03
+*RC dut/reg_bank/haddrreg/q_reg_34_:SI 3.399e-03
+*RC dut/reg_bank/haddrreg/q_reg_33_:SE 3.456e-03
+*RC dut/reg_bank/haddrreg/q_reg_33_:SI 3.399e-03
+*RC dut/reg_bank/haddrreg/q_reg_32_:SE 3.456e-03
+*RC dut/reg_bank/haddrreg/q_reg_32_:SI 3.399e-03
+*RC dut/reg_bank/haddrreg/q_reg_30_:SE 3.456e-03
+*RC dut/reg_bank/haddrreg/q_reg_30_:SI 3.399e-03
+*RC dut/reg_bank/haddrreg/q_reg_29_:SE 3.456e-03
+*RC dut/reg_bank/haddrreg/q_reg_29_:SI 3.399e-03
+*RC dut/reg_bank/haddrreg/q_reg_28_:SE 3.456e-03
+*RC dut/reg_bank/haddrreg/q_reg_28_:SI 3.399e-03
+*RC dut/reg_bank/haddrreg/q_reg_27_:SE 3.456e-03
+*RC dut/reg_bank/haddrreg/q_reg_27_:SI 3.399e-03
+*RC dut/reg_bank/haddrreg/q_reg_26_:SE 3.456e-03
+*RC dut/reg_bank/haddrreg/q_reg_26_:SI 3.399e-03
+*RC dut/reg_bank/haddrreg/q_reg_25_:SE 3.456e-03
+*RC dut/reg_bank/haddrreg/q_reg_25_:SI 3.399e-03
+*RC dut/reg_bank/haddrreg/q_reg_24_:SE 3.456e-03
+*RC dut/reg_bank/haddrreg/q_reg_24_:SI 3.399e-03
+*RC dut/reg_bank/haddrreg/q_reg_23_:SE 3.456e-03
+*RC dut/reg_bank/haddrreg/q_reg_23_:SI 3.399e-03
+*RC dut/reg_bank/haddrreg/q_reg_22_:SE 3.456e-03
+*RC dut/reg_bank/haddrreg/q_reg_22_:SI 3.399e-03
+*RC dut/reg_bank/haddrreg/q_reg_21_:SE 3.456e-03
+*RC dut/reg_bank/haddrreg/q_reg_21_:SI 3.399e-03
+*RC dut/reg_bank/haddrreg/q_reg_20_:SE 3.456e-03
+*RC dut/reg_bank/haddrreg/q_reg_20_:SI 3.399e-03
+*RC dut/reg_bank/haddrreg/q_reg_19_:SE 3.456e-03
+*RC dut/reg_bank/haddrreg/q_reg_19_:SI 3.399e-03
+*RC dut/reg_bank/haddrreg/q_reg_18_:SE 3.456e-03
+*RC dut/reg_bank/haddrreg/q_reg_18_:SI 3.399e-03
+*RC dut/reg_bank/haddrreg/q_reg_15_:SE 3.456e-03
+*RC dut/reg_bank/haddrreg/q_reg_15_:SI 3.399e-03
+*RC dut/reg_bank/haddrreg/q_reg_14_:SE 3.456e-03
+*RC dut/reg_bank/haddrreg/q_reg_14_:SI 3.399e-03
+*RC dut/reg_bank/haddrreg/q_reg_13_:SE 3.456e-03
+*RC dut/reg_bank/haddrreg/q_reg_13_:SI 3.399e-03
+*RC dut/reg_bank/haddrreg/q_reg_12_:SE 3.456e-03
+*RC dut/reg_bank/haddrreg/q_reg_12_:SI 3.399e-03
+*RC dut/reg_bank/haddrreg/q_reg_11_:SE 3.456e-03
+*RC dut/reg_bank/haddrreg/q_reg_11_:SI 3.399e-03
+*RC dut/reg_bank/haddrreg/q_reg_10_:SE 3.456e-03
+*RC dut/reg_bank/haddrreg/q_reg_10_:SI 3.399e-03
+*RC dut/reg_bank/haddrreg/q_reg_9_:SE 3.456e-03
+*RC dut/reg_bank/haddrreg/q_reg_9_:SI 3.399e-03
+*RC dut/reg_bank/haddrreg/q_reg_7_:SE 3.456e-03
+*RC dut/reg_bank/haddrreg/q_reg_7_:SI 3.399e-03
+*RC dut/reg_bank/haddrreg/q_reg_6_:SE 3.456e-03
+*RC dut/reg_bank/haddrreg/q_reg_6_:SI 3.399e-03
+*RC dut/reg_bank/haddrreg/q_reg_5_:SE 3.456e-03
+*RC dut/reg_bank/haddrreg/q_reg_5_:SI 3.399e-03
+*RC dut/reg_bank/haddrreg/q_reg_4_:SE 3.456e-03
+*RC dut/reg_bank/haddrreg/q_reg_4_:SI 3.399e-03
+*RC dut/reg_bank/haddrreg/q_reg_2_:SE 3.456e-03
+*RC dut/reg_bank/haddrreg/q_reg_2_:SI 3.399e-03
+*RC dut/reg_bank/haddrreg/q_reg_0_:SE 3.456e-03
+*RC dut/reg_bank/haddrreg/q_reg_0_:SI 3.399e-03
+*RC dut/reg_bank/haddrreg/q_reg_1_:SE 3.456e-03
+*RC dut/reg_bank/haddrreg/q_reg_1_:SI 3.399e-03
+*RC dut/reg_bank/haddrreg/q_reg_16_:SE 3.456e-03
+*RC dut/reg_bank/haddrreg/q_reg_16_:SI 3.399e-03
+*RC dut/reg_bank/haddrreg/q_reg_31_:SE 3.456e-03
+*RC dut/reg_bank/haddrreg/q_reg_31_:SI 3.399e-03
+*RC dut/reg_bank/haddrreg/q_reg_46_:SE 3.456e-03
+*RC dut/reg_bank/haddrreg/q_reg_46_:SI 3.399e-03
+*RC dut/reg_bank/haddrreg/clk_gate_q_reg/latch:SE 3.400e-03
+*END
+
+*R_NET dut/reg_bank/haddrreg/N4 4.732e-03
+*DRIVER dut/reg_bank/haddrreg/U67:X
+*CELL SAEDHVT14_AN2_1
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/reg_bank/haddrreg/q_reg_0_:D 1.037e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/N6 4.732e-03
+*DRIVER dut/reg_bank/haddrreg/U25:X
+*CELL SAEDHVT14_AN2_1
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/reg_bank/haddrreg/q_reg_1_:D 1.037e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/N8 4.732e-03
+*DRIVER dut/reg_bank/haddrreg/U66:X
+*CELL SAEDHVT14_AN2_1
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/reg_bank/haddrreg/q_reg_2_:D 1.037e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/N10 4.732e-03
+*DRIVER dut/reg_bank/haddrreg/U20:X
+*CELL SAEDHVT14_AN2_1
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/reg_bank/haddrreg/q_reg_3_:D 1.037e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/N12 4.732e-03
+*DRIVER dut/reg_bank/haddrreg/U23:X
+*CELL SAEDHVT14_AN2_1
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/reg_bank/haddrreg/q_reg_4_:D 1.037e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/N14 4.732e-03
+*DRIVER dut/reg_bank/haddrreg/U22:X
+*CELL SAEDHVT14_AN2_1
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/reg_bank/haddrreg/q_reg_5_:D 1.037e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/N16 4.732e-03
+*DRIVER dut/reg_bank/haddrreg/U28:X
+*CELL SAEDHVT14_AN2_1
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/reg_bank/haddrreg/q_reg_6_:D 1.037e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/N18 4.732e-03
+*DRIVER dut/reg_bank/haddrreg/U51:X
+*CELL SAEDHVT14_AN2_1
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/reg_bank/haddrreg/q_reg_7_:D 1.037e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/N20 4.732e-03
+*DRIVER dut/reg_bank/haddrreg/U32:X
+*CELL SAEDHVT14_AN2_1
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/reg_bank/haddrreg/q_reg_8_:D 1.037e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/N22 4.732e-03
+*DRIVER dut/reg_bank/haddrreg/U38:X
+*CELL SAEDHVT14_AN2_1
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/reg_bank/haddrreg/q_reg_9_:D 1.037e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/N24 4.732e-03
+*DRIVER dut/reg_bank/haddrreg/U33:X
+*CELL SAEDHVT14_AN2_1
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/reg_bank/haddrreg/q_reg_10_:D 1.037e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/N26 4.732e-03
+*DRIVER dut/reg_bank/haddrreg/U40:X
+*CELL SAEDHVT14_AN2_1
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/reg_bank/haddrreg/q_reg_11_:D 1.037e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/N28 4.732e-03
+*DRIVER dut/reg_bank/haddrreg/U55:X
+*CELL SAEDHVT14_AN2_1
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/reg_bank/haddrreg/q_reg_12_:D 1.037e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/N30 4.732e-03
+*DRIVER dut/reg_bank/haddrreg/U56:X
+*CELL SAEDHVT14_AN2_1
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/reg_bank/haddrreg/q_reg_13_:D 1.037e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/N32 4.732e-03
+*DRIVER dut/reg_bank/haddrreg/U39:X
+*CELL SAEDHVT14_AN2_1
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/reg_bank/haddrreg/q_reg_14_:D 1.037e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/N34 4.732e-03
+*DRIVER dut/reg_bank/haddrreg/U37:X
+*CELL SAEDHVT14_AN2_1
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/reg_bank/haddrreg/q_reg_15_:D 1.037e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/N36 4.732e-03
+*DRIVER dut/reg_bank/haddrreg/U14:X
+*CELL SAEDHVT14_AN2_1
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/reg_bank/haddrreg/q_reg_16_:D 1.037e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/N38 4.732e-03
+*DRIVER dut/reg_bank/haddrreg/U12:X
+*CELL SAEDHVT14_AN2_1
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/reg_bank/haddrreg/q_reg_17_:D 1.037e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/N40 4.732e-03
+*DRIVER dut/reg_bank/haddrreg/U10:X
+*CELL SAEDHVT14_AN2_1
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/reg_bank/haddrreg/q_reg_18_:D 1.037e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/N42 4.732e-03
+*DRIVER dut/reg_bank/haddrreg/U13:X
+*CELL SAEDHVT14_AN2_1
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/reg_bank/haddrreg/q_reg_19_:D 1.037e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/N44 4.732e-03
+*DRIVER dut/reg_bank/haddrreg/U50:X
+*CELL SAEDHVT14_AN2_1
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/reg_bank/haddrreg/q_reg_20_:D 1.037e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/N46 4.732e-03
+*DRIVER dut/reg_bank/haddrreg/U47:X
+*CELL SAEDHVT14_AN2_1
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/reg_bank/haddrreg/q_reg_21_:D 1.037e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/N48 4.732e-03
+*DRIVER dut/reg_bank/haddrreg/U41:X
+*CELL SAEDHVT14_AN2_1
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/reg_bank/haddrreg/q_reg_22_:D 1.037e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/N50 4.732e-03
+*DRIVER dut/reg_bank/haddrreg/U35:X
+*CELL SAEDHVT14_AN2_1
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/reg_bank/haddrreg/q_reg_23_:D 1.037e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/N52 4.732e-03
+*DRIVER dut/reg_bank/haddrreg/U42:X
+*CELL SAEDHVT14_AN2_1
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/reg_bank/haddrreg/q_reg_24_:D 1.037e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/N54 4.732e-03
+*DRIVER dut/reg_bank/haddrreg/U31:X
+*CELL SAEDHVT14_AN2_1
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/reg_bank/haddrreg/q_reg_25_:D 1.037e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/N56 4.732e-03
+*DRIVER dut/reg_bank/haddrreg/U43:X
+*CELL SAEDHVT14_AN2_1
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/reg_bank/haddrreg/q_reg_26_:D 1.037e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/N58 4.732e-03
+*DRIVER dut/reg_bank/haddrreg/U45:X
+*CELL SAEDHVT14_AN2_1
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/reg_bank/haddrreg/q_reg_27_:D 1.037e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/N60 4.732e-03
+*DRIVER dut/reg_bank/haddrreg/U64:X
+*CELL SAEDHVT14_AN2_1
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/reg_bank/haddrreg/q_reg_28_:D 1.037e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/N62 4.732e-03
+*DRIVER dut/reg_bank/haddrreg/U62:X
+*CELL SAEDHVT14_AN2_1
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/reg_bank/haddrreg/q_reg_29_:D 1.037e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/N64 4.732e-03
+*DRIVER dut/reg_bank/haddrreg/U48:X
+*CELL SAEDHVT14_AN2_1
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/reg_bank/haddrreg/q_reg_30_:D 1.037e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/N66 4.732e-03
+*DRIVER dut/reg_bank/haddrreg/U54:X
+*CELL SAEDHVT14_AN2_1
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/reg_bank/haddrreg/q_reg_31_:D 1.037e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/N68 4.732e-03
+*DRIVER dut/reg_bank/haddrreg/U27:X
+*CELL SAEDHVT14_AN2_1
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/reg_bank/haddrreg/q_reg_32_:D 1.037e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/N70 4.732e-03
+*DRIVER dut/reg_bank/haddrreg/U60:X
+*CELL SAEDHVT14_AN2_1
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/reg_bank/haddrreg/q_reg_33_:D 1.037e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/N72 4.732e-03
+*DRIVER dut/reg_bank/haddrreg/U57:X
+*CELL SAEDHVT14_AN2_1
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/reg_bank/haddrreg/q_reg_34_:D 1.037e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/N74 4.732e-03
+*DRIVER dut/reg_bank/haddrreg/U49:X
+*CELL SAEDHVT14_AN2_1
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/reg_bank/haddrreg/q_reg_35_:D 1.037e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/N76 4.732e-03
+*DRIVER dut/reg_bank/haddrreg/U21:X
+*CELL SAEDHVT14_AN2_1
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/reg_bank/haddrreg/q_reg_36_:D 1.037e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/N78 4.732e-03
+*DRIVER dut/reg_bank/haddrreg/U18:X
+*CELL SAEDHVT14_AN2_1
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/reg_bank/haddrreg/q_reg_37_:D 1.037e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/N80 4.732e-03
+*DRIVER dut/reg_bank/haddrreg/U46:X
+*CELL SAEDHVT14_AN2_1
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/reg_bank/haddrreg/q_reg_38_:D 1.037e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/N82 4.732e-03
+*DRIVER dut/reg_bank/haddrreg/U44:X
+*CELL SAEDHVT14_AN2_1
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/reg_bank/haddrreg/q_reg_39_:D 1.037e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/N84 4.732e-03
+*DRIVER dut/reg_bank/haddrreg/U15:X
+*CELL SAEDHVT14_AN2_1
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/reg_bank/haddrreg/q_reg_40_:D 1.037e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/N86 4.732e-03
+*DRIVER dut/reg_bank/haddrreg/U16:X
+*CELL SAEDHVT14_AN2_1
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/reg_bank/haddrreg/q_reg_41_:D 1.037e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/N88 4.732e-03
+*DRIVER dut/reg_bank/haddrreg/U30:X
+*CELL SAEDHVT14_AN2_1
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/reg_bank/haddrreg/q_reg_42_:D 1.037e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/N90 4.732e-03
+*DRIVER dut/reg_bank/haddrreg/U65:X
+*CELL SAEDHVT14_AN2_1
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/reg_bank/haddrreg/q_reg_43_:D 1.037e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/N92 4.732e-03
+*DRIVER dut/reg_bank/haddrreg/U63:X
+*CELL SAEDHVT14_AN2_1
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/reg_bank/haddrreg/q_reg_44_:D 1.037e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/N94 4.732e-03
+*DRIVER dut/reg_bank/haddrreg/U61:X
+*CELL SAEDHVT14_AN2_1
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/reg_bank/haddrreg/q_reg_45_:D 1.037e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/N96 4.732e-03
+*DRIVER dut/reg_bank/haddrreg/U59:X
+*CELL SAEDHVT14_AN2_1
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/reg_bank/haddrreg/q_reg_46_:D 1.037e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/N98 4.732e-03
+*DRIVER dut/reg_bank/haddrreg/U52:X
+*CELL SAEDHVT14_AN2_1
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/reg_bank/haddrreg/q_reg_47_:D 1.037e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/N100 4.732e-03
+*DRIVER dut/reg_bank/haddrreg/U58:X
+*CELL SAEDHVT14_AN2_1
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/reg_bank/haddrreg/q_reg_48_:D 1.037e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/N102 4.732e-03
+*DRIVER dut/reg_bank/haddrreg/U53:X
+*CELL SAEDHVT14_AN2_1
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/reg_bank/haddrreg/q_reg_49_:D 1.037e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/N104 4.732e-03
+*DRIVER dut/reg_bank/haddrreg/U24:X
+*CELL SAEDHVT14_AN2_1
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/reg_bank/haddrreg/q_reg_50_:D 1.037e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/N106 4.732e-03
+*DRIVER dut/reg_bank/haddrreg/U11:X
+*CELL SAEDHVT14_AN2_1
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/reg_bank/haddrreg/q_reg_51_:D 1.037e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/N108 4.732e-03
+*DRIVER dut/reg_bank/haddrreg/U19:X
+*CELL SAEDHVT14_AN2_1
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/reg_bank/haddrreg/q_reg_52_:D 1.037e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/N110 4.732e-03
+*DRIVER dut/reg_bank/haddrreg/U17:X
+*CELL SAEDHVT14_AN2_1
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/reg_bank/haddrreg/q_reg_53_:D 1.037e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/N112 4.732e-03
+*DRIVER dut/reg_bank/haddrreg/U36:X
+*CELL SAEDHVT14_AN2_1
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/reg_bank/haddrreg/q_reg_54_:D 1.037e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/N114 4.732e-03
+*DRIVER dut/reg_bank/haddrreg/U34:X
+*CELL SAEDHVT14_AN2_1
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/reg_bank/haddrreg/q_reg_55_:D 1.037e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/net1857 1.329e+00
+*DRIVER dut/reg_bank/haddrreg/clk_gate_q_reg/latch:Q
+*CELL SAEDHVT14_CKGTPLT_V5_1
+*C2_R1_C1 6.644e-01 6.587e+00 6.644e-01 
+*LOADS
+*RC dut/reg_bank/haddrreg/q_reg_3_:CK 2.791e-03
+*RC dut/reg_bank/haddrreg/q_reg_8_:CK 2.791e-03
+*RC dut/reg_bank/haddrreg/q_reg_17_:CK 2.791e-03
+*RC dut/reg_bank/haddrreg/q_reg_55_:CK 2.791e-03
+*RC dut/reg_bank/haddrreg/q_reg_54_:CK 2.791e-03
+*RC dut/reg_bank/haddrreg/q_reg_53_:CK 2.791e-03
+*RC dut/reg_bank/haddrreg/q_reg_52_:CK 2.791e-03
+*RC dut/reg_bank/haddrreg/q_reg_51_:CK 2.791e-03
+*RC dut/reg_bank/haddrreg/q_reg_50_:CK 2.791e-03
+*RC dut/reg_bank/haddrreg/q_reg_49_:CK 2.791e-03
+*RC dut/reg_bank/haddrreg/q_reg_48_:CK 2.791e-03
+*RC dut/reg_bank/haddrreg/q_reg_47_:CK 2.791e-03
+*RC dut/reg_bank/haddrreg/q_reg_45_:CK 2.791e-03
+*RC dut/reg_bank/haddrreg/q_reg_44_:CK 2.791e-03
+*RC dut/reg_bank/haddrreg/q_reg_43_:CK 2.791e-03
+*RC dut/reg_bank/haddrreg/q_reg_42_:CK 2.791e-03
+*RC dut/reg_bank/haddrreg/q_reg_41_:CK 2.791e-03
+*RC dut/reg_bank/haddrreg/q_reg_40_:CK 2.791e-03
+*RC dut/reg_bank/haddrreg/q_reg_39_:CK 2.791e-03
+*RC dut/reg_bank/haddrreg/q_reg_38_:CK 2.791e-03
+*RC dut/reg_bank/haddrreg/q_reg_37_:CK 2.791e-03
+*RC dut/reg_bank/haddrreg/q_reg_36_:CK 2.791e-03
+*RC dut/reg_bank/haddrreg/q_reg_35_:CK 2.791e-03
+*RC dut/reg_bank/haddrreg/q_reg_34_:CK 2.791e-03
+*RC dut/reg_bank/haddrreg/q_reg_33_:CK 2.791e-03
+*RC dut/reg_bank/haddrreg/q_reg_32_:CK 2.791e-03
+*RC dut/reg_bank/haddrreg/q_reg_30_:CK 2.791e-03
+*RC dut/reg_bank/haddrreg/q_reg_29_:CK 2.791e-03
+*RC dut/reg_bank/haddrreg/q_reg_28_:CK 2.791e-03
+*RC dut/reg_bank/haddrreg/q_reg_27_:CK 2.791e-03
+*RC dut/reg_bank/haddrreg/q_reg_26_:CK 2.791e-03
+*RC dut/reg_bank/haddrreg/q_reg_25_:CK 2.791e-03
+*RC dut/reg_bank/haddrreg/q_reg_24_:CK 2.791e-03
+*RC dut/reg_bank/haddrreg/q_reg_23_:CK 2.791e-03
+*RC dut/reg_bank/haddrreg/q_reg_22_:CK 2.791e-03
+*RC dut/reg_bank/haddrreg/q_reg_21_:CK 2.791e-03
+*RC dut/reg_bank/haddrreg/q_reg_20_:CK 2.791e-03
+*RC dut/reg_bank/haddrreg/q_reg_19_:CK 2.791e-03
+*RC dut/reg_bank/haddrreg/q_reg_18_:CK 2.791e-03
+*RC dut/reg_bank/haddrreg/q_reg_15_:CK 2.791e-03
+*RC dut/reg_bank/haddrreg/q_reg_14_:CK 2.791e-03
+*RC dut/reg_bank/haddrreg/q_reg_13_:CK 2.791e-03
+*RC dut/reg_bank/haddrreg/q_reg_12_:CK 2.791e-03
+*RC dut/reg_bank/haddrreg/q_reg_11_:CK 2.791e-03
+*RC dut/reg_bank/haddrreg/q_reg_10_:CK 2.791e-03
+*RC dut/reg_bank/haddrreg/q_reg_9_:CK 2.791e-03
+*RC dut/reg_bank/haddrreg/q_reg_7_:CK 2.791e-03
+*RC dut/reg_bank/haddrreg/q_reg_6_:CK 2.791e-03
+*RC dut/reg_bank/haddrreg/q_reg_5_:CK 2.791e-03
+*RC dut/reg_bank/haddrreg/q_reg_4_:CK 2.791e-03
+*RC dut/reg_bank/haddrreg/q_reg_2_:CK 2.791e-03
+*RC dut/reg_bank/haddrreg/q_reg_0_:CK 2.791e-03
+*RC dut/reg_bank/haddrreg/q_reg_1_:CK 2.791e-03
+*RC dut/reg_bank/haddrreg/q_reg_16_:CK 2.791e-03
+*RC dut/reg_bank/haddrreg/q_reg_31_:CK 2.791e-03
+*RC dut/reg_bank/haddrreg/q_reg_46_:CK 2.791e-03
+*END
+
+*R_NET dut/reg_bank/haddrreg/n59 4.646e-03
+*DRIVER dut/reg_bank/haddrreg/U70:X
+*CELL SAEDHVT14_ND2B_1P5
+*C2_R1_C1 2.323e-03 2.192e-02 2.323e-03 
+*LOADS
+*RC dut/reg_bank/haddrreg/clk_gate_q_reg/latch:EN 1.019e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/n1 6.222e-02
+*DRIVER dut/reg_bank/haddrreg/U9:X
+*CELL SAEDRVT14_BUF_S_6
+*C2_R1_C1 3.111e-02 2.964e-01 3.111e-02 
+*LOADS
+*RC dut/reg_bank/haddrreg/U64:A1 2.881e-04
+*RC dut/reg_bank/haddrreg/U62:A1 2.881e-04
+*RC dut/reg_bank/haddrreg/U54:A1 2.881e-04
+*RC dut/reg_bank/haddrreg/U48:A1 2.881e-04
+*RC dut/reg_bank/haddrreg/U65:A1 2.881e-04
+*RC dut/reg_bank/haddrreg/U61:A1 2.881e-04
+*RC dut/reg_bank/haddrreg/U59:A1 2.881e-04
+*RC dut/reg_bank/haddrreg/U58:A1 2.881e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/n3 8.709e-02
+*DRIVER dut/reg_bank/haddrreg/U7:X
+*CELL SAEDHVT14_BUF_10
+*C2_R1_C1 4.355e-02 4.175e-01 4.355e-02 
+*LOADS
+*RC dut/reg_bank/haddrreg/U44:A1 3.636e-04
+*RC dut/reg_bank/haddrreg/U46:A1 3.636e-04
+*RC dut/reg_bank/haddrreg/U34:A1 3.636e-04
+*RC dut/reg_bank/haddrreg/U36:A1 3.636e-04
+*RC dut/reg_bank/haddrreg/U17:A1 3.636e-04
+*RC dut/reg_bank/haddrreg/U18:A1 3.636e-04
+*RC dut/reg_bank/haddrreg/U19:A1 3.636e-04
+*RC dut/reg_bank/haddrreg/U21:A1 3.636e-04
+*RC dut/reg_bank/haddrreg/U22:A1 3.636e-04
+*RC dut/reg_bank/haddrreg/U23:A1 3.636e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/n4 1.060e-01
+*DRIVER dut/reg_bank/haddrreg/U6:X
+*CELL SAEDHVT14_BUF_12
+*C2_R1_C1 5.301e-02 4.871e-01 5.301e-02 
+*LOADS
+*RC dut/reg_bank/haddrreg/U5:A 4.331e-04
+*RC dut/reg_bank/haddrreg/U7:A 4.481e-04
+*RC dut/reg_bank/haddrreg/U8:A 4.723e-04
+*RC dut/reg_bank/haddrreg/U9:A 4.331e-04
+*RC dut/reg_bank/haddrreg/U26:A 4.322e-04
+*RC dut/reg_bank/haddrreg/U27:A1 4.079e-04
+*RC dut/reg_bank/haddrreg/U28:A1 4.079e-04
+*RC dut/reg_bank/haddrreg/U29:A 4.319e-04
+*RC dut/reg_bank/haddrreg/U30:A1 4.079e-04
+*RC dut/reg_bank/haddrreg/U67:A1 4.079e-04
+*RC dut/reg_bank/haddrreg/U69:A 4.122e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/n5 6.230e-03
+*DRIVER dut/reg_bank/haddrreg/U3:X
+*CELL SAEDHVT14_NR2_1P5
+*C2_R1_C1 3.115e-03 2.192e-02 3.115e-03 
+*LOADS
+*RC dut/reg_bank/haddrreg/U6:A 1.366e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/n6 3.273e-02
+*DRIVER dut/reg_bank/haddrreg/U26:X
+*CELL SAEDHVT14_BUF_CDC_4
+*C2_R1_C1 1.636e-02 1.542e-01 1.636e-02 
+*LOADS
+*RC dut/reg_bank/haddrreg/U42:A1 2.019e-04
+*RC dut/reg_bank/haddrreg/U31:A1 2.019e-04
+*RC dut/reg_bank/haddrreg/U43:A1 2.019e-04
+*RC dut/reg_bank/haddrreg/U45:A1 2.019e-04
+*RC dut/reg_bank/haddrreg/U53:A1 2.019e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/n7 1.013e-01
+*DRIVER dut/reg_bank/haddrreg/U8:X
+*CELL SAEDHVT14_BUF_12
+*C2_R1_C1 5.066e-02 4.871e-01 5.066e-02 
+*LOADS
+*RC dut/reg_bank/haddrreg/U20:A1 4.079e-04
+*RC dut/reg_bank/haddrreg/U14:A1 4.079e-04
+*RC dut/reg_bank/haddrreg/U13:A1 4.079e-04
+*RC dut/reg_bank/haddrreg/U12:A1 4.079e-04
+*RC dut/reg_bank/haddrreg/U10:A1 4.079e-04
+*RC dut/reg_bank/haddrreg/U51:A1 4.079e-04
+*RC dut/reg_bank/haddrreg/U50:A1 4.079e-04
+*RC dut/reg_bank/haddrreg/U47:A1 4.079e-04
+*RC dut/reg_bank/haddrreg/U41:A1 4.079e-04
+*RC dut/reg_bank/haddrreg/U35:A1 4.079e-04
+*RC dut/reg_bank/haddrreg/U60:A1 4.079e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/n8 4.162e-02
+*DRIVER dut/reg_bank/haddrreg/U29:X
+*CELL SAEDHVT14_BUF_S_6
+*C2_R1_C1 2.081e-02 1.969e-01 2.081e-02 
+*LOADS
+*RC dut/reg_bank/haddrreg/U11:A1 2.276e-04
+*RC dut/reg_bank/haddrreg/U15:A1 2.276e-04
+*RC dut/reg_bank/haddrreg/U16:A1 2.276e-04
+*RC dut/reg_bank/haddrreg/U24:A1 2.276e-04
+*RC dut/reg_bank/haddrreg/U25:A1 2.276e-04
+*RC dut/reg_bank/haddrreg/U63:A1 2.276e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/n9 2.468e-02
+*DRIVER dut/reg_bank/haddrreg/U69:X
+*CELL SAEDHVT14_BUF_3
+*C2_R1_C1 1.234e-02 1.158e-01 1.234e-02 
+*LOADS
+*RC dut/reg_bank/haddrreg/U49:A1 1.785e-04
+*RC dut/reg_bank/haddrreg/U52:A1 1.785e-04
+*RC dut/reg_bank/haddrreg/U57:A1 1.785e-04
+*RC dut/reg_bank/haddrreg/U66:A1 1.785e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/n10 6.222e-02
+*DRIVER dut/reg_bank/haddrreg/U5:X
+*CELL SAEDRVT14_BUF_S_6
+*C2_R1_C1 3.111e-02 2.964e-01 3.111e-02 
+*LOADS
+*RC dut/reg_bank/haddrreg/U56:A1 2.881e-04
+*RC dut/reg_bank/haddrreg/U55:A1 2.881e-04
+*RC dut/reg_bank/haddrreg/U39:A1 2.881e-04
+*RC dut/reg_bank/haddrreg/U37:A1 2.881e-04
+*RC dut/reg_bank/haddrreg/U33:A1 2.881e-04
+*RC dut/reg_bank/haddrreg/U32:A1 2.881e-04
+*RC dut/reg_bank/haddrreg/U40:A1 2.881e-04
+*RC dut/reg_bank/haddrreg/U38:A1 2.881e-04
+*END
+
+*R_NET dut/reg_bank/haddrreg/n11 1.135e-02
+*DRIVER dut/reg_bank/haddrreg/U4:X
+*CELL SAEDHVT14_INV_S_1P5
+*C2_R1_C1 5.674e-03 5.002e-02 5.674e-03 
+*LOADS
+*RC dut/reg_bank/haddrreg/U3:A2 1.417e-04
+*RC dut/reg_bank/haddrreg/U70:B 1.421e-04
+*END
+
+*R_NET dut/reg_bank/readyreg/N3 4.732e-03
+*DRIVER dut/reg_bank/readyreg/U4:X
+*CELL SAEDHVT14_AN2B_MM_1
+*C2_R1_C1 2.366e-03 2.192e-02 2.366e-03 
+*LOADS
+*RC dut/reg_bank/readyreg/q_reg_0_:D 1.037e-04
+*END
+
+*R_NET dut/reg_bank/readyreg/n1 1.091e-02
+*DRIVER dut/reg_bank/readyreg/U3:X
+*CELL SAEDHVT14_TIE0_V1_2
+*C2_R1_C1 5.456e-03 5.002e-02 5.456e-03 
+*LOADS
+*RC dut/reg_bank/readyreg/q_reg_0_:SE 1.419e-04
+*RC dut/reg_bank/readyreg/q_reg_0_:SI 1.310e-04
+*END
+
+*R_NET dut/reg_bank/adrmux/n1 2.584e-02
+*DRIVER dut/reg_bank/adrmux/U6:X
+*CELL SAEDHVT14_BUF_3
+*C2_R1_C1 1.292e-02 1.158e-01 1.292e-02 
+*LOADS
+*RC dut/reg_bank/adrmux/U57:S 1.869e-04
+*RC dut/reg_bank/adrmux/U19:S 1.869e-04
+*RC dut/reg_bank/adrmux/U55:S 1.869e-04
+*RC dut/reg_bank/adrmux/U30:S 1.869e-04
+*END
+
+*R_NET dut/reg_bank/adrmux/n2 2.584e-02
+*DRIVER dut/reg_bank/adrmux/U8:X
+*CELL SAEDHVT14_BUF_3
+*C2_R1_C1 1.292e-02 1.158e-01 1.292e-02 
+*LOADS
+*RC dut/reg_bank/adrmux/U44:S 1.869e-04
+*RC dut/reg_bank/adrmux/U45:S 1.869e-04
+*RC dut/reg_bank/adrmux/U14:S 1.869e-04
+*RC dut/reg_bank/adrmux/U13:S 1.869e-04
+*END
+
+*R_NET dut/reg_bank/adrmux/n5 5.345e-02
+*DRIVER dut/reg_bank/adrmux/U5:X
+*CELL SAEDRVT14_BUF_S_6
+*C2_R1_C1 2.673e-02 2.441e-01 2.673e-02 
+*LOADS
+*RC dut/reg_bank/adrmux/U43:S 2.663e-04
+*RC dut/reg_bank/adrmux/U60:S 2.663e-04
+*RC dut/reg_bank/adrmux/U42:S 2.663e-04
+*RC dut/reg_bank/adrmux/U58:S 2.663e-04
+*RC dut/reg_bank/adrmux/U61:S 2.663e-04
+*RC dut/reg_bank/adrmux/U62:S 2.663e-04
+*RC dut/reg_bank/adrmux/U41:S 2.663e-04
+*END
+
+*R_NET dut/reg_bank/adrmux/n6 1.136e-02
+*DRIVER dut/reg_bank/adrmux/U9:X
+*CELL SAEDHVT14_BUF_1P5
+*C2_R1_C1 5.679e-03 5.002e-02 5.679e-03 
+*LOADS
+*RC dut/reg_bank/adrmux/U39:S 1.420e-04
+*RC dut/reg_bank/adrmux/U38:S 1.420e-04
+*END
+
+*R_NET dut/reg_bank/adrmux/n7 1.045e-01
+*DRIVER dut/reg_bank/adrmux/U2:X
+*CELL SAEDHVT14_BUF_12
+*C2_R1_C1 5.226e-02 4.871e-01 5.226e-02 
+*LOADS
+*RC dut/reg_bank/adrmux/U27:S 4.207e-04
+*RC dut/reg_bank/adrmux/U26:S 4.207e-04
+*RC dut/reg_bank/adrmux/U10:S 4.207e-04
+*RC dut/reg_bank/adrmux/U12:S 4.207e-04
+*RC dut/reg_bank/adrmux/U37:S 4.207e-04
+*RC dut/reg_bank/adrmux/U35:S 4.207e-04
+*RC dut/reg_bank/adrmux/U40:S 4.207e-04
+*RC dut/reg_bank/adrmux/U46:S 4.207e-04
+*RC dut/reg_bank/adrmux/U32:S 4.207e-04
+*RC dut/reg_bank/adrmux/U29:S 4.207e-04
+*RC dut/reg_bank/adrmux/U28:S 4.207e-04
+*END
+
+*R_NET dut/reg_bank/adrmux/n8 2.584e-02
+*DRIVER dut/reg_bank/adrmux/U11:X
+*CELL SAEDHVT14_BUF_3
+*C2_R1_C1 1.292e-02 1.158e-01 1.292e-02 
+*LOADS
+*RC dut/reg_bank/adrmux/U33:S 1.869e-04
+*RC dut/reg_bank/adrmux/U24:S 1.869e-04
+*RC dut/reg_bank/adrmux/U25:S 1.869e-04
+*RC dut/reg_bank/adrmux/U36:S 1.869e-04
+*END
+
+*R_NET dut/reg_bank/adrmux/n9 1.063e-01
+*DRIVER dut/reg_bank/adrmux/U3:X
+*CELL SAEDRVT14_BUF_10
+*C2_R1_C1 5.314e-02 4.871e-01 5.314e-02 
+*LOADS
+*RC dut/reg_bank/adrmux/U1:A 4.723e-04
+*RC dut/reg_bank/adrmux/U2:A 4.723e-04
+*RC dut/reg_bank/adrmux/U8:A 4.122e-04
+*RC dut/reg_bank/adrmux/U47:S 4.207e-04
+*RC dut/reg_bank/adrmux/U15:S 4.207e-04
+*RC dut/reg_bank/adrmux/U6:A 4.122e-04
+*RC dut/reg_bank/adrmux/U31:S 4.207e-04
+*RC dut/reg_bank/adrmux/U11:A 4.122e-04
+*RC dut/reg_bank/adrmux/U65:S 4.215e-04
+*RC dut/reg_bank/adrmux/U52:S 4.207e-04
+*RC dut/reg_bank/adrmux/U53:S 4.207e-04
+*END
+
+*R_NET dut/reg_bank/adrmux/n10 1.045e-01
+*DRIVER dut/reg_bank/adrmux/U1:X
+*CELL SAEDHVT14_BUF_12
+*C2_R1_C1 5.226e-02 4.871e-01 5.226e-02 
+*LOADS
+*RC dut/reg_bank/adrmux/U54:S 4.207e-04
+*RC dut/reg_bank/adrmux/U23:S 4.207e-04
+*RC dut/reg_bank/adrmux/U20:S 4.207e-04
+*RC dut/reg_bank/adrmux/U34:S 4.207e-04
+*RC dut/reg_bank/adrmux/U18:S 4.207e-04
+*RC dut/reg_bank/adrmux/U21:S 4.207e-04
+*RC dut/reg_bank/adrmux/U17:S 4.207e-04
+*RC dut/reg_bank/adrmux/U22:S 4.207e-04
+*RC dut/reg_bank/adrmux/U56:S 4.207e-04
+*RC dut/reg_bank/adrmux/U51:S 4.207e-04
+*RC dut/reg_bank/adrmux/U16:S 4.207e-04
+*END
+
+*R_NET dut/reg_bank/adrmux/n11 4.338e-02
+*DRIVER dut/reg_bank/adrmux/U4:X
+*CELL SAEDHVT14_BUF_S_6
+*C2_R1_C1 2.169e-02 1.969e-01 2.169e-02 
+*LOADS
+*RC dut/reg_bank/adrmux/U7:S 2.377e-04
+*RC dut/reg_bank/adrmux/U63:S 2.371e-04
+*RC dut/reg_bank/adrmux/U59:S 2.371e-04
+*RC dut/reg_bank/adrmux/U49:S 2.371e-04
+*RC dut/reg_bank/adrmux/U50:S 2.371e-04
+*RC dut/reg_bank/adrmux/U48:S 2.371e-04
+*END

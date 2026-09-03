@@ -1,0 +1,32 @@
+ 
+****************************************
+Report : area
+Design : msrv_soc_system_controllerwrapper
+Version: T-2022.03-SP4
+Date   : Wed Apr 15 10:43:12 2026
+****************************************
+
+Library(s) Used:
+
+    saed14hvt_base_ss0p585v125c (File: /home1/SAED14_EDK/SAED14_EDK/SAED14nm_EDK_STD_HVT/liberty/nldm/base/saed14hvt_base_ss0p585v125c.db)
+    saed14rvt_base_ss0p585v125c (File: /home1/SAED14_EDK/SAED14_EDK/SAED14nm_EDK_STD_RVT/liberty/nldm/base/saed14rvt_base_ss0p585v125c.db)
+    saed14hvt_cg_ss0p585v125c (File: /home1/SAED14_EDK/SAED14_EDK/SAED14nm_EDK_STD_HVT/liberty/nldm/cg/saed14hvt_cg_ss0p585v125c.db)
+
+Number of ports:                         1184
+Number of nets:                          1241
+Number of cells:                          670
+Number of combinational cells:            531
+Number of sequential cells:               124
+Number of macros/black boxes:               0
+Number of buf/inv:                         51
+Number of references:                       2
+
+Combinational area:                189.632397
+Buf/Inv area:                       19.802400
+Noncombinational area:             146.875202
+Macro/Black Box area:                0.000000
+Net Interconnect area:             406.930525
+
+Total cell area:                   336.507598
+Total area:                        743.438123
+1

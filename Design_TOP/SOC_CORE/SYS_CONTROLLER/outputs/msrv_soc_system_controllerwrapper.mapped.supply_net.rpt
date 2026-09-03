@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : supply_net
+Design : msrv_soc_system_controllerwrapper
+Version: T-2022.03-SP4
+Date   : Wed Apr 15 10:43:12 2026
+****************************************
+
+------------------------------------------------------------------------------
+
+ Supply Net            : VDDL
+ Current Scope         : msrv_soc_system_controllerwrapper
+ Operating Voltage     : -- Maximum --    -- Minimum --   
+                            (0.58)           (0.58)
+
+ Supply States         : No supply states defined for the net. 
+ Power Domain          : pd_sys(*)  
+
+------------------------------------------------------------------------------
+
+ Supply Net            : VSS
+ Current Scope         : msrv_soc_system_controllerwrapper
+ Operating Voltage     : -- Maximum --    -- Minimum --   
+                            (0.00)           (0.00)
+
+ Supply States         : No supply states defined for the net. 
+ Power Domain          : pd_sys(*)  
+
+------------------------------------------------------------------------------
+1

@@ -1,0 +1,22 @@
+ 
+****************************************
+Report : power_domain
+Design : msrv_soc_system_controllerwrapper
+Version: T-2022.03-SP4
+Date   : Wed Apr 15 10:43:12 2026
+****************************************
+
+------------------------------------------------------------------------------
+
+ Power Domain             : pd_sys
+ Current Scope            : msrv_soc_system_controllerwrapper
+ Elements                 : <top_level>
+ Available Supply Nets    : VDDL, VSS
+ Available Supply Sets    : 
+
+ Connections                -- Power --             -- Ground --
+ Primary:                   VDDL                    VSS
+   (Max Op. Voltage)         (0.58)                  (0.00)
+
+------------------------------------------------------------------------------
+1

@@ -1,0 +1,55 @@
+
+# ===================================================================
+# SPI — Block-level local UPF (power-gated domain)
+# - Block-level only: top-level owns power switch and supplies.
+# - This UPF exposes the gated supply and control signals as ports.
+# ===================================================================
+
+upf_version 1.0
+
+create_power_domain pd_sys -include_scope 
+
+#create_supply_port VDD 
+create_supply_port VDDL -domain pd_sys -direction in  
+create_supply_port VSS  -domain pd_sys -direction in  
+
+#create_supply_net VDD            
+#create_supply_net VDD -domain pd_sys -reuse
+
+create_supply_net VDDL 
+create_supply_net VDDL -domain pd_sys -reuse
+create_supply_net VSS            
+create_supply_net VSS  -domain pd_sys -reuse
+
+#connect_supply_net VDD -ports VDD	
+connect_supply_net VDDL -ports VDDL
+connect_supply_net VSS  -ports VSS
+
+set_domain_supply_net pd_sys -primary_power_net VDDL -primary_ground_net VSS
+
+#set_related_supply_net -power VDDL -ground VSS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

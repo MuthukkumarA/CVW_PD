@@ -1,0 +1,92 @@
+ 
+****************************************
+Report : resolved_strategy
+Design : msrv_soc_system_controllerwrapper
+Version: T-2022.03-SP4
+Date   : Wed Apr 15 10:31:11 2026
+****************************************
+
+Attributes that prevent power management cell insertion
+      dt - dont_touch
+      an - analog net
+     pad - pad-port path
+      pg - power/ground pin
+      da - dangling pin
+
+Resolved Isolation strategies: No strategies to report
+
+Resolved Level shifter strategies: No strategies to report
+
+Resolved Repeater strategies: No strategies to report
+
+Resolved Retention strategies: No strategies to report
+Warning: Library cell 'SAEDHVT14_FSDP_V2LP_1' could not be modeled for sequential mapping. (OPT-1201)
+Warning: Library cell 'SAEDHVT14_FSDP_V2_2' could not be modeled for sequential mapping. (OPT-1201)
+Warning: Library cell 'SAEDHVT14_FSDP_V2_0P5' could not be modeled for sequential mapping. (OPT-1201)
+Warning: Library cell 'SAEDHVT14_FSDN_V2_4' could not be modeled for sequential mapping. (OPT-1201)
+Warning: Library cell 'SAEDHVT14_FSDN_V2_2' could not be modeled for sequential mapping. (OPT-1201)
+Warning: Library cell 'SAEDHVT14_FSDN_V2_1' could not be modeled for sequential mapping. (OPT-1201)
+Warning: Library cell 'SAEDRVT14_FSDP_V2LP_1' could not be modeled for sequential mapping. (OPT-1201)
+Warning: Library cell 'SAEDRVT14_FSDP_V2_2' could not be modeled for sequential mapping. (OPT-1201)
+Warning: Library cell 'SAEDRVT14_FSDP_V2_0P5' could not be modeled for sequential mapping. (OPT-1201)
+Warning: Library cell 'SAEDRVT14_FSDN_V2_4' could not be modeled for sequential mapping. (OPT-1201)
+Warning: Library cell 'SAEDRVT14_FSDN_V2_2' could not be modeled for sequential mapping. (OPT-1201)
+Warning: Library cell 'SAEDRVT14_FSDN_V2_1' could not be modeled for sequential mapping. (OPT-1201)
+Warning: Library cell 'SAEDHVT14_FSDP_V2LP_1' could not be modeled for sequential mapping. (OPT-1201)
+Warning: Library cell 'SAEDHVT14_FSDP_V2_2' could not be modeled for sequential mapping. (OPT-1201)
+Warning: Library cell 'SAEDHVT14_FSDP_V2_0P5' could not be modeled for sequential mapping. (OPT-1201)
+Warning: Library cell 'SAEDHVT14_FSDN_V2_4' could not be modeled for sequential mapping. (OPT-1201)
+Warning: Library cell 'SAEDHVT14_FSDN_V2_2' could not be modeled for sequential mapping. (OPT-1201)
+Warning: Library cell 'SAEDHVT14_FSDN_V2_1' could not be modeled for sequential mapping. (OPT-1201)
+Warning: Library cell 'SAEDRVT14_FSDP_V2LP_1' could not be modeled for sequential mapping. (OPT-1201)
+Warning: Library cell 'SAEDRVT14_FSDP_V2_2' could not be modeled for sequential mapping. (OPT-1201)
+Warning: Library cell 'SAEDRVT14_FSDP_V2_0P5' could not be modeled for sequential mapping. (OPT-1201)
+Warning: Library cell 'SAEDRVT14_FSDN_V2_4' could not be modeled for sequential mapping. (OPT-1201)
+Warning: Library cell 'SAEDRVT14_FSDN_V2_2' could not be modeled for sequential mapping. (OPT-1201)
+Warning: Library cell 'SAEDRVT14_FSDN_V2_1' could not be modeled for sequential mapping. (OPT-1201)
+Warning: Library cell 'SAEDHVT14_FSDP_V2LP_1' could not be modeled for sequential mapping. (OPT-1201)
+Warning: Library cell 'SAEDHVT14_FSDP_V2_2' could not be modeled for sequential mapping. (OPT-1201)
+Warning: Library cell 'SAEDHVT14_FSDP_V2_0P5' could not be modeled for sequential mapping. (OPT-1201)
+Warning: Library cell 'SAEDHVT14_FSDN_V2_4' could not be modeled for sequential mapping. (OPT-1201)
+Warning: Library cell 'SAEDHVT14_FSDN_V2_2' could not be modeled for sequential mapping. (OPT-1201)
+Warning: Library cell 'SAEDHVT14_FSDN_V2_1' could not be modeled for sequential mapping. (OPT-1201)
+Warning: Library cell 'SAEDRVT14_FSDP_V2LP_1' could not be modeled for sequential mapping. (OPT-1201)
+Warning: Library cell 'SAEDRVT14_FSDP_V2_2' could not be modeled for sequential mapping. (OPT-1201)
+Warning: Library cell 'SAEDRVT14_FSDP_V2_0P5' could not be modeled for sequential mapping. (OPT-1201)
+Warning: Library cell 'SAEDRVT14_FSDN_V2_4' could not be modeled for sequential mapping. (OPT-1201)
+Warning: Library cell 'SAEDRVT14_FSDN_V2_2' could not be modeled for sequential mapping. (OPT-1201)
+Warning: Library cell 'SAEDRVT14_FSDN_V2_1' could not be modeled for sequential mapping. (OPT-1201)
+Information: Related supplies are not explicitly specified on 142 port(s) and primary supplies (VDDL, VSS) of top power domain will be assumed as the related supply. (UPF-405)
+
+Non-default variable settings:
+--------------------------------------------------------------------------------
+No non-default variable values to report
+--------------------------------------------------------------------------------
+
+Isolation mapping failures:
+
+Element(s)                                  Strategy   Domain     Clamp Sense Reasons
+--------------------------------------------------------------------------------------------------------------
+Isolation mapping should succeed.
+--------------------------------------------------------------------------------------------------------------
+
+Enable level shifter mapping failures:
+
+Element(s)                                  Strategy   Domain     Clamp Sense Reasons
+--------------------------------------------------------------------------------------------------------------
+Enable level shifter mapping should succeed.
+--------------------------------------------------------------------------------------------------------------
+
+
+
+Level shifter insertion failures:
+
+Index  Path Drivers                                   Reasons
+----------------------------------------------------------------------------------------------------
+
+Level shifter insertion should succeed.
+----------------------------------------------------------------------------------------------------
+
+
+Information: All isolation, enable level shifter and level shifter cells can be mapped. (UPF-908)
+1
