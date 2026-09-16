@@ -1,0 +1,167 @@
+# ===================================================================
+# UART — Block-level local UPF (power-gating-ready)
+# - Block-level only: top-level owns power switch and gated supply.
+# - Use for UART block synthesis (no RTL port changes required).
+# ===================================================================
+
+upf_version 1.0
+
+# -------------------------------------------------------------------
+# 1) Power domain for UART (assumes block instance name 'uart')
+# -------------------------------------------------------------------
+create_power_domain pd_uart_gated -include_scope
+
+
+# -------------------------------------------------------------------
+# 2) Supply ports (block expects these from top)
+#    Declare gated supply as input port driven by top-level power switch
+# -------------------------------------------------------------------
+create_supply_port VDD -domain pd_uart_gated
+create_supply_port VDDL_uart_gated -direction in  -domain pd_uart_gated
+create_supply_port VSS              -direction in  -domain pd_uart_gated
+create_supply_port VDDL -direction in  -domain pd_uart_gated
+
+# -------------------------------------------------------------------
+# 3) Supply nets (local)
+# -------------------------------------------------------------------
+create_supply_net VDD            -domain pd_uart_gated
+create_supply_net VDD            -domain pd_uart_gated -reuse
+
+create_supply_net VDDL_uart_gated -domain pd_uart_gated
+create_supply_net VDDL_uart_gated -domain pd_uart_gated -reuse
+create_supply_net VDDL -domain pd_uart_gated 
+create_supply_net VDDL -domain pd_uart_gated -reuse
+create_supply_net VSS             -domain pd_uart_gated
+create_supply_net VSS             -domain pd_uart_gated -reuse
+#create_supply_net VDDL_uart_gated -domain pd_uart_gated 
+#create_supply_net VDDL_uart_gated -domain pd_uart_gated -reuse
+
+# Connect supply nets to ports (block-level mapping)
+#connect_supply_net VDDL_uart_gated -ports VDDL_uart_gated
+connect_supply_net VDDL -ports VDDL
+connect_supply_net VSS             -ports VSS
+connect_supply_net VDD             -ports VDD
+
+# -------------------------------------------------------------------
+# 4) Bind the domain to its external gated supply
+# -------------------------------------------------------------------
+set_domain_supply_net pd_uart_gated -primary_power_net VDD -primary_ground_net VSS
+set_related_supply_net -power VDDL_uart_gated -ground VSS
+
+#set_domain_supply_net pd_uart_gated  -primary_power_net VDD -primary_ground_net VSS
+
+# Optionally create a supply set for hierarchical stitching
+#create_supply_set SS_UART -supplies {VDDL_uart_gated VSS}
+#set_domain_supply_set pd_uart_gated -supply_set SS_UART
+
+# -------------------------------------------------------------------
+# 5) Local virtual control ports (UPF logical ports; not RTL ports)
+#    These prevent "missing real driver" errors at block-level.
+#    Top-level will later connect these to PMU signals.
+# -------------------------------------------------------------------
+create_logic_port uart_powergate_enb  -direction in
+create_logic_port uart_isolation_enb  -direction in
+create_logic_port uart_retention_save_enb  -direction in
+#create_logic_port uart_save            -direction in
+create_logic_port uart_retention_restore_enb    -direction in
+
+# -------------------------------------------------------------------
+# 6) DO NOT create/create_power_switch here (top-level owns it)
+#    If you had a create_power_switch in previous attempts, remove it.
+# -------------------------------------------------------------------
+# (no create_power_switch in block UPF)
+
+#te_power_switch sw_uart -domain pd_uart_gated -input_supply_port "sw_uart_VDDL VDDL" \
+# -output_supply_port "sw_VDDL_uart_gated VDDL_uart_gated"                                 \
+#  -control_port       "sw_uart_powergate_enb dut/SOC_CORE/sys_ctrl_gen.sys_ctrl/PMU/uart_powergate_enb" \
+
+#   -on_state           "SW_PGD_UART_ON sw_uart_VDDL {!sw_uart_powergate_enb}"
+create_power_switch sw_uart -domain pd_uart_gated -input_supply_port "sw_uart_VDDL VDDL" \
+ -output_supply_port "sw_VDDL_uart_gated VDDL_uart_gated" \
+ -control_port       "sw_uart_powergate_enb uart_powergate_enb" \
+ -on_state           "SW_PGD_UART_ON sw_uart_VDDL {!sw_uart_powergate_enb}"
+
+
+
+
+
+#   -------------------------------------------------------------------
+# 7) Isolation — reference only local block boundary signals (local names)
+#    Use clamp_value as in main UPF (you used clamp_value = 1 there).
+#    Replace element names if your UART netlist uses different names.
+# -------------------------------------------------------------------
+#set_isolation isol_clamp1_sig_uart_from_pgd -domain pd_uart_gated \
+# -applies_to outputs \
+# -isolation_power_net VDDL_uart_gated \
+# -isolation_ground_net VSS \
+# -clamp_value 1 \
+# -elements {
+#   SOUT
+#   INTR
+#    PRDATA
+# }
+
+# Bind isolation control to the local logical control port
+#set_isolation_control isol_clamp1_sig_uart_from_pgd \
+# -domain pd_uart_gated \
+# -isolation_signal uart_isolation_enb \
+# -isolation_sense high \
+# -location parent
+
+# -------------------------------------------------------------------
+# 8) Retention — list the registers (local names as per your main UPF)
+#    Replace names/paths with exact netlist names if different.
+# -------------------------------------------------------------------
+set_retention pgd_retain_uart -domain pd_uart_gated \
+ -retention_power_net VDDL_uart_gated \
+ -retention_ground_net VSS \
+ -elements {
+    dut/uartPC/FCR_reg*
+    dut/uartPC/LCR_reg_*
+    dut/uartPC/SCR_reg*
+    dut/uartPC/DLL_reg*
+    dut/uartPC/DLM_reg*
+    dut/uartPC/IER_reg*
+    dut/uartPC/txsr_reg*
+    dut/uartPC/MCR_reg*
+    dut/uartPC/TXHR_reg*
+ }
+
+# Retention control: local virtual control (top-level will map it)
+set_retention_control pgd_retain_uart -domain pd_uart_gated \
+ -save_signal    { uart_retention_save_enb high } \
+ -restore_signal { uart_retention_restore_enb high }
+
+#map_retention_cell pgd_retain_uart -domain pd_uart_gated -lib_cells {SAEDLVT14_*}
+
+# -------------------------------------------------------------------
+# 9) Level shifters (optional markers)
+#    Prefer insertion decisions to top-level, but block UPF may mark
+#    which inputs/outputs need LS when integrated.
+# -------------------------------------------------------------------
+set_level_shifter LtoH_sig_to_uart -domain pd_uart_gated \
+ -applies_to inputs -rule low_to_high -location self
+
+set_level_shifter HtoL_sig_from_uart -domain pd_uart_gated \
+ -applies_to outputs -rule high_to_low -location self
+
+# Example element lists (uncomment and update if you want explicit mapping)
+# add_level_shifter LtoH_sig_to_uart -elements { clk resetn RXD TXD ... }
+# add_level_shifter HtoL_sig_from_uart -elements { SOUT INTR PRDATA }
+
+# -------------------------------------------------------------------
+# 10) Notes / checklist
+# -------------------------------------------------------------------
+# 1) Replace local element names (SOUT, INTR, PRDATA, uartPC/... registers)
+#    with exact names from your UART netlist. Use `report_hierarchy`
+#    or `report_cells` to confirm exact paths/names and update the lists.
+# 2) Do NOT create the gated supply driver (power switch) at block level.
+#    The SoC/uncore UPF must own create_power_switch and drive
+#    VDDL_uart_gated. This prevents "multiple drivers" errors.
+# 3) At integration (uncore/SoC-level UPF), connect the local logical
+#    control ports to PMU signals, for example:
+#      connect_logic_net uart_isolation_enb -nets dut/SOC_CORE/.../PMU/uart_isolation_enb
+#    or replace local references with the full PMU signal path in top UPF.
+# ===================================================================
+
+

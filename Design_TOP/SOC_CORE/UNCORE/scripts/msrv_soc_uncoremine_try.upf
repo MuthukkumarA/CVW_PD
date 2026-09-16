@@ -1,0 +1,84 @@
+###load_upf  /home1/PD07/AMuthuKKumar/Project_CVW_PD12/Synth/msrv_soc_uncore/upf/msrv_soc_clint_apbwrapper.upf -scope clint_synth
+load_upf /home1/PD07/AMuthuKKumar/Project_CVW_PD12/Synth/msrv_soc_uncore/msrv_soc_clint_apbwrapper/scripts/msrv_soc_clint_apbwrapper.upf -scope clint_synth
+
+###load_upf  /home1/PD07/AMuthuKKumar/Project_CVW_PD12/Synth/msrv_soc_uncore/upf/msrv_soc_plic_apbwrapper.upf -scope plic_synth
+load_upf /home1/PD07/AMuthuKKumar/Project_CVW_PD12/Synth/msrv_soc_uncore/msrv_soc_plic_apbwrapper/scripts/msrv_soc_plic_apbwrapper.upf -scope plic_synth
+
+###load_upf  /home1/PD07/AMuthuKKumar/Project_CVW_PD12/Synth/uncore/msrv_soc_uncore/upf/msrv_soc_spi_apbwrapper.upf -scope spi_synth
+load_upf /home1/PD07/AMuthuKKumar/Project_CVW_PD12/Synth/msrv_soc_uncore/msrv_soc_spi_apbwrapper/scripts/msrv_soc_spi_apbwrapper.upf -scope spi_synth
+
+
+###load_upf  /home1/PD07/AMuthuKKumar/Project_CVW_PD12/Synth/uncore/msrv_soc_uncore/upf/msrv_soc_uart_apbwrapper.upf -scope uart_synth
+load_upf /home1/PD07/AMuthuKKumar/Project_CVW_PD12/Synth/msrv_soc_uncore/msrv_soc_uart_apbwrapper/scripts/msrv_soc_uart_apbwrapper.upf -scope uart_synth
+
+###load_upf  /home1/PD07/AMuthuKKumar/Project_CVW_PD12/Synth/msrv_soc_uncore/upf/msrv_soc_gpio_apbwrapper.upf -scope gpio_synth
+load_upf /home1/PD07/AMuthuKKumar/Project_CVW_PD12/Synth/msrv_soc_uncore/msrv_soc_gpio_apbwrapper/scripts/msrv_soc_gpio_apbwrapper.upf -scope gpio_synth
+
+###load_upf  /home1/PD07/AMuthuKKumar/Project_CVW_PD12/Synth/msrv_soc_uncore/upf/msrv_soc_adrdecswrapper.upf -scope adrdecs_synth
+load_upf /home1/PD07/AMuthuKKumar/Project_CVW_PD12/Synth/msrv_soc_uncore/msrv_soc_adrdecswrapper/scripts/msrv_soc_adrdecswrapper.upf -scope adrdecs_synth
+
+#load_upf /home1/PD07/AMuthuKKumar/Project_CVW_PD12/Synth/uncore/msrv_soc_uncore/upf/msrv_soc_adrdecswrapper.upf -scope dut/bootrom_synth
+####load_upf  /home1/PD07/AMuthuKKumar/Project_CVW_PD12/Synth/msrv_soc_uncore/upf/msrv_soc_ahbapbbridgewrapper.upf -scope ahbapbbridge_synth
+load_upf /home1/PD07/AMuthuKKumar/Project_CVW_PD12/Synth/msrv_soc_uncore/msrv_soc_ahbapbbridgewrapper/scripts/msrv_soc_ahbapbbridgewrapper.upf -scope ahbapbbridge_synth
+
+
+
+create_power_domain pd_uncore
+
+create_supply_port VDD
+create_supply_port VDDL 
+create_supply_port VSS
+create_supply_port VDDM
+create_supply_port VDDL_spi_gated
+create_supply_port VDDL_uart_gated
+
+
+create_supply_net VDD -domain pd_uncore
+create_supply_net VDD -domain pd_uncore -reuse
+create_supply_net VDDL -domain pd_uncore
+create_supply_net VDDL -domain pd_uncore -reuse
+create_supply_net VSS -domain pd_uncore
+create_supply_net VSS -domain pd_uncore -reuse
+
+create_supply_net VDDL_spi_gated -domain pd_uncore
+create_supply_net VDDL_spi_gated -domain pd_uncore -reuse
+
+create_supply_net VDDL_uart_gated -domain pd_uncore
+create_supply_net VDDL_uart_gated -domain pd_uncore -reuse
+
+
+create_supply_net VDDM -domain pd_uncore
+create_supply_net VDDM -domain pd_uncore -reuse
+
+
+
+
+#Connect Supply Nets
+
+connect_supply_net VDD -ports {VDD clint_synth/VDD  plic_synth/VDD spi_synth/VDD gpio_synth/VDD adrdecs_synth/VDD ahbapbbridge_synth/VDD uart_synth/VDD}
+
+connect_supply_net VSS -ports {VSS clint_synth/VSS plic_synth/VSS spi_synth/VSS  gpio_synth/VSS adrdecs_synth/VSS ahbapbbridge_synth/VSS uart_synth/VSS }
+
+connect_supply_net VDDL -ports {VDDL clint_synth/VDDL plic_synth/VDDL spi_synth/VDDL gpio_synth/VDDL adrdecs_synth/VDDL uart_synth/VDDL  }
+connect_supply_net VDDM -ports {VDDM  ahbapbbridge_synth/VDDM}
+
+
+connect_supply_net VDDL_spi_gated -ports {VDDL_spi_gated}
+connect_supply_net VDDL_spi_gated [get_pins spi_synth/VDDL]
+
+connect_supply_net VDDL_uart_gated -ports {VDDL_uart_gated}
+
+#connect_supply_net VDD -ports VDD
+#connect_supply_net VDDL -ports VDDL
+#connect_supply_net VSS  -ports VSS
+
+
+set_domain_supply_net pd_uncore -primary_power_net VDD -primary_ground_net VSS
+set_related_supply_net -power VDDL -ground VSS
+
+
+set_level_shifter LtoH_sig_to_uncore -domain pd_uncore  -applies_to inputs -rule low_to_high -location  self
+set_level_shifter HtoL_sig_from_uncore -domain pd_uncore -applies_to outputs -rule high_to_low -location self
+
+
+

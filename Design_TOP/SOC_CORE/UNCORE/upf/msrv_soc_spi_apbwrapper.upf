@@ -1,0 +1,180 @@
+
+# ===================================================================
+# SPI — Block-level local UPF (power-gated domain)
+# - Block-level only: top-level owns power switch and supplies.
+# - This UPF exposes the gated supply and control signals as ports.
+# ===================================================================
+
+upf_version 1.0
+
+# 1) Power domain for SPI (local instance name 'spi' assumed)
+create_power_domain pd_spi_gated -include_scope
+
+# 2) Supply ports (block expects these from top)
+#    Only declare the *gated* supply as an input port (driven by top)
+create_supply_port VDD -domain pd_spi_gated
+create_supply_port VDDL -domain pd_spi_gated
+create_supply_port VDDL_spi_gated -direction in  -domain pd_spi_gated
+create_supply_port VSS            -direction in  -domain pd_spi_gated
+
+# 3) Supply nets (local representation)
+#    Create nets only for the ports you declared (no VDDL main driver here)
+create_supply_net VDD            -domain pd_spi_gated
+create_supply_net VDD            -domain pd_spi_gated -reuse
+create_supply_net VDDL -domain pd_spi_gated
+create_supply_net VDDL -domain pd_spi_gated -reuse
+
+create_supply_net VDDL_spi_gated -domain pd_spi_gated
+create_supply_net VDDL_spi_gated -domain pd_spi_gated -reuse
+create_supply_net VSS            -domain pd_spi_gated
+create_supply_net VSS            -domain pd_spi_gated -reuse
+
+# Connect supply nets to ports (block-level mapping)
+connect_supply_net VDD -ports VDD
+connect_supply_net VDDL -ports VDDL
+#connect_supply_net VDDL_spi_gated -ports VDDL_spi_gated
+connect_supply_net VSS            -ports VSS
+
+# 4) Bind the domain to its (external) gated supply
+#    primary_power_net must be the gated supply the block expects
+#set_domain_supply_net pd_spi_gated \
+#    -primary_power_net VDDL_spi_gated \
+#    -primary_ground_net GND
+
+# If tool expects supply set usage:
+#create_supply_set SS_SPI -supplies {VDDL_spi_gated GND}
+#set_domain_supply_set pd_spi_gated -supply_set SS_SPI
+set_domain_supply_net pd_spi_gated -primary_power_net VDD -primary_ground_net VSS
+set_related_supply_net -power VDDL_spi_gated -ground VSS
+# -------------------------------------------------------------------
+# 5) Local virtual control ports (do not exist in block RTL)
+#    These are UPF logical ports so the block-level flow will not fail
+#    due to missing drivers. At top-level these will be connected to PMU.
+# -------------------------------------------------------------------
+create_logic_port spi_powergate_enb -direction in
+create_logic_port spi_isolation_enb -direction in
+create_logic_port spi_retention_save_enb -direction in
+#create_logic_port spi_save          -direction in
+create_logic_port spi_retention_restore_enb  -direction in
+
+# -------------------------------------------------------------------
+# 6) DO NOT create power_switch here (top-level owns it).
+#    If you had one in prior file, remove it to avoid multiple drivers.
+# -------------------------------------------------------------------
+# (no create_power_switch in block UPF)
+create_power_switch sw_spi -domain pd_spi_gated -input_supply_port "sw_spi_VDDL VDDL" \
+ -output_supply_port "sw_VDDL_spi_gated VDDL_spi_gated" \
+ -control_port       "sw_spi_powergate_enb spi_powergate_enb" \
+ -on_state           "SW_PGD_SPI_ON sw_spi_VDDL {!sw_spi_powergate_enb}"
+
+# -------------------------------------------------------------------
+# 7) Isolation — reference only local block boundary signals (local names)
+#    Use the actual signal names as they appear inside the spi block.
+#    Do NOT use absolute 'dut/...' paths at block level.
+# -------------------------------------------------------------------
+#set_isolation isol_clamp1_sig_spi_from_pgd -domain pd_spi_gated \
+ #-applies_to outputs \
+ #-isolation_power_net VDDL_spi_gated \
+ #-isolation_ground_net VSS \
+ #-clamp_value 1 \
+ #-elements {
+  #  SPIOut
+   # SPICS
+   # SPICLK
+   # SPIIntr
+   # PRDATA
+ #}
+
+# Bind isolation control to the local logical control port
+#set_isolation_control isol_clamp1_sig_spi_from_pgd \
+# -domain pd_spi_gated \
+ #-isolation_signal spi_isolation_enb \
+ #-isolation_sense high \
+ #-location parent
+
+# -------------------------------------------------------------------
+# 8) Retention — list registers (local names)
+# -------------------------------------------------------------------
+set_retention pgd_retain_spi -domain pd_spi_gated \
+ -retention_power_net VDDL_spi_gated \
+ -retention_ground_net VSS \
+ -elements {
+   dut/SckDiv_reg*
+   dut/SckMode_reg*
+   dut/ChipSelectID_reg*
+   dut/Delay1_reg*
+   dut/ChipSelectDef_reg*
+   dut/ChipSelectMode_reg*
+   dut/Delay0_reg*
+   dut/Delay1_reg*
+   dut/Format_reg*
+   dut/TransmitData_reg_*
+   dut/TransmitWatermark_reg*
+   dut/ReceiveWatermark_reg*
+   dut/InterruptEnable_reg*
+   dut/TransmitReg_reg*
+ }
+
+set_retention_control pgd_retain_spi -domain pd_spi_gated \
+ -save_signal    { spi_retention_save_enb high } \
+ -restore_signal { spi_retention_restore_enb high }
+
+#map_retention_cell pgd_retain_spi -domain pd_spi_gated -lib_cells {SAEDLVT14_*}
+
+# -------------------------------------------------------------------
+# 9) Level shifters
+#    Prefer to keep LS/ISO insertion to top-level; but block UPF can
+#    mark inputs/outputs as needing LS if you want.
+# -------------------------------------------------------------------
+set_level_shifter LtoH_sig_to_spi -domain pd_spi_gated \
+ -applies_to inputs -rule low_to_high -location self
+
+set_level_shifter HtoL_sig_from_spi -domain pd_spi_gated \
+ -applies_to outputs -rule high_to_low -location self
+
+# optionally associate elements with LS (local names)
+# add_level_shifter LtoH_sig_to_spi -elements { clk mosi sclk cs resetn }
+# add_level_shifter HtoL_sig_from_spi -elements { miso irq PRDATA }
+
+# -------------------------------------------------------------------
+# Notes:
+# 1) Replace the local element names (SPIOut, PRDATA, SckDiv_reg[*], etc.)
+#    with exact names from your SPI netlist if they differ. Use
+#    `report_hierarchy`/`report_cells` to get the correct names.
+# 2) Top-level UPF must:
+#    - create the power switch that drives VDDL_spi_gated
+#    - connect the top/PMU signals to spi_powergate_enb, spi_isolation_enb,
+#      spi_retention_enb (via connect_logic_net / connect_supply_net or by
+#      referencing the block local ports)
+# 3) Do NOT create VDDL or VDDL_spi_gated drivers in this file. The top
+#    must own the create_power_switch command that drives the gated net.
+# ===================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

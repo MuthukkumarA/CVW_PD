@@ -1,0 +1,30 @@
+upf_version 1.0
+
+# 1) Power domain for SPI (local instance name 'spi' assumed)
+create_power_domain pd_gpio -include_scope
+
+# 2) Supply ports (block expects these from top)
+#    Only declare the *gated* supply as an input port (driven by top)
+create_supply_port VDD 
+create_supply_port VDDL -domain pd_gpio -direction in  
+create_supply_port VSS  -domain pd_gpio -direction in  
+
+# 3) Supply nets (local representation)
+#    Create nets only for the ports you declared (no VDDL main driver here)
+create_supply_net VDD            
+create_supply_net VDD -domain pd_gpio -reuse
+
+create_supply_net VDDL 
+create_supply_net VDDL -domain pd_gpio -reuse
+create_supply_net VSS            
+create_supply_net VSS  -domain pd_gpio -reuse
+
+# Connect supply nets to ports (block-level mapping)
+connect_supply_net VDD -ports VDD	
+connect_supply_net VDDL -ports VDDL
+connect_supply_net VSS  -ports VSS
+
+set_domain_supply_net pd_gpio -primary_power_net VDD -primary_ground_net VSS
+
+set_related_supply_net -power VDDL -ground VSS
+

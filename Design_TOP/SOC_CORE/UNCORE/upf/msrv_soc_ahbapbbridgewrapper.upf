@@ -1,0 +1,51 @@
+
+# =====================================================
+# Local UPF for AHB-APB Bridge (non power-gated)
+# Extracted from SoC main UPF
+# =====================================================
+
+upf_version 1.0
+
+# -----------------------------------------------------
+# 1) Power domain for bridge
+# -----------------------------------------------------
+create_power_domain pd_bridge -include_scope
+
+# -----------------------------------------------------
+# 2) Supply ports (local to bridge block)
+# -----------------------------------------------------
+create_supply_port VDD -direction in -domain pd_bridge
+create_supply_port VDDM -direction in -domain pd_bridge
+create_supply_port VSS  -direction in -domain pd_bridge
+
+# -----------------------------------------------------
+# 3) Supply nets (local nets mapped to SoC supplies)
+# -----------------------------------------------------
+create_supply_net VDD -domain pd_bridge
+create_supply_net VDD -domain pd_bridge -reuse
+create_supply_net VDDM -domain pd_bridge
+create_supply_net VDDM -domain pd_bridge -reuse
+create_supply_net VSS  -domain pd_bridge
+create_supply_net VSS  -domain pd_bridge -reuse
+
+# Connect supply nets to supply ports
+connect_supply_net VDD -ports VDD
+connect_supply_net VDDM -ports VDDM
+connect_supply_net VSS  -ports VSS
+
+# -----------------------------------------------------
+# 4) Assign supply nets to the bridge domain
+# -----------------------------------------------------
+set_domain_supply_net pd_bridge -primary_power_net  VDD -primary_ground_net VSS
+set_related_supply_net -power VDDM -ground VSS
+
+# -----------------------------------------------------
+# 5) (Optional) Level shifters
+# If bridge interfaces with other domains, define LS here.
+# For example, if signals cross from bridge <-> pd_core or pd_io_interface.
+# -----------------------------------------------------
+set_level_shifter LtoH_sig_to_bridge -domain pd_bridge \
+    -applies_to inputs -rule low_to_high -location self
+#
+set_level_shifter HtoL_sig_from_bridge -domain pd_bridge \
+    -applies_to outputs -rule high_to_low -location self

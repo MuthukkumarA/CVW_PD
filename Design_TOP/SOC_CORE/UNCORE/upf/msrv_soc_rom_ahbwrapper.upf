@@ -1,0 +1,105 @@
+########################################################
+# ROM Power Domain (Parent, Always ON)
+########################################################
+create_power_domain pd_rom -include_scope
+
+# Define supply ports for ROM
+create_supply_port VDD -direction in
+create_supply_port VSS -direction in
+
+# Define supply nets for ROM
+create_supply_net VDD -domain pd_rom
+create_supply_net VSS -domain pd_rom
+
+# Hook up ports to nets
+connect_supply_net VDD -ports { VDD }
+connect_supply_net VSS -ports { VSS }
+
+# Assign ROM supplies
+set_domain_supply_net pd_rom \
+    -primary_power_net VDD \
+    -primary_ground_net VSS
+
+
+########################################################
+# EEPROM Gated Domain (Child of ROM)
+########################################################
+create_power_domain pd_eeprom_gated -elements {dut/memory}
+ 
+# Define supply ports for EEPROM
+create_supply_port VDDM_gated -direction internal
+create_supply_port VDDM       -direction internal
+create_supply_port VSSM       -direction internal
+
+# Define supply nets for EEPROM
+create_supply_net VDDM_gated -domain pd_eeprom_gated
+create_supply_net VDDM       -domain pd_eeprom_gated
+create_supply_net VSSM       -domain pd_eeprom_gated
+
+# Hook up EEPROM nets
+connect_supply_net VDDM_gated -ports { VDDM_gated }
+connect_supply_net VDDM       -ports { VDDM }
+connect_supply_net VSSM       -ports { VSSM }
+
+# Assign EEPROM supplies
+set_domain_supply_net pd_eeprom_gated \
+    -primary_power_net VDDM_gated \
+    -primary_ground_net VSSM
+
+#create_supply_set ss_eeprom -function {power VDD} -function {ground VSS}
+#create_supply_set ss_eeprom_gated -function {power VDDM_gated} -function {ground VSSM}
+########################################################
+# Power Switch for EEPROM
+########################################################
+create_logic_port eeprom_pwr_en -direction in
+
+create_power_switch PS_EEPROM \
+    -domain pd_eeprom_gated \
+    -input_supply_port  {VDD_in  VDDM} \
+    -output_supply_port {VDD_out VDDM_gated} \
+    -control_port       {sw_en   eeprom_pwr_en} \
+    -on_state {ON VDD_in {sw_en == 1}} \
+    -off_state {OFF {sw_en == 0}}
+
+
+########################################################
+# Isolation Strategy
+########################################################
+create_logic_port eeprom_iso_en -direction in
+
+#set_isolation isol_clamp1_sig_spi_from_pgd -domain pd_eeprom_gated \
+# -applies_to outputs \
+# -isolation_power_net VDDM_gated \
+# -isolation_ground_net VSS \
+# -clamp_value 0 \
+# -elements {
+   # dut/memory/read_data
+#	 }
+
+
+
+
+########################################################
+# Level Shifters (if EEPROM domain voltage < ROM voltage)
+########################################################
+# Example: EEPROM runs at 0.9V, ROM runs at 1.1V
+
+# Define strategy for signals going OUT of EEPROM (low → high)
+set_level_shifter ls_eeprom_to_rom \
+    -domain pd_eeprom_gated \
+    -applies_to outputs \
+    -location parent
+
+# Define strategy for signals coming INTO EEPROM (high → low)
+set_level_shifter ls_rom_to_eeprom \
+    -domain pd_eeprom_gated \
+    -applies_to inputs \
+    -location self
+
+
+
+
+
+
+
+

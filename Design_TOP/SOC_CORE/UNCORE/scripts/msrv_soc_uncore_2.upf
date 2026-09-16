@@ -1,0 +1,269 @@
+
+create_power_domain pd_uncore
+create_power_domain pd_clint  -elements {dut/clint_synth}
+create_power_domain pd_spi_gated  -elements {dut/spi_synth}
+create_power_domain pd_uart_gated  -elements {dut/uart_synth}
+create_power_domain pd_gpio  -elements {dut/gpio_synth}
+create_power_domain pd_ahbapb  -elements {dut/ahbapbbridge_synth}
+create_power_domain pd_plic  -elements {dut/plic_synth}
+create_power_domain pd_eeprom_gated -elements {dut/bootrom_synth/dut/memory}
+
+
+create_supply_port VDD -domain pd_uncore
+create_supply_port VDDL -domain pd_uncore
+create_supply_port VSS -domain pd_uncore
+create_supply_port VDDM -domain pd_uncore
+create_supply_port VDDL_spi_gated -domain pd_spi_gated
+create_supply_port VDDL_uart_gated -domain pd_uart_gated
+create_supply_port VDDM_eeprom_gated -domain pd_eeprom_gated
+
+
+
+create_supply_net VDD -domain pd_uncore
+create_supply_net VDD -domain pd_uncore -reuse
+create_supply_net VDDL -domain pd_uncore
+create_supply_net VDDL -domain pd_uncore -reuse
+create_supply_net VSS -domain pd_uncore
+create_supply_net VSS -domain pd_uncore -reuse
+create_supply_net VDDM -domain pd_uncore
+create_supply_net VDDM -domain pd_uncore -reuse
+
+
+create_supply_net VDD -domain pd_clint -reuse
+create_supply_net VDDL -domain pd_clint -reuse
+create_supply_net VSS -domain pd_clint -reuse
+
+create_supply_net VDD -domain pd_plic -reuse
+create_supply_net VDDL -domain pd_plic -reuse
+create_supply_net VSS -domain pd_plic -reuse
+
+create_supply_net VDD -domain pd_gpio -reuse
+create_supply_net VDDL -domain pd_gpio -reuse
+create_supply_net VSS -domain pd_gpio -reuse
+
+create_supply_net VDD -domain pd_ahbapb -reuse
+create_supply_net VSS -domain pd_ahbapb -reuse
+create_supply_net VDDM -domain pd_ahbapb -reuse
+
+create_supply_net VDD -domain pd_uart_gated -reuse
+create_supply_net VDDL -domain pd_uart_gated -reuse
+create_supply_net VSS -domain pd_uart_gated -reuse
+create_supply_net VDDL_uart_gated -domain pd_uart_gated 
+create_supply_net VDDL_uart_gated -domain pd_uart_gated -reuse
+
+
+create_supply_net VDD -domain pd_spi_gated -reuse
+create_supply_net VDDL -domain pd_spi_gated -reuse
+create_supply_net VSS -domain pd_spi_gated -reuse
+create_supply_net VDDL_spi_gated -domain pd_spi_gated 
+create_supply_net VDDL_spi_gated -domain pd_spi_gated -reuse
+
+create_supply_net VDD -domain pd_eeprom_gated -reuse
+create_supply_net VDDM -domain pd_eeprom_gated -reuse
+create_supply_net VSS -domain pd_eeprom_gated -reuse
+create_supply_net VDDM_eeprom_gated -domain pd_eeprom_gated 
+create_supply_net VDDM_eeprom_gated -domain pd_eeprom_gated -reuse
+
+
+create_logic_port spi_powergate_enb -direction in
+create_logic_port spi_isolation_enb -direction in
+create_logic_port spi_retention_save_enb -direction in
+create_logic_port spi_retention_restore_enb       -direction in
+create_logic_port uart_powergate_enb  -direction in
+create_logic_port uart_isolation_enb  -direction in
+create_logic_port uart_retention_save_enb  -direction in
+create_logic_port uart_retention_restore_enb         -direction in
+create_logic_port eeprom_powergate_enb -direction in
+create_logic_port eeprom_isolation_enb -direction in
+
+
+create_power_switch sw_spi -domain pd_spi_gated -input_supply_port "sw_spi_VDDL VDDL" \
+ -output_supply_port "sw_VDDL_spi_gated VDDL_spi_gated" \
+ -control_port       "sw_spi_powergate_enb spi_powergate_enb" \
+ -on_state           "SW_PGD_SPI_ON sw_spi_VDDL {!sw_spi_powergate_enb}"
+
+create_power_switch sw_uart -domain pd_uart_gated -input_supply_port "sw_uart_VDDL VDDL" \
+ -output_supply_port "sw_VDDL_uart_gated VDDL_uart_gated" \
+ -control_port       "sw_uart_powergate_enb uart_powergate_enb" \
+ -on_state           "SW_PGD_UART_ON sw_uart_VDDL {!sw_uart_powergate_enb}"
+
+create_power_switch sw_eeprom -domain pd_eeprom_gated -input_supply_port "sw_eeprom_VDDM VDDM" \
+ -output_supply_port "sw_VDDM_eeprom_gated VDDM_eeprom_gated" \
+ -control_port       "sw_eeprom_powergate_enb eeprom_powergate_enb" \
+ -on_state           "SW_PGD_EEPROM_ON sw_eeprom_VDDM {!sw_eeprom_powergate_enb}"
+
+
+#set_isolation isol_clamp1_sig_uart_from_pgd -domain pd_uncore \
+ #-applies_to outputs \
+ #-isolation_power_net VDDL_uart_gated \
+ #-isolation_ground_net VSS \
+ #-clamp_value 1 \
+ #-elements {
+ #   dut/uart_synth/SOUT
+  #  dut/uart_synth/INTR
+   # dut/uart_synth/PRDATA
+# }
+
+# Bind isolation control to the local logical control port
+#set_isolation_control isol_clamp1_sig_uart_from_pgd \
+ #	-domain pd_uncore \
+#	-isolation_signal uart_isolation_enb \
+#	-isolation_sense high \
+ #	-location parent
+
+#set_isolation isol_clamp1_sig_spi_from_pgd -domain pd_spi_gated \
+ #-applies_to outputs \
+ #-isolation_power_net VDDL_spi_gated \
+ #-isolation_ground_net VSS \
+ #-clamp_value 1 \
+ #-elements {
+  #  dut/spi_synth/SPIOut
+   # dut/spi_synth/SPICS
+   # dut/spi_synth/SPICLK
+   # dut/spi_synth/SPIIntr
+   # dut/spi_synth/PRDATA
+ #}
+
+# Bind isolation control to the local logical control port
+#set_isolation_control isol_clamp1_sig_spi_from_pgd \
+ #-domain pd_spi_gated \
+ #-isolation_signal spi_isolation_enb \
+ #-isolation_sense high \
+ #-location parent
+
+#set_isolation isol_clamp0_sig_eeprom_from_pgd -domain pd_eeprom_gated \
+ #-applies_to outputs \
+ #-isolation_power_net VDDM_eeprom_gated \
+ #-isolation_ground_net VSS \
+ #-clamp_value 0 \
+ #-elements {
+ #   dut/bootrom_synth/dut/memory/read_data
+#	 }
+
+#set_isolation_control isol_clamp0_sig_eeprom_from_pgd \
+ #-domain pd_eeprom_gated \
+ #-isolation_signal eeprom_isolation_enb \
+ #-isolation_sense high \
+ #-location parent
+
+
+set_retention pgd_retain_spi -domain pd_spi_gated \
+ -retention_power_net VDDL_spi_gated \
+ -retention_ground_net VSS \
+ -elements {
+    dut/spi_synth/dut/SckDiv*
+    dut/spi_synth/dut/SckMode*
+    dut/spi_synth/dut/ChipSelectID*
+    dut/spi_synth/dut/ChipSelectDef*
+    dut/spi_synth/dut/ChipSelectMode*
+    dut/spi_synth/dut/Delay0_reg*
+    dut/spi_synth/dut/Delay1_reg*
+    dut/spi_synth/dut/Format_reg*
+    dut/spi_synth/dut/TransmitData_reg*
+    dut/spi_synth/dut/TransmitWatermark_reg*
+    dut/spi_synth/dut/ReceiveWatermark_reg*
+    dut/spi_synth/dut/InterruptEnable_reg*
+    dut/spi_synth/dut/TransmitReg_reg*
+ }
+
+set_retention_control pgd_retain_spi -domain pd_spi_gated \
+ -save_signal    { spi_retention_save_enb high } \
+ -restore_signal { spi_retention_restore_enb high }
+suppress_message MV-159
+map_retention_cell pgd_retain_spi -domain pd_spi_gated -lib_cells {SAEDLVT14_*}
+
+set_retention pgd_retain_uart -domain pd_uart_gated \
+ -retention_power_net VDDL_uart_gated \
+ -retention_ground_net VSS \
+ -elements {
+    dut/uart_synth/dut/uartPC/FCR_reg*
+    dut/uart_synth/dut/uartPC/LCR_reg*
+    dut/uart_synth/dut/uartPC/SCR_reg*
+    dut/uart_synth/dut/uartPC/DLL_reg*
+    dut/uart_synth/dut/uartPC/DLM_reg*
+    dut/uart_synth/dut/uartPC/IER_reg*
+    dut/uart_synth/dut/uartPC/txsr_reg*
+    dut/uart_synth/dut/uartPC/MCR_reg*
+    dut/uart_synth/dut/uartPC/TXHR_reg*
+ }
+
+# Retention control: local virtual control (top-level will map it)
+set_retention_control pgd_retain_uart -domain pd_uart_gated \
+ -save_signal    { uart_retention_save_enb high } \
+ -restore_signal { uart_retention_restore_enb high }
+
+suppress_message MV-159
+
+map_retention_cell pgd_retain_uart -domain pd_uart_gated -lib_cells {SAEDLVT14_*}
+
+
+#connect_supply_net VDDL_spi_gated -port VDDL_spi_gated
+#connect_supply_net VDDL_uart_gated -port VDDL_uart_gated
+#connect_supply_net VDDM_eeprom_gated -port VDDM_eeprom_gated
+connect_supply_net VDDL -port VDDL
+connect_supply_net VDDM -port VDDM
+connect_supply_net VDD -port VDD
+connect_supply_net VSS -port VSS
+
+
+set_level_shifter LtoH_sig_to_bridge -domain pd_ahbapb \
+  -applies_to inputs -rule low_to_high -location  self
+
+set_level_shifter HtoL_sig_from_bridge -domain pd_ahbapb \
+  -applies_to outputs -rule high_to_low -location self
+
+set_level_shifter LtoH_sig_to_eeprom -domain pd_eeprom_gated \
+  -applies_to inputs -rule low_to_high -location  self
+
+set_level_shifter HtoL_sig_from_eeprom -domain pd_eeprom_gated \
+  -applies_to outputs -rule high_to_low -location self
+
+set_level_shifter LtoH_sig_to_eeprom -domain pd_spi_gated \
+  -applies_to outputs -rule low_to_high -location  self
+
+set_level_shifter HtoL_sig_from_eeprom -domain pd_spi_gated \
+  -applies_to inputs -rule high_to_low -location self
+
+set_level_shifter LtoH_sig_to_eeprom -domain pd_uart_gated \
+  -applies_to outputs -rule low_to_high -location  self
+
+set_level_shifter HtoL_sig_from_eeprom -domain pd_uart_gated \
+  -applies_to inputs -rule high_to_low -location self
+
+set_level_shifter LtoH_sig_to_eeprom -domain pd_gpio \
+  -applies_to outputs -rule low_to_high -location  self
+
+set_level_shifter HtoL_sig_from_eeprom -domain pd_gpio \
+  -applies_to inputs -rule high_to_low -location self
+
+set_level_shifter LtoH_sig_to_eeprom -domain pd_clint \
+  -applies_to outputs -rule low_to_high -location  self
+
+set_level_shifter HtoL_sig_from_eeprom -domain pd_clint \
+  -applies_to inputs -rule high_to_low -location self
+
+set_level_shifter LtoH_sig_to_eeprom -domain pd_plic \
+  -applies_to outputs -rule low_to_high -location  self
+
+set_level_shifter HtoL_sig_from_eeprom -domain pd_plic \
+  -applies_to inputs -rule high_to_low -location self
+
+set_domain_supply_net pd_uncore  -primary_power_net VDD -primary_ground_net VSS
+
+set_domain_supply_net pd_eeprom_gated  -primary_power_net VDDM_eeprom_gated -primary_ground_net VSS
+set_domain_supply_net pd_spi_gated  -primary_power_net VDDL_spi_gated -primary_ground_net VSS
+set_domain_supply_net pd_uart_gated  -primary_power_net VDDL_uart_gated -primary_ground_net VSS
+set_domain_supply_net pd_gpio  -primary_power_net VDDL -primary_ground_net VSS
+set_domain_supply_net pd_clint  -primary_power_net VDDL -primary_ground_net VSS
+set_domain_supply_net pd_plic  -primary_power_net VDDL -primary_ground_net VSS
+set_domain_supply_net pd_ahbapb  -primary_power_net VDDM -primary_ground_net VSS
+
+
+
+
+
+
+
+
+
+
